@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="REDHAWK IDE" id="gov.redhawk.product.ide.product" application="org.eclipse.ui.ide.workbench" version="1.8.3.qualifier" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/gov.redhawk.product.ide/icons/RedHawk_Logo250x.gif"/>
+      <text>
+         %productBlurb
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgs>-Xms40m
+-Xmx512m
+-XX:MaxPermSize=256m
+-Dcom.sun.CORBA.transport.ORBUseNIOSelectToWait=false
+-Djava.util.logging.config.file=configuration/javalogger.properties
+-Djava.net.preferIPv4Stack=true
+-Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB
+-Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton
+-Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer</vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/gov.redhawk.product.ide/icons/RedHawk_Logo16x.gif" i32="/gov.redhawk.product.ide/icons/RedHawk_Logo32x.gif" i48="/gov.redhawk.product.ide/icons/RedHawk_Logo48x.gif" i64="/gov.redhawk.product.ide/icons/RedHawk_Logo64x.gif" i128="/gov.redhawk.product.ide/icons/RedHawk_Logo128x.gif"/>
+
+   <splash
+      location="gov.redhawk.product.ide"
+      startupProgressRect="5,245,445,15"
+      startupMessageRect="7,222,445,20"
+      startupForegroundColor="FFFFFF" />
+   <launcher name="eclipse">
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <intro introId="org.eclipse.ui.intro.universal"/>
+
+   <vm>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="gov.redhawk.product.ide.feature" version="1.8.3.qualifier"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="4" />
+      <property name="eclipse.buildId" value="@buildId@" />
+   </configurations>
+
+</product>

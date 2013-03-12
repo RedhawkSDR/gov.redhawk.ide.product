@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/mil.jpeojtrs.sca.feature_2.2.2.qualifier.jar" id="mil.jpeojtrs.sca.feature" version="2.2.2.qualifier">
+      <category name="SCA"/>
+   </feature>
+   <feature url="features/mil.jpeojtrs.sca.sdk_2.2.2.qualifier.jar" id="mil.jpeojtrs.sca.sdk" version="2.2.2.qualifier">
+      <category name="SCA"/>
+   </feature>
+   <feature url="features/gov.redhawk.apps_1.0.0.qualifier.jar" id="gov.redhawk.apps" version="1.0.0.qualifier">
+      <category name="REDHAWK"/>
+   </feature>
+   <feature url="features/gov.redhawk.apps.sdk_1.0.0.qualifier.jar" id="gov.redhawk.apps.sdk" version="1.0.0.qualifier">
+      <category name="REDHAWK"/>
+   </feature>
+   <feature url="features/gov.redhawk.ide.codegen_1.0.0.qualifier.jar" id="gov.redhawk.ide.codegen" version="1.0.0.qualifier">
+      <category name="REDHAWK"/>
+   </feature>
+   <feature url="features/gov.redhawk.ide.codegen.sdk_1.0.0.qualifier.jar" id="gov.redhawk.ide.codegen.sdk" version="1.0.0.qualifier">
+      <category name="REDHAWK"/>
+   </feature>
+   <feature url="features/gov.redhawk.ide.feature_1.0.0.qualifier.jar" id="gov.redhawk.ide.feature" version="1.0.0.qualifier">
+      <category name="REDHAWK"/>
+   </feature>
+   <feature url="features/gov.redhawk.ide.sdk_1.0.0.qualifier.jar" id="gov.redhawk.ide.sdk" version="1.0.0.qualifier">
+      <category name="REDHAWK"/>
+   </feature>
+   <feature url="features/gov.redhawk.ide.ui.feature_1.0.0.qualifier.jar" id="gov.redhawk.ide.ui.feature" version="1.0.0.qualifier">
+      <category name="REDHAWK"/>
+   </feature>
+   <feature url="features/gov.redhawk.ide.ui.sdk_1.0.0.qualifier.jar" id="gov.redhawk.ide.ui.sdk" version="1.0.0.qualifier">
+      <category name="REDHAWK"/>
+   </feature>
+   <feature url="features/gov.redhawk.interfaces_1.7.0.qualifier.jar" id="gov.redhawk.interfaces" version="1.7.0.qualifier">
+      <category name="REDHAWK"/>
+   </feature>
+   <feature url="features/gov.redhawk.interfaces.sdk_1.7.0.qualifier.jar" id="gov.redhawk.interfaces.sdk" version="1.7.0.qualifier">
+      <category name="REDHAWK"/>
+   </feature>
+   <feature url="features/gov.redhawk.rcp.feature_1.0.0.qualifier.jar" id="gov.redhawk.rcp.feature" version="1.0.0.qualifier">
+      <category name="REDHAWK"/>
+   </feature>
+   <feature url="features/gov.redhawk.rcp.sdk_1.0.0.qualifier.jar" id="gov.redhawk.rcp.sdk" version="1.0.0.qualifier">
+      <category name="REDHAWK"/>
+   </feature>
+   <feature url="features/gov.redhawk.sca.feature_1.1.0.qualifier.jar" id="gov.redhawk.sca.feature" version="1.1.0.qualifier">
+      <category name="REDHAWK"/>
+   </feature>
+   <feature url="features/gov.redhawk.sca.sdk_1.1.0.qualifier.jar" id="gov.redhawk.sca.sdk" version="1.1.0.qualifier">
+      <category name="REDHAWK"/>
+   </feature>
+   <feature url="features/gov.redhawk.sdk.feature_1.0.0.qualifier.jar" id="gov.redhawk.sdk.feature" version="1.0.0.qualifier">
+      <category name="REDHAWK"/>
+   </feature>
+   <feature url="features/gov.redhawk.ui.feature_1.5.0.qualifier.jar" id="gov.redhawk.ui.feature" version="1.5.0.qualifier">
+      <category name="REDHAWK"/>
+   </feature>
+   <feature url="features/gov.redhawk.ui.sdk_1.4.0.qualifier.jar" id="gov.redhawk.ui.sdk" version="1.4.0.qualifier">
+      <category name="REDHAWK"/>
+   </feature>
+   <category-def name="SCA" label="SCA"/>
+   <category-def name="REDHAWK" label="REDHAWK"/>
+</site>
