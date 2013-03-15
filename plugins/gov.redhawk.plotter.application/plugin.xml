@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     REDHAWK HEADER
+ 
+     Identification: $Revision: 7858 $
+-->
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="plotter"
+         name="Plotter"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            cardinality="singleton-global"
+            thread="main"
+            visible="true">
+         <run
+               class="gov.redhawk.plotter.application.PlotterApplication">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="gov.redhawk.plotter.application.PlotterPerspective"
+            fixed="false"
+            id="gov.redhawk.plotter.application.perspective"
+            name="REDHAWK Plotter Perspective">
+      </perspective>
+   </extension>
+
+</plugin>

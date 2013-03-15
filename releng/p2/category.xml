@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/gov.redhawk.product.ide_1.9.0.qualifier.jar" id="gov.redhawk.product.ide" version="1.9.0.qualifier">
+      <category name="gov.redhawk.ide.product"/>
+   </feature>
+   <feature url="features/gov.redhawk.product.ide.source_1.9.0.qualifier.jar" id="gov.redhawk.product.ide.source" version="1.9.0.qualifier">
+      <category name="gov.redhawk.ide.product"/>
+   </feature>
+   <category-def name="gov.redhawk.ide.product" label="REDHAWK Product"/>
+</site>
