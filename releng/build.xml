@@ -5,7 +5,7 @@
     <import file="${commondir}/pdebuild.xml"/>
 
     <target name="buildAll" depends="clean">
-        <buildProduct featureId="gov.redhawk.product.ide.platform" productName="ideProduct" archiveName="redhawk-ide" archivePrefix="eclipse"/>
+        <buildProduct featureId="gov.redhawk.product.ide.platform" productName="ideProduct" outputName="redhawk-ide" folderName="eclipse"/>
     </target>
 
 </project>
