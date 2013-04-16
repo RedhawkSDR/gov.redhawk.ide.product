@@ -42,11 +42,11 @@
          version="0.0.0"/>
 
    <includes
-         id="gov.redhawk.common.sdk"
+         id="gov.redhawk.core.sdk"
          version="0.0.0"/>
 
    <includes
-         id="gov.redhawk.core.feature"
+         id="gov.redhawk.core"
          version="0.0.0"/>
 
    <includes
@@ -194,17 +194,9 @@
          version="0.0.0"/>
 
    <includes
-         id="org.jacorb.systemFragment"
-         version="0.0.0"/>
-
-   <includes
          id="org.jacorb"
          version="0.0.0"/>
-
-   <includes
-         id="idl.bulkio"
-         version="0.0.0"/>
-
+         
    <plugin
          id="org.apache.commons.io"
          download-size="0"
