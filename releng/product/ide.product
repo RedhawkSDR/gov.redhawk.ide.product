@@ -60,7 +60,7 @@
       <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="4" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="4" />
-      <property name="eclipse.buildId" value="@buildId@" />
+      <property name="eclipse.buildId" value="${unqualifiedVersion}.${buildType}${buildQualifier}" />
    </configurations>
 
 </product>

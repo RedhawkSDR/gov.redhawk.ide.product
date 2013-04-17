@@ -35,7 +35,7 @@
                     <products>
                         <product>
                             <id>gov.redhawk.product.ide.product</id>
-                            <archiveFileName>redhawk-ide-${unqualifiedVersion}.${buildQualifier}</archiveFileName>
+                            <archiveFileName>redhawk-ide-${unqualifiedVersion}.${buildType}${buildQualifier}</archiveFileName>
                             <rootFolder>eclipse</rootFolder>
                         </product>
                     </products>
