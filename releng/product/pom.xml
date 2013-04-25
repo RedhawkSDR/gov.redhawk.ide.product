@@ -26,6 +26,7 @@
                     </execution>
                     <execution>
                         <id>archive-products</id>
+                        <phase>pre-integration-test</phase>
                         <goals>
                             <goal>archive-products</goal>
                         </goals>
@@ -35,11 +36,37 @@
                     <products>
                         <product>
                             <id>gov.redhawk.product.ide.product</id>
-                            <archiveFileName>redhawk-ide-${unqualifiedVersion}.${buildQualifier}</archiveFileName>
+                            <archiveFileName>redhawk-ide-${unqualifiedVersion}.${buildType}${buildQualifier}</archiveFileName>
                             <rootFolder>eclipse</rootFolder>
                         </product>
                     </products>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-patch-plugin</artifactId>
+                <version>1.1.1</version>
+                <configuration>
+                    <targetDirectory>target/products/gov.redhawk.product.ide.product/linux/gtk</targetDirectory>
+                    <patchDirectory>patches</patchDirectory>
+                    <patches>
+                        <patch>pydev.patch</patch>
+                        <patch>pydev-x86_64.patch</patch>
+                        <patch>rcp.patch</patch>
+                        <patch>rcp-86_64.patch</patch>
+                        <patch>rcp-source.patch</patch>
+                        <patch>rcp-source-x86_64.patch</patch>
+                    </patches>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>rh</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>apply</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

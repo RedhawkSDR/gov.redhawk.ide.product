@@ -1,0 +1,38 @@
+--- eclipse/features/org.eclipse.rcp_3.6.2.r362_v20101104-9SAxFMKFkSAqi8axkv1ZjegmiBLY/feature.xml	2010-09-09 08:54:26.000000000 -0400
++++ x86_64/eclipse/features/org.eclipse.rcp_3.6.2.r362_v20101104-9SAxFMKFkSAqi8axkv1ZjegmiBLY/feature.xml	2012-02-15 17:56:10.000000000 -0500
+@@ -117,7 +117,7 @@
+          id="org.eclipse.swt"
+          download-size="0"
+          install-size="0"
+-         version="3.6.2.v3659c"
++         version="3.8.0.v3816"
+          unpack="false"/>
+ 
+    <plugin
+@@ -189,7 +189,7 @@
+          arch="x86"
+          download-size="0"
+          install-size="0"
+-         version="3.6.2.v3659c"
++         version="3.8.0.v3816"
+          fragment="true"
+          unpack="false"/>
+ 
+@@ -211,7 +211,7 @@
+          arch="x86"
+          download-size="0"
+          install-size="0"
+-         version="3.6.2.v3659b"
++         version="3.8.0.v3816"
+          fragment="true"
+          unpack="false"/>
+          
+@@ -288,7 +288,7 @@
+          arch="x86_64"
+          download-size="0"
+          install-size="0"
+-         version="3.6.2.v3659b"
++         version="3.8.0.v3816"
+          fragment="true"
+          unpack="false"/>
+ 
