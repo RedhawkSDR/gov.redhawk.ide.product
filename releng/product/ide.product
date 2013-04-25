@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="REDHAWK IDE" id="gov.redhawk.product.ide.product" uid="gov.redhawk.product.ide.product" application="org.eclipse.ui.ide.workbench" version="1.8.4.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="REDHAWK IDE" uid="gov.redhawk.product.ide.product" id="gov.redhawk.product.ide.product" application="org.eclipse.ui.ide.workbench" version="1.8.4.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/gov.redhawk.product.ide/icons/RedHawk_Logo250x.gif"/>
@@ -16,13 +16,7 @@
    <launcherArgs>
       <vmArgs>-Xms40m
 -Xmx512m
--XX:MaxPermSize=256m
--Dcom.sun.CORBA.transport.ORBUseNIOSelectToWait=false
--Djava.util.logging.config.file=configuration/javalogger.properties
--Djava.net.preferIPv4Stack=true
--Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB
--Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton
--Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer</vmArgs>
+-XX:MaxPermSize=256m</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
 
@@ -60,7 +54,14 @@
       <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="4" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="4" />
+      <property name="com.sun.CORBA.transport.ORBUseNIOSelectToWait" value="false" />
       <property name="eclipse.buildId" value="@buildId@" />
+      <property name="jacorb.config.dir" value="@config.dir" />
+      <property name="java.net.preferIPv4Stack" value="true" />
+      <property name="java.util.logging.config.file" value="@config.dir/javalogger.properties" />
+      <property name="org.omg.CORBA.ORBClass" value="org.jacorb.orb.ORB" />
+      <property name="org.omg.CORBA.ORBSingletonClass" value="org.jacorb.orb.ORBSingleton" />
+      <property name="org.omg.PortableInterceptor.ORBInitializerClass.standard_init" value="org.jacorb.orb.standardInterceptors.IORInterceptorInitializer" />
    </configurations>
 
 </product>

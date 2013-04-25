@@ -216,11 +216,6 @@
          version="0.0.0"
          os="linux"/>
 
-     <!--<includes
-         id="org.eclipse.linuxtools.systemtap"
-         version="0.0.0"
-         os="linux"/>-->
-
    <includes
          id="org.eclipse.linuxtools.tmf"
          version="0.0.0"
@@ -278,14 +273,6 @@
    <includes
          id="gov.redhawk.interfaces.sdk"
          version="0.0.0"/>
-
-     <!--<includes
-         id="org.eclipse.rcp.patch"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.rcp.source.patch"
-         version="0.0.0"/>-->
 
    <includes
          id="org.eclipse.jdt"
@@ -396,10 +383,10 @@
          version="0.0.0"/>
 
    <includes
-         id="org.jacorb.systemFragment"
+         id="org.jacorb"
          version="0.0.0"/>
 
-    <plugin
+   <plugin
          id="org.eclipse.wst.common.project.facet.core"
          download-size="0"
          install-size="0"
