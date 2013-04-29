@@ -24,8 +24,8 @@
                     <configuration>
                         <target>
                             <replace file="OSGI-INF/l10n/bundle.properties">
-                                <replacefilter value="${unqualifiedVersion}" token="@buildLabel@" />
-                                <replacefilter value="${buildQualifier}" token="@buildId@" />
+                                <replacefilter value="${unqualifiedVersion}" token="@version@" />
+                                <replacefilter value="${buildType}${buildQualifier}" token="@buildId@" />
                             </replace>
                         </target>
                     </configuration>

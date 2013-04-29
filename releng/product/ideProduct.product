@@ -21,7 +21,11 @@
 -Djava.util.logging.config.file=configuration/javalogger.properties
 -Djava.net.preferIPv4Stack=true
 -Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB
--Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton</vmArgs>
+-Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton
+-Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer
+-Djacorb.config.dir=configuration
+-Dorg.eclipse.swt.browser.XULRunnerPath=xulrunner
+-Dorg.eclipse.swt.browser.DefaultType=mozilla</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
 
@@ -63,7 +67,7 @@
       <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="4" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="4" />
-      <property name="eclipse.buildId" value="@buildId@" />
+      <property name="eclipse.buildId" value="${unqualifiedVersion}.${buildType}${buildQualifier}" />
    </configurations>
 
 </product>
