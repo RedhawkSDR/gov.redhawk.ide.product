@@ -26,7 +26,7 @@
 		<gov.redhawk.core.rcp>http://download.redhawksdr.org/gov.redhawk.core/rcp/releases/1.9</gov.redhawk.core.rcp>
 		<gov.redhawk.ide>http://download.redhawksdr.org/gov.redhawk.ide/releases/1.9</gov.redhawk.ide>
 		<gov.redhawk.codegen>http://download.redhawksdr.org/gov.redhawk.codegen/releases/1.9</gov.redhawk.codegen>
-		<nxm>http://download.redhawksdr.org/nxm/releases/latest</nxm>
+            	<nxm>http://nextmidas.techma.com/p2/nxm/updates/stable</nxm>
 		<nxm-rcp>http://download.redhawksdr.org/nxm-ui/releases/1.0</nxm-rcp>
 		<jacorb>http://download.redhawksdr.org/jacorb/releases/3.1</jacorb>
 		<idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
