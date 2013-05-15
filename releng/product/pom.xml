@@ -53,7 +53,7 @@
                         <patch>pydev.patch</patch>
                         <patch>pydev-x86_64.patch</patch>
                         <patch>rcp.patch</patch>
-                        <patch>rcp-86_64.patch</patch>
+                        <patch>rcp-x86_64.patch</patch>
                         <patch>rcp-source.patch</patch>
                         <patch>rcp-source-x86_64.patch</patch>
                     </patches>
