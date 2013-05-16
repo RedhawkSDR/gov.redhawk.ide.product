@@ -10,6 +10,6 @@
   </parent>
   <groupId>gov.redhawk.ide.product</groupId>
   <artifactId>gov.redhawk.product.ide.platform</artifactId>
-  <version>1.8.4-SNAPSHOT</version>
+  <version>1.8.5-SNAPSHOT</version>
   <packaging>eclipse-feature</packaging>
 </project>
