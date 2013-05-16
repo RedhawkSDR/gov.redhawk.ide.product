@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/gov.redhawk.product.ide.feature" id="gov.redhawk.product.ide.feature" version="1.8.4.qualifier">
+   <feature url="features/gov.redhawk.product.ide.feature" id="gov.redhawk.product.ide.feature" version="1.8.5.qualifier">
       <category name="gov.redhawk.ide.product"/>
    </feature>
-   <feature url="features/gov.redhawk.product.ide.feature.source" id="gov.redhawk.product.ide.feature.source" version="1.8.4.qualifier">
+   <feature url="features/gov.redhawk.product.ide.feature.source" id="gov.redhawk.product.ide.feature.source" version="1.8.5.qualifier">
       <category name="gov.redhawk.ide.product"/>
    </feature>
    <category-def name="gov.redhawk.ide.product" label="REDHAWK Product"/>
