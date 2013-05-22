@@ -114,6 +114,7 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 				                PlotterApplicationPlugin.PLUGIN_ID,
 				                "Could not find associated  plot handler, check -handler and -repid arguments."));
 				PlatformUI.getWorkbench().close();
+				return; // Will never get here
 			}
 
 			// Create the port objects
