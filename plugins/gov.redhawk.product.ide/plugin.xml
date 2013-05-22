@@ -16,7 +16,7 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
-            name="REDHAWK IDE">
+            name="%product.name">
          <property
                name="appName"
                value="REDHAWK IDE">
@@ -350,9 +350,9 @@
    <extension
          point="org.eclipse.ui.activities">
       <category
-            description="Use the REDHAWK SDK to develop generic (i.e. Non-REDHAWK) applications"
+            description="%category.description"
             id="gov.redhawk.product.ide.genericDevelopmentCategory"
-            name="Non-REDHAWK Development">
+            name="%category.name">
       </category>
       <categoryActivityBinding
             activityId="gov.redhawk.product.ide.genericJavaDevelopmentActivity"
@@ -395,9 +395,9 @@
             categoryId="gov.redhawk.product.ide.genericDevelopmentCategory">
       </categoryActivityBinding>
       <activity
-            description="Use the REDHAWK SDK to develop Java applications"
+            description="%activity.description"
             id="gov.redhawk.product.ide.genericJavaDevelopmentActivity"
-            name="Java Development">
+            name="%activity.name">
       </activity>
       <activityPatternBinding
             activityId="gov.redhawk.product.ide.genericJavaDevelopmentActivity"
@@ -410,9 +410,9 @@
             pattern="org.eclipse.ant.ui/org.eclipse.ant.ui.wizards.JavaProjectWizard">
       </activityPatternBinding>
       <activity
-            description="Use the REDHAWK SDK to develop Eclipse Plug-ins"
+            description="%activity.description.0"
             id="gov.redhawk.product.ide.genericPluginDevelopmentActivity"
-            name="Plugin Development">
+            name="%activity.name.0">
       </activity> 
       <activityPatternBinding
             activityId="gov.redhawk.product.ide.genericPluginDevelopmentActivity"
@@ -423,9 +423,9 @@
             pattern="org\.eclipse\.pde/.*">
       </activityPatternBinding>       
       <activity
-            description="Use the REDHAWK SDK to develop C/C++ applications"
+            description="%activity.description.1"
             id="gov.redhawk.product.ide.genericCppDevelopmentActivity"
-            name="C/C++ Development">
+            name="%activity.name.1">
       </activity>
       <activityPatternBinding
             activityId="gov.redhawk.product.ide.genericCppDevelopmentActivity"
@@ -457,9 +457,9 @@
             pattern="org\.eclipse\.linuxtools\.cdt\..*/.*">
       </activityPatternBinding>
       <activity
-            description="Use the REDHAWK SDK to develop with Eclipse Modeling"
+            description="%activity.description.2"
             id="gov.redhawk.product.ide.genericEMFDevelopmentActivity"
-            name="EMF Development">
+            name="%activity.name.2">
       </activity>
       <activityPatternBinding
             activityId="gov.redhawk.product.ide.genericEMFDevelopmentActivity"
@@ -538,9 +538,9 @@
             pattern="org\.eclipse\.m2m\..*/.*">
       </activityPatternBinding>
       <activity
-            description="Use the REDHAWK SDK to develop with Python applications"
+            description="%activity.description.3"
             id="gov.redhawk.product.ide.genericPythonDevelopmentActivity"
-            name="Python Development">
+            name="%activity.name.3">
       </activity>
       <activityPatternBinding
             activityId="gov.redhawk.product.ide.genericPythonDevelopmentActivity"
@@ -558,9 +558,9 @@
             pattern="org.python.pydev.customizations/org.python.pydev.customizations.app_engine.wizards.AppEngineWizard">
       </activityPatternBinding>
       <activity
-            description="Use the REDHAWK SDK to debug applications"
+            description="%activity.description.4"
             id="gov.redhawk.product.ide.genericTestingDevelopmentActivity"
-            name="Debug Tools">
+            name="%activity.name.4">
       </activity>
       <activityPatternBinding
             activityId="gov.redhawk.product.ide.genericTestingDevelopmentActivity"
@@ -579,9 +579,9 @@
             pattern="org\.eclipse\.linuxtools\.systemtap\..*/.*">
       </activityPatternBinding>
       <activity
-            description="Use the REDHAWK SDK to develop Web applications"
+            description="%activity.description.5"
             id="gov.redhawk.product.ide.genericWebDevelopmentActivity"
-            name="Web Tools">
+            name="%activity.name.5">
       </activity>
       <activityPatternBinding
             activityId="gov.redhawk.product.ide.genericWebDevelopmentActivity"
@@ -592,18 +592,18 @@
             pattern="org\.eclipse\.wst\..*/.*">
       </activityPatternBinding>
       <activity
-            description="Use the REDHAWK SDK to develop RPM packages"
+            description="%activity.description.6"
             id="gov.redhawk.product.ide.genericRpmDevelopmentActivity"
-            name="RPM Tools">
+            name="%activity.name.6">
       </activity>
       <activityPatternBinding
             activityId="gov.redhawk.product.ide.genericRpmDevelopmentActivity"
             pattern="org\.eclipse\.linuxtools\.rpm\..*/.*">
       </activityPatternBinding>
       <activity
-            description="Use the REDHAWK SDK to develop User Interfaces"
+            description="%activity.description.7"
             id="gov.redhawk.product.ide.genericUiDevelopmentActivity"
-            name="UI Tools">
+            name="%activity.name.7">
       </activity>
       <activityPatternBinding
             activityId="gov.redhawk.product.ide.genericUiDevelopmentActivity"
@@ -614,9 +614,9 @@
             pattern="com\.windowtester\.eclipse\..*/.*">
       </activityPatternBinding>
       <activity
-            description="Use the REDHAWK SDK to maintain autotools based projects"
+            description="%activity.description.8"
             id="gov.redhawk.product.ide.genericAutoolsDevelopmentActivity"
-            name="Autotools Tools">
+            name="%activity.name.8">
       </activity>
       <activityPatternBinding
             activityId="gov.redhawk.product.ide.genericAutoolsDevelopmentActivity"
@@ -627,7 +627,7 @@
          point="org.eclipse.ui.activities">
       <activity
             id="gov.redhawk.product.ide.hidedistractions"
-            name="Distractions">
+            name="%activity.name.9">
          <enabledWhen>
             <with
                   variable="gov.redhawk.product.ide.with1">
@@ -671,7 +671,7 @@
          point="org.eclipse.ui.preferencePages">
 	  <page            
             category="org.eclipse.ui.preferencePages.Workbench"
-            name="Capabilities"
+            name="%page.name"
             id="org.eclipse.sdk.capabilities">
             <class class="org.eclipse.ui.activities.ActivityCategoryPreferencePage">
                 <parameter name="allowAdvanced" value="true"/>

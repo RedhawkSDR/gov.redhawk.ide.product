@@ -11,9 +11,11 @@
 -->
 <feature
       id="gov.redhawk.product.ide.platform"
-      label="IDE Platform"
+      label="%featureName"
       version="1.9.0.qualifier"
-      provider-name="United States Government">
+      provider-name="%providerName"
+      plugin="mil.jpeojtrs.sca.util"
+      image="rh_logo_128x128.gif">
 
    <description url="http://redhawksdr.org">
       %description
