@@ -4,7 +4,6 @@
     <artifactId>gov.redhawk.ide.product</artifactId>
     <version>1.9.0-SNAPSHOT</version>
     <packaging>eclipse-repository</packaging>
-    <groupId>gov.redhawk.ide.product.product</groupId>
     <parent>
         <groupId>gov.redhawk.ide.product</groupId>
         <artifactId>releng</artifactId>
