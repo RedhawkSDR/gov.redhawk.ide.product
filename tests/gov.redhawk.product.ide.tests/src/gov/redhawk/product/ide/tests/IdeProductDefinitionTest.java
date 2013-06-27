@@ -90,9 +90,6 @@ public class IdeProductDefinitionTest {
 			}
 		}
 		Assert.assertNotNull("The ide.product file must contain an eclipse.buildId property", buildIdElement);
-		if (buildIdElement == null) {
-			throw new IllegalStateException();
-		}
 		Assert.assertNotNull("The eclipse.buildId property must have a value", buildIdElement.getAttribute("value"));
 	}
 
@@ -104,8 +101,7 @@ public class IdeProductDefinitionTest {
 	 * @throws IOException
 	 */
 	private Document parseIdeProduct() throws SAXException, IOException {
-		return this.builder.parse(FileLocator.toFileURL(FileLocator.find(Platform.getBundle("gov.redhawk.product.ide"), new Path("ide.product"), null))
-		        .toString());
+		return this.builder.parse(FileLocator.toFileURL(FileLocator.find(Platform.getBundle("gov.redhawk.product.ide"), new Path("ide.product"), null)).toString());
 	}
 
 	/**
