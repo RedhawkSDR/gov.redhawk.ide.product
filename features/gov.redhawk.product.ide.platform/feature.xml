@@ -208,7 +208,11 @@
    <includes
          id="org.jacorb"
          version="0.0.0"/>
-         
+
+   <includes
+         id="org.eclipse.nebula.widgets.xviewer.feature"
+         version="0.0.0"/>
+
    <plugin
          id="org.apache.commons.io"
          download-size="0"
