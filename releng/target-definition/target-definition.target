@@ -16,6 +16,8 @@
 <unit id="org.slf4j.log4j.source" version="0.0.0"/>
 <unit id="org.apache.commons.lang" version="2.6.0.v201205030909"/>
 <unit id="org.apache.commons.lang.source" version="2.6.0.v201205030909"/>
+<unit id="org.apache.commons.math" version="0.0.0"/>
+<unit id="org.apache.commons.math.source" version="0.0.0"/>
 <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20130118183705/repository"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
