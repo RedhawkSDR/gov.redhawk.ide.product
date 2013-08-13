@@ -3,7 +3,7 @@
 <locations>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="mil.jpeojtrs.sca.sdk.feature.group" version="0.0.0"/>
-<repository location="http://download.redhawksdr.org/mil.jpeojtrs.sca/releases/1.9"/>
+<repository location="http://download.redhawksdr.org/mil.jpeojtrs.sca/nightly/1.9"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.apache.commons.io" version="0.0.0"/>
@@ -40,14 +40,14 @@
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="gov.redhawk.ide.codegen.sdk.feature.group" version="0.0.0"/>
-<repository location="http://download.redhawksdr.org/gov.redhawk.codegen/releases/1.9"/>
+<repository location="http://download.redhawksdr.org/gov.redhawk.codegen/nightly/1.9"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="gov.redhawk.validation.feature.group" version="0.0.0"/>
 <unit id="gov.redhawk.idl.feature.group" version="0.0.0"/>
 <unit id="gov.redhawk.rcp.sdk.feature.group" version="0.0.0"/>
 <unit id="gov.redhawk.rcp.feature.group" version="0.0.0"/>
-<repository location="http://download.redhawksdr.org/gov.redhawk.core/rcp/releases/1.9"/>
+<repository location="http://download.redhawksdr.org/gov.redhawk.core/rcp/nightly/1.9"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.jacorb.feature.group" version="0.0.0"/>
@@ -55,7 +55,7 @@
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="gov.redhawk.ide.all.sdk.feature.group" version="0.0.0"/>
-<repository location="http://download.redhawksdr.org/gov.redhawk.ide/releases/1.9"/>
+<repository location="http://download.redhawksdr.org/gov.redhawk.ide/nightly/1.9"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.linuxtools.valgrind.feature.group" version="1.1.0.201302051708"/>
@@ -84,7 +84,7 @@
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="gov.redhawk.core.sdk.feature.group" version="0.0.0"/>
-<repository location="http://download.redhawksdr.org/gov.redhawk.core/releases/1.9"/>
+<repository location="http://download.redhawksdr.org/gov.redhawk.core/nightly/1.9"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.nebula.widgets.xviewer.feature.feature.group" version="0.0.0"/>
