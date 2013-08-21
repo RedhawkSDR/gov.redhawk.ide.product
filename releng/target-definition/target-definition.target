@@ -51,7 +51,7 @@
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.jacorb.feature.group" version="0.0.0"/>
-<repository location="http://download.redhawksdr.org/jacorb/nightly/3.1"/>
+<repository location="http://download.redhawksdr.org/jacorb/releases/3.1"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="gov.redhawk.ide.all.sdk.feature.group" version="0.0.0"/>
