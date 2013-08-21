@@ -24,6 +24,7 @@
 		<module>../features/gov.redhawk.product.ide.feature</module>
 		<module>../features/gov.redhawk.product.ide.platform</module>
 		<module>../plugins/gov.redhawk.product.ide</module>
+		<module>../plugins/gov.redhawk.plotter.application</module>
 		<module>p2</module>
 		<module>product</module>
 	</modules>
