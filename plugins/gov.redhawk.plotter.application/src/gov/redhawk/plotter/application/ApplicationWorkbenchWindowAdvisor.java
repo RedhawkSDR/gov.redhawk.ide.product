@@ -13,25 +13,35 @@ package gov.redhawk.plotter.application;
 import gov.redhawk.model.sca.ScaFactory;
 import gov.redhawk.model.sca.ScaUsesPort;
 import gov.redhawk.sca.util.ORBUtil;
-import gov.redhawk.ui.port.Activator;
-import gov.redhawk.ui.port.IPortHandler;
-import gov.redhawk.ui.port.IPortHandlerRegistry;
+import gov.redhawk.ui.port.nxmplot.PlotType;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import mil.jpeojtrs.sca.scd.ScdFactory;
 import mil.jpeojtrs.sca.scd.Uses;
 
+import org.eclipse.core.commands.Command;
+import org.eclipse.core.commands.ExecutionEvent;
+import org.eclipse.core.commands.ExecutionException;
+import org.eclipse.core.commands.NotEnabledException;
+import org.eclipse.core.commands.NotHandledException;
+import org.eclipse.core.commands.common.NotDefinedException;
+import org.eclipse.core.expressions.EvaluationContext;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Platform;
 import org.eclipse.core.runtime.Status;
+import org.eclipse.jface.viewers.StructuredSelection;
 import org.eclipse.swt.graphics.Point;
+import org.eclipse.ui.ISources;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.WorkbenchException;
 import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
 import org.eclipse.ui.application.WorkbenchWindowAdvisor;
+import org.eclipse.ui.commands.ICommandService;
 
 public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 
@@ -105,17 +115,18 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 
 			gov.redhawk.ui.port.Activator.getDefault();
 			// Locate the handler
-			final IPortHandlerRegistry handlerRegistry = Activator.getPortHandlerRegistry();
-			final IPortHandler handler = handlerRegistry.findPortHandler(handlerid, repId);
-			if (handler == null) {
-				PlotterApplicationPlugin.getDefault()
-				        .getLog()
-				        .log(new Status(IStatus.ERROR,
-				                PlotterApplicationPlugin.PLUGIN_ID,
-				                "Could not find associated  plot handler, check -handler and -repid arguments."));
-				PlatformUI.getWorkbench().close();
-				return; // Will never get here
-			}
+			
+//			final IPortHandlerRegistry handlerRegistry = Activator.getPortHandlerRegistry();
+//			final IPortHandler handler = handlerRegistry.findPortHandler(handlerid, repId);
+//			if (handler == null) {
+//				PlotterApplicationPlugin.getDefault()
+//				        .getLog()
+//				        .log(new Status(IStatus.ERROR,
+//				                PlotterApplicationPlugin.PLUGIN_ID,
+//				                "Could not find associated  plot handler, check -handler and -repid arguments."));
+//				PlatformUI.getWorkbench().close();
+//				return; // Will never get here
+//			}
 
 			// Create the port objects
 			final Uses profile = ScdFactory.eINSTANCE.createUses();
@@ -129,8 +140,27 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 			// Connect the port
 			final List<ScaUsesPort> ports = new ArrayList<ScaUsesPort>();
 			ports.add(port);
-
-			handler.connect(ports);
+			EvaluationContext exContext = new EvaluationContext(null, ports);
+			exContext.addVariable(ISources.ACTIVE_CURRENT_SELECTION_NAME, new StructuredSelection(ports));
+			exContext.addVariable(ISources.ACTIVE_WORKBENCH_WINDOW_NAME, window);
+			Map<String, Object> exParam = new HashMap<String, Object>();
+			exParam.put("gov.redhawk.ui.port.nxmplot.type", PlotType.RASTER.toString());
+			exParam.put("gov.redhawk.ui.port.nxmplot.isFft", Boolean.FALSE.toString());
+			ICommandService svc = (ICommandService)window.getService(ICommandService.class);
+			Command comm = svc.getCommand("gov.redhawk.ui.port.nxmplot.command.plot");
+			ExecutionEvent ex = new ExecutionEvent(comm, exParam, null, exContext);
+			try {
+				comm.executeWithChecks(ex);
+			} catch (ExecutionException e2) {
+				postLog("Failed to execute plot handler command", e2);
+			} catch (NotDefinedException e2) {
+				postLog("Failed to execute plot handler command", e2);
+			} catch (NotEnabledException e2) {
+				postLog("Failed to execute plot handler command", e2);
+			} catch (NotHandledException e2) {
+				postLog("Failed to execute plot handler command", e2);
+				
+			}
 		} else {
 			PlotterApplicationPlugin.getDefault()
 			        .getLog()
@@ -140,6 +170,15 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 			PlatformUI.getWorkbench().close();
 		}
 
+	}
+
+	private void postLog(String log, Throwable e) {
+		PlotterApplicationPlugin.getDefault()
+        .getLog()
+        .log(new Status(IStatus.ERROR,
+                PlotterApplicationPlugin.PLUGIN_ID,
+                log, e));
+		
 	}
 
 }
