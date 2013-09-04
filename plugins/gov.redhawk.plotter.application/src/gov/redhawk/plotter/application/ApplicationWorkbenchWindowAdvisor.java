@@ -146,7 +146,7 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 			Map<String, Object> exParam = new HashMap<String, Object>();
 			exParam.put("gov.redhawk.ui.port.nxmplot.type", PlotType.RASTER.toString());
 			exParam.put("gov.redhawk.ui.port.nxmplot.isFft", Boolean.FALSE.toString());
-			ICommandService svc = (ICommandService)window.getService(ICommandService.class);
+			ICommandService svc = (ICommandService) window.getService(ICommandService.class);
 			Command comm = svc.getCommand("gov.redhawk.ui.port.nxmplot.command.plot");
 			ExecutionEvent ex = new ExecutionEvent(comm, exParam, null, exContext);
 			try {
