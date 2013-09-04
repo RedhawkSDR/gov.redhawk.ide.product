@@ -14,6 +14,7 @@ import gov.redhawk.ui.port.nxmplot.PlotActivator;
 
 import org.eclipse.ui.IPageLayout;
 import org.eclipse.ui.IPerspectiveFactory;
+import org.eclipse.ui.IPlaceholderFolderLayout;
 
 public class PlotterPerspective implements IPerspectiveFactory {
 	public static final String ID = "gov.redhawk.plotter.application.perspective"; //$NON-NLS-1$
@@ -23,7 +24,9 @@ public class PlotterPerspective implements IPerspectiveFactory {
 		layout.setEditorAreaVisible(false);
 
 		// Place project explorer to left of editor area.
-		layout.addView(PlotActivator.VIEW_PLOT, IPageLayout.LEFT, (float) 1.0, editorArea);
+		IPlaceholderFolderLayout plotFolder = layout.createPlaceholderFolder("plotFolder", IPageLayout.BOTTOM, (float) 0.25, editorArea);
+		plotFolder.addPlaceholder(PlotActivator.VIEW_PLOT_2);
+		plotFolder.addPlaceholder(PlotActivator.VIEW_PLOT_2 + ":*");
 	}
 
 }
