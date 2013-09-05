@@ -11,36 +11,36 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../../releng</relativePath>
     </parent>
-    <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-antrun-plugin</artifactId>
-        <version>1.6</version>
-        <executions>
-          <execution>
-            <id>prepare-package</id>
-            <phase>prepare-package</phase>
-            <configuration>
-              <target>
-                <replace file="about.properties">
-                  <replacefilter value="${unqualifiedVersion}"
-                    token="@buildLabel@" />
-                  <replacefilter value="${buildQualifier}"
-                    token="@buildId@" />
-                </replace>
-                <replace file="OSGI-INF/l10n/bundle.properties">
-                  <replacefilter value="${unqualifiedVersion}" token="@version@" />
-                  <replacefilter value="${buildType}${buildQualifier}" token="@buildId@" />
-                </replace>
-              </target>
-            </configuration>
-            <goals>
-              <goal>run</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      </plugins>
-    </build>
+    <profiles>
+        <profile>
+            <id>with-metadata</id>
+            <build>
+                <plugins>
+                    <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>1.6</version>
+                    <executions>
+                        <execution>
+                            <id>prepare-package</id>
+                            <phase>prepare-package</phase>
+                            <configuration>
+                                <target>
+                                    <replace file="OSGI-INF/l10n/bundle.properties">
+                                        <replacefilter value="${unqualifiedVersion}" token="@version@" />
+                                        <replacefilter value="${buildType}${buildQualifier}" token="@buildId@" />
+                                        <replacefilter value="${commitHash}" token="@commitHash@" />
+                                    </replace>
+                                </target>
+                            </configuration>
+                            <goals>
+                                <goal>run</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
