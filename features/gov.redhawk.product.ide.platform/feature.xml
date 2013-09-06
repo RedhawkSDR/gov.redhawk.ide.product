@@ -13,9 +13,7 @@
       id="gov.redhawk.product.ide.platform"
       label="%featureName"
       version="1.8.5.qualifier"
-      provider-name="%providerName"
-      plugin="mil.jpeojtrs.sca.util"
-      image="rh_logo_128x128.gif">
+      provider-name="%providerName">
 
    <description url="http://redhawksdr.org">
       %description
