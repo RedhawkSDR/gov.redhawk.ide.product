@@ -129,6 +129,7 @@ public class RedhawkProductIDEActivator extends AbstractUIPlugin implements ISta
 		return AbstractUIPlugin.imageDescriptorFromPlugin(RedhawkProductIDEActivator.PLUGIN_ID, path);
 	}
 
+	@Override
 	public void earlyStartup() {
 		// PASS - logic is in startup
     }
