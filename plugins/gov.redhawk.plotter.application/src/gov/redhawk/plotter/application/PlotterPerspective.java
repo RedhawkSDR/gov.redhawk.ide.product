@@ -19,6 +19,7 @@ import org.eclipse.ui.IPlaceholderFolderLayout;
 public class PlotterPerspective implements IPerspectiveFactory {
 	public static final String ID = "gov.redhawk.plotter.application.perspective"; //$NON-NLS-1$
 
+	@Override
 	public void createInitialLayout(final IPageLayout layout) {
 		final String editorArea = layout.getEditorArea();
 		layout.setEditorAreaVisible(false);

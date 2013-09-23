@@ -21,11 +21,13 @@ import org.eclipse.ui.PlatformUI;
 
 public class PlotterApplication implements IApplication {
 
+	@Override
 	public Object start(final IApplicationContext context) throws Exception {
 		final Display display = PlatformUI.createDisplay();
 		//TODO RAP RCP runtime has SWT.OpenDocument
 		display.addListener(SWT.OPEN, new Listener() {
 
+			@Override
 			public void handleEvent(final Event event) {
 				// BEGIN DEBUG CODE
 				System.out.println("Open document event");
@@ -45,6 +47,7 @@ public class PlotterApplication implements IApplication {
 		}
 	}
 
+	@Override
 	public void stop() {
 		if (!PlatformUI.isWorkbenchRunning()) {
 			return;
@@ -52,6 +55,7 @@ public class PlotterApplication implements IApplication {
 		final IWorkbench workbench = PlatformUI.getWorkbench();
 		final Display display = workbench.getDisplay();
 		display.syncExec(new Runnable() {
+			@Override
 			public void run() {
 				if (!display.isDisposed()) {
 					workbench.close();
