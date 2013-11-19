@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="REDHAWK SDK" uid="gov.redhawk.sdk.ide" id="gov.redhawk.platform.ide" application="org.eclipse.ui.ide.workbench" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/gov.redhawk.platform/redhawk250.png"/>
+      <text>
+         %productBlurb
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-showsplash gov.redhawk.platform --launcher.XXMaxPermSize 256m --launcher.defaultAction openFile  --launcher.appendVmargs</programArgs>
+      <vmArgs>-Xms40m
+-Xmx512m
+-XX:MaxPermSize=256m
+-Dcom.sun.CORBA.transport.ORBUseNIOSelectToWait=false
+-Djava.util.logging.config.file=configuration/javalogger.properties
+-Djava.net.preferIPv4Stack=true
+-Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB
+-Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton
+-Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer
+-Djacorb.config.dir=configuration
+-Dorg.eclipse.swt.browser.XULRunnerPath=xulrunner
+-Dorg.eclipse.swt.browser.DefaultType=mozilla</vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/gov.redhawk.platform/redhawk16.gif" i32="/gov.redhawk.platform/redhawk32.gif" i48="/gov.redhawk.platform/redhawk48.gif" i64="/gov.redhawk.platform/redhawk64.gif" i128="/gov.redhawk.platform/redhawk_lg.gif"/>
+
+   <splash
+      location="gov.redhawk.platform"
+      startupProgressRect="5,275,445,15"
+      startupMessageRect="7,252,445,20"
+      startupForegroundColor="FFFFFF" />
+   <launcher name="eclipse">
+      <macosx icon="Eclipse.icns"/>
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <intro introId="org.eclipse.ui.intro.universal"/>
+
+   <vm>
+   </vm>
+
+   <license>
+        <url>redhawksdr.org</url>
+   </license>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="org.eclipse.rcp.configuration"/>
+      <feature id="org.eclipse.sdk"/>
+      <feature id="org.eclipse.equinox.p2.user.ui"/>
+      <feature id="org.eclipse.equinox.p2.user.ui.source"/>
+      <feature id="gov.redhawk.sdk"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="3" />
+      <property name="eclipse.buildId" value="${unqualifiedVersion}.${buildType}${buildQualifier}" />
+      <property name="org.eclipse.update.reconcile" value="false" />
+      <property name="osgi.bundles.defaultStartLevel" value="4" />
+   </configurations>
+
+</product>
