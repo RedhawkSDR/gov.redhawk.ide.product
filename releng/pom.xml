@@ -25,7 +25,7 @@
       <id>e4</id>
 
       <properties>
-        <eclipse>http://download.eclipse.org/releases/kepler</eclipse>
+        <eclipse-e4>http://download.eclipse.org/releases/kepler</eclipse-e4>
         <orbit>http://download.eclipse.org/tools/orbit/downloads/drops/R20130118183705/repository</orbit>
         <nxm>http://nextmidas.techma.com/p2/nxm/updates/stable</nxm>
         <nxm-rcp>http://download.redhawksdr.org/nxm-rcp/releases/1.1</nxm-rcp>
@@ -43,7 +43,7 @@
         <repository>
           <id>eclipse</id>
           <layout>p2</layout>
-          <url>${eclipse}</url>
+          <url>${eclipse-e4}</url>
         </repository>
 
         <repository>
