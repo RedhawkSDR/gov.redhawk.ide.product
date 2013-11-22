@@ -177,6 +177,34 @@
          id="org.eclipse.nebula.widgets.xviewer.feature"
          version="0.0.0"/>
 
+   <includes
+         id="org.eclipse.wb.core.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.wb.core.java.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.wb.core.ui.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.wb.doc.user.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.wb.layout.group.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.wb.rcp.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.wb.swt.feature"
+         version="0.0.0"/>
+
    <plugin
          id="org.apache.commons.io"
          download-size="0"
@@ -258,6 +286,13 @@
          download-size="0"
          install-size="0"
          version="1.6.4.v20120130-2120"
+         unpack="false"/>
+
+   <plugin
+         id="org.swtchart"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
 </feature>
