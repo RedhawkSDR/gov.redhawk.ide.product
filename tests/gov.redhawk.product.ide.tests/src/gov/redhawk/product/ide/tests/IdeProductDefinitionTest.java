@@ -83,7 +83,7 @@ public class IdeProductDefinitionTest {
 		for (Node node : this.configurationElements) {
 			if (node instanceof Element) {
 				Element temp = (Element) node;
-				if (temp.getNodeName().equals("property") && temp.getAttribute("name").equals("eclipse.buildId")) {
+				if ("property".equals(temp.getNodeName()) && "eclipse.buildId".equals(temp.getAttribute("name"))) {
 					buildIdElement = temp;
 					break;
 				}
@@ -116,10 +116,10 @@ public class IdeProductDefinitionTest {
 			Node node = nodes.item(i);
 			if (node instanceof Element) {
 				Element child = (Element) node;
-				if (child.getNodeName().equals("configurations")) {
+				if ("configurations".equals(child.getNodeName())) {
 					NodeList configurationsNodes = child.getChildNodes();
 					for (int j = 0; j < configurationsNodes.getLength(); j++) {
-						if (configurationsNodes.item(j).getNodeName().equals("property")) {
+						if ("property".equals(configurationsNodes.item(j).getNodeName())) {
 							if (this.configurationElements == null) {
 								this.configurationElements = new ArrayList<Node>();
 							}
