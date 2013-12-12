@@ -3,11 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>gov.redhawk.product.ide</artifactId>
     <packaging>eclipse-plugin</packaging>
-    <version>1.8.5-SNAPSHOT</version>
     <parent>
         <groupId>gov.redhawk.ide.product</groupId>
         <artifactId>releng</artifactId>
-        <version>1.8.5-SNAPSHOT</version>
+        <version>1.8.6-SNAPSHOT</version>
         <relativePath>../../releng</relativePath>
     </parent>
     <profiles>
