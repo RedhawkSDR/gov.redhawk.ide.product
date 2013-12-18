@@ -9,6 +9,5 @@
   </parent>
   <groupId>gov.redhawk.ide.product</groupId>
   <artifactId>gov.redhawk.product.ide.p2</artifactId>
-  <version>1.9.1-SNAPSHOT</version>
   <packaging>eclipse-repository</packaging>
 </project>
