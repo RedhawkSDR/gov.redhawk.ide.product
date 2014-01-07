@@ -56,8 +56,11 @@
    </plugins>
 
    <features>
-      <feature id="gov.redhawk.product.ide" version="1.9.1.qualifier"/>
-      <feature id="gov.redhawk.product.ide.platform" version="1.9.1.qualifier"/>
+      <feature id="org.eclipse.rcp.configuration"/>
+      <feature id="org.eclipse.sdk"/>
+      <feature id="gov.redhawk.sdk"/>
+      <feature id="org.eclipse.equinox.p2.user.ui"/>
+      <feature id="org.eclipse.equinox.p2.user.ui.source"/>
    </features>
 
    <configurations>

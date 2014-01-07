@@ -1,82 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>gov.redhawk.ide.product</groupId>
-	<artifactId>releng</artifactId>
-	<version>1.9.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+  xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>gov.redhawk.ide.product</groupId>
+  <artifactId>releng</artifactId>
+  <version>1.9.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
-	<parent>
-		<relativePath>parent/</relativePath>
-		<groupId>gov.redhawk.development.configuration</groupId>
-		<artifactId>parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
-	
-	<properties>
-		<buildType>SNAPSHOT</buildType>
-	</properties>
+  <parent>
+    <relativePath>parent/</relativePath>
+    <groupId>gov.redhawk.development.configuration</groupId>
+    <artifactId>parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
 
-	<modules>
-		<module>target-definition</module>
-		<module>../features/gov.redhawk.product.ide.feature</module>
-		<module>../features/gov.redhawk.product.ide.platform</module>
-		<module>../plugins/gov.redhawk.product.ide</module>
-		<module>../plugins/gov.redhawk.plotter.application</module>
-		<module>p2</module>
-		<module>product</module>
-	</modules>
+  <properties>
+    <buildType>SNAPSHOT</buildType>
+  </properties>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-surefire-plugin</artifactId>
-				<version>${tycho-version}</version>
-				<configuration>
-					<argLine>-Xmx512m -Djava.net.preferIPv4Stack=true
-						-Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB
-						-Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton
-						-Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer</argLine>
-					<appArgLine>-nl en</appArgLine>
-					<dependencies>
-						<dependency>
-							<type>eclipse-feature</type>
-							<artifactId>org.jacorb</artifactId>
-							<version>0.0.0</version>
-						</dependency>
-					</dependencies>
-				</configuration>
-			</plugin>
+  <modules>
+    <module>target-definition</module>
+    <module>../features/gov.redhawk.sdk</module>
+    <module>../features/gov.redhawk.product.ide.feature</module>
+    <module>../features/gov.redhawk.product.ide.platform</module>
+    <module>../plugins/gov.redhawk.product.ide</module>
+    <module>../plugins/gov.redhawk.plotter.application</module>
+    <module>p2</module>
+    <module>product</module>
+  </modules>
 
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>target-platform-configuration</artifactId>
-				<version>${tycho-version}</version>
-				<configuration>
-					<target>
-						<artifact>
-							<groupId>gov.redhawk.ide.product</groupId>
-							<artifactId>target-definition</artifactId>
-							<version>1.9.1-SNAPSHOT</version>
-						</artifact>
-					</target>
-					<environments>
-						<environment>
-							<os>linux</os>
-							<ws>gtk</ws>
-							<arch>x86</arch>
-						</environment>
-						<environment>
-							<os>linux</os>
-							<ws>gtk</ws>
-							<arch>x86_64</arch>
-						</environment>
-					</environments>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>target-platform-configuration</artifactId>
+        <version>${tycho-version}</version>
+        <configuration>
+          <target>
+            <artifact>
+              <groupId>gov.redhawk.ide.product</groupId>
+              <artifactId>target-definition</artifactId>
+              <version>1.9.1-SNAPSHOT</version>
+            </artifact>
+          </target>
+          <environments>
+            <environment>
+              <os>linux</os>
+              <ws>gtk</ws>
+              <arch>x86</arch>
+            </environment>
+            <environment>
+              <os>linux</os>
+              <ws>gtk</ws>
+              <arch>x86_64</arch>
+            </environment>
+          </environments>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
