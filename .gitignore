@@ -1,5 +1,3 @@
 bin
 target
 *.class
-plugin_customization*
-pdebuild

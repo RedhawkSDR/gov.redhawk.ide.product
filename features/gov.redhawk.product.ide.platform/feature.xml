@@ -56,13 +56,14 @@
       <import feature="org.eclipse.wb.swt.feature" version="1.5.0" match="compatible"/>
       <import feature="org.eclipse.wb.rcp.SWT_AWT_support" version="1.5.0" match="compatible"/>
       <import feature="org.eclipse.graphiti.sdk.feature" version="0.0.0" match="compatible"/>
-      <import feature="org.eclipse.linuxtools.valgrind" version="2.0.0" match="compatible"/>
+      <import feature="org.eclipse.linuxtools.valgrind" version="1.0.0" match="compatible"/>
       <import feature="org.eclipse.linuxtools.rpm" version="1.0.0" match="compatible"/>
       <import feature="org.eclipse.jgit" version="2.2.0" match="compatible"/>
       <import feature="org.eclipse.egit" version="2.2.0" match="compatible"/>
       <import feature="org.eclipse.jdt" version="3.8.0" match="compatible"/>
       <import feature="org.eclipse.epp.mpc" version="1.1.0" match="compatible"/>
       <import feature="org.eclipse.team.svn" version="1.0.0" match="compatible"/>
+      <import feature="org.eclipse.sdk" version="3.8.0" match="compatible"/>
    </requires>
 
    <plugin
