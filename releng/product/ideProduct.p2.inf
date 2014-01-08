@@ -103,4 +103,4 @@ properties.0.value = true
 update.id= gov.redhawk.product.ide.product
 update.range = [1.10,1.11)
 update.severity = 0
-update.description = An update for 1.9 generation REDHAWK SDK.
+update.description = An update for 1.10 generation REDHAWK SDK.
