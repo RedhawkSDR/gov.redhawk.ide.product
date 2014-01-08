@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/gov.redhawk.sdk_1.10.0.qualifier.jar" id="gov.redhawk.sdk" version="1.10.0.qualifier">
+      <category name="gov.redhawk.e4"/>
+   </feature>
+   <feature url="features/gov.redhawk.e4.platform_1.10.0.qualifier.jar" id="gov.redhawk.e4.platform" version="1.10.0.qualifier">
+      <category name="gov.redhawk.e4"/>
+   </feature>
+   <feature url="features/gov.redhawk.e4.platform.source_1.10.0.qualifier.jar" id="gov.redhawk.e4.platform.source" version="1.10.0.qualifier">
+      <category name="gov.redhawk.e4"/>
+   </feature>
+   <category-def name="gov.redhawk.e4" label="REDHAWK e4"/>
+</site>

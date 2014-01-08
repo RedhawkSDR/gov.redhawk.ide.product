@@ -56,8 +56,13 @@
    </plugins>
 
    <features>
-      <feature id="gov.redhawk.product.ide" version="1.10.0.qualifier"/>
-      <feature id="gov.redhawk.product.ide.platform" version="1.10.0.qualifier"/>
+      <feature id="org.eclipse.rcp.configuration"/>
+      <feature id="org.eclipse.sdk"/>
+      <feature id="gov.redhawk.product.ide"/>
+      <feature id="gov.redhawk.product.ide.platform"/>
+      <feature id="gov.redhawk.sdk"/>
+      <feature id="org.eclipse.equinox.p2.user.ui"/>
+      <feature id="org.eclipse.equinox.p2.user.ui.source"/>
    </features>
 
    <configurations>
@@ -68,6 +73,8 @@
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="4" />
       <property name="eclipse.buildId" value="${unqualifiedVersion}.${buildType}${buildQualifier}" />
+      <property name="org.eclipse.update.reconcile" value="false" />
+      <property name="osgi.bundles.defaultStartLevel" value="4" />
    </configurations>
 
 </product>

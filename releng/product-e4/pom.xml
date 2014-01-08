@@ -28,12 +28,19 @@
             <goals>
               <goal>archive-products</goal>
             </goals>
+            <configuration>
+              <formats>
+                <win32>zip</win32>
+                <linux>tar.gz</linux>
+                <macosx>tar.gz</macosx>
+              </formats>
+            </configuration>
           </execution>
         </executions>
         <configuration>
           <products>
             <product>
-              <id>gov.redhawk.sdk.ide</id>
+              <id>gov.redhawk.e4.platform.ide</id>
               <archiveFileName>redhawk-ide-${unqualifiedVersion}.${buildType}${buildQualifier}</archiveFileName>
               <rootFolder>eclipse</rootFolder>
             </product>

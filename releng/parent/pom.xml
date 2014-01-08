@@ -121,6 +121,13 @@
         <configuration>
           <failIfNoTests>false</failIfNoTests>
           <testFailureIgnore>true</testFailureIgnore>
+          <dependencies>
+            <dependency>
+              <type>eclipse-feature</type>
+              <artifactId>org.jacorb</artifactId>
+              <version>0.0.0</version>
+            </dependency>
+          </dependencies>
         </configuration>
       </plugin>
 
@@ -147,6 +154,21 @@
             <environment>
               <os>linux</os>
               <ws>gtk</ws>
+              <arch>x86_64</arch>
+            </environment>
+            <environment>
+              <os>win32</os>
+              <ws>win32</ws>
+              <arch>x86</arch>
+            </environment>
+            <environment>
+              <os>win32</os>
+              <ws>win32</ws>
+              <arch>x86_64</arch>
+            </environment>
+            <environment>
+              <os>macosx</os>
+              <ws>cocoa</ws>
               <arch>x86_64</arch>
             </environment>
           </environments>
@@ -187,7 +209,7 @@
               <failOnError>false</failOnError>
             </configuration>
             <executions>
-            <execution>
+              <execution>
                 <goals>
                   <goal>check</goal>
                 </goals>
@@ -229,7 +251,7 @@
                 <goals>
                   <goal>checkstyle</goal>
                 </goals>
-              <phase>verify</phase>
+                <phase>verify</phase>
               </execution>
             </executions>
           </plugin>
@@ -286,5 +308,4 @@
       </plugin>
     </plugins>
   </reporting>
-
 </project>

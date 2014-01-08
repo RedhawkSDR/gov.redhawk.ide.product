@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
   xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>gov.redhawk.ide.product</groupId>
@@ -115,8 +114,10 @@
 
       <modules>
         <module>../features/gov.redhawk.sdk</module>
-        <module>../plugins/gov.redhawk.platform</module>
+        <module>../features/gov.redhawk.e4.platform.feature</module>
+        <module>../plugins/gov.redhawk.e4.platform</module>
         <module>product-e4</module>
+        <module>p2-e4</module>
       </modules>
 
     </profile>
@@ -132,6 +133,7 @@
         <module>target-definition</module>
         <module>../features/gov.redhawk.product.ide.feature</module>
         <module>../features/gov.redhawk.product.ide.platform</module>
+        <module>../features/gov.redhawk.sdk</module>
         <module>../plugins/gov.redhawk.product.ide</module>
         <module>../plugins/gov.redhawk.plotter.application</module>
         <module>p2</module>
