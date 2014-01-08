@@ -101,6 +101,6 @@ properties.0.value = true
 
 # REDHAWK Restrict range so we are not an automatic update for 1.10.
 update.id= gov.redhawk.product.ide.product
-update.range = [1.9,1.10)
+update.range = [1.10,1.11)
 update.severity = 0
 update.description = An update for 1.9 generation REDHAWK SDK.
