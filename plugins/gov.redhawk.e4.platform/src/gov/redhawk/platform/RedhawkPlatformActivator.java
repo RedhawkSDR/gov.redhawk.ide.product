@@ -26,11 +26,10 @@ import org.osgi.framework.BundleContext;
 /**
  * The activator class controls the plug-in life cycle
  */
-public class RedhawkPlatformActivator extends AbstractUIPlugin implements
-		IStartup {
+public class RedhawkPlatformActivator extends AbstractUIPlugin implements IStartup {
 
 	// The plug-in ID
-	public static final String PLUGIN_ID = "gov.redhawk.platform"; //$NON-NLS-1$
+	public static final String PLUGIN_ID = "gov.redhawk.e4.platform"; //$NON-NLS-1$
 
 	// The shared instance
 	private static RedhawkPlatformActivator plugin;
@@ -48,9 +47,10 @@ public class RedhawkPlatformActivator extends AbstractUIPlugin implements
 	 * org.eclipse.ui.plugin.AbstractUIPlugin#start(org.osgi.framework.BundleContext
 	 * )
 	 */
+	@Override
 	public void start(BundleContext context) throws Exception {
 		super.start(context);
-		plugin = this;
+		RedhawkPlatformActivator.plugin = this;
 
 		configureJavaLogger(context);
 	}
@@ -62,8 +62,9 @@ public class RedhawkPlatformActivator extends AbstractUIPlugin implements
 	 * org.eclipse.ui.plugin.AbstractUIPlugin#stop(org.osgi.framework.BundleContext
 	 * )
 	 */
+	@Override
 	public void stop(BundleContext context) throws Exception {
-		plugin = null;
+		RedhawkPlatformActivator.plugin = null;
 		super.stop(context);
 	}
 
@@ -73,7 +74,7 @@ public class RedhawkPlatformActivator extends AbstractUIPlugin implements
 	 * @return the shared instance
 	 */
 	public static RedhawkPlatformActivator getDefault() {
-		return plugin;
+		return RedhawkPlatformActivator.plugin;
 	}
 
 	@Override
@@ -93,16 +94,13 @@ public class RedhawkPlatformActivator extends AbstractUIPlugin implements
 		InputStream test = null;
 		InputStream logInputStream = null;
 		try {
-			test = Platform.getConfigurationLocation()
-					.getDataArea("javalogger.properties").openStream();
+			test = Platform.getConfigurationLocation().getDataArea("javalogger.properties").openStream();
 		} catch (IOException e) {
-			URL javaloggerURL = FileLocator.find(context.getBundle(), new Path(
-					"javalogger.properties"), null);
+			URL javaloggerURL = FileLocator.find(context.getBundle(), new Path("javalogger.properties"), null);
 			if (javaloggerURL != null) {
 				try {
 					logInputStream = javaloggerURL.openStream();
-					LogManager.getLogManager()
-							.readConfiguration(logInputStream);
+					LogManager.getLogManager().readConfiguration(logInputStream);
 				} catch (IOException e2) {
 					// PASS
 				} catch (SecurityException e2) {
