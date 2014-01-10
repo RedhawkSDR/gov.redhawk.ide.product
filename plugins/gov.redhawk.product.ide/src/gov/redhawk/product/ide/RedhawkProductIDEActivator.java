@@ -10,14 +10,6 @@
  *******************************************************************************/
 package gov.redhawk.product.ide;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
-import java.util.logging.LogManager;
-
-import org.eclipse.core.runtime.FileLocator;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.Platform;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.IStartup;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
@@ -51,51 +43,7 @@ public class RedhawkProductIDEActivator extends AbstractUIPlugin implements ISta
 	public void start(final BundleContext context) throws Exception {
 		super.start(context);
 		RedhawkProductIDEActivator.plugin = this;
-		
-		configureJavaLogger(context);
 	}
-
-	/**
-	 * This method ensures that if the Java logging properties weren't properly installed by the IDE's feature
-	 * into the configuration directory that we'll load a backup. This is primarily important for debugging the IDE
-	 * within Eclipse where this is the situation.
-	 * 
-	 * @param context
-	 */
-	private void configureJavaLogger(final BundleContext context) {
-	    InputStream test = null;
-		InputStream logInputStream = null;
-		try {
-			test = Platform.getConfigurationLocation().getDataArea("javalogger.properties").openStream();
-		} catch (IOException e) {
-			URL javaloggerURL = FileLocator.find(context.getBundle(), new Path("javalogger.properties"), null);
-			if (javaloggerURL != null) {
-				try {
-					logInputStream = javaloggerURL.openStream();
-					LogManager.getLogManager().readConfiguration(logInputStream);
-				} catch (IOException e2) {
-					// PASS
-				} catch (SecurityException e2) {
-					// PASS
-				} 
-			}
-		} finally {
-			if (test != null) {
-				try {
-	                test.close();
-                } catch (IOException e) {
-	                // PASS
-                }
-			}
-			if (logInputStream != null) {
-				try {
-	                logInputStream.close();
-                } catch (IOException e) {
-	                // PASS
-                }
-			}
-		}
-    }
 
 	/*
 	 * (non-Javadoc)
@@ -132,5 +80,5 @@ public class RedhawkProductIDEActivator extends AbstractUIPlugin implements ISta
 	@Override
 	public void earlyStartup() {
 		// PASS - logic is in startup
-    }
+	}
 }
