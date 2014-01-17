@@ -63,6 +63,8 @@
       <import feature="org.eclipse.jdt" version="3.8.0" match="compatible"/>
       <import feature="org.eclipse.epp.mpc" version="1.1.0" match="compatible"/>
       <import feature="org.eclipse.sdk" version="3.8.0" match="compatible"/>
+      <import feature="nxm" version="3.4.1" match="compatible"/>
+      <import feature="nxm.rcp.ui.sdk" version="1.1.0" match="compatible"/>
    </requires>
 
    <plugin
