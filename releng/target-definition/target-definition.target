@@ -25,7 +25,7 @@
 <repository location="http://nextmidas.techma.com/p2/nxm/updates/stable"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="org.python.pydev.feature.feature.group" version="2.8.1.2013072611"/>
+<unit id="org.python.pydev.feature.feature.group" version="0.0.0"/>
 <repository location="http://pydev.org/updates"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
