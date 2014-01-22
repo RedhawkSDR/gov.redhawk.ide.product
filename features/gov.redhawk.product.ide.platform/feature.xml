@@ -49,6 +49,8 @@
       <import feature="org.eclipse.linuxtools.rpm" version="1.0.0" match="compatible"/>
       <import feature="org.eclipse.linuxtools.valgrind" version="1.1.0" match="compatible"/>
       <import feature="org.eclipse.sdk" version="3.8.2" match="compatible"/>
+      <import feature="nxm" version="3.4.1" match="compatible"/>
+      <import feature="nxm.rcp.ui.sdk" version="1.1.0" match="compatible"/>
    </requires>
 
    <plugin
