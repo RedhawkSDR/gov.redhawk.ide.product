@@ -29,6 +29,7 @@
     <jacorb>http://download.redhawksdr.org/jacorb/updates/stable</jacorb>
     <pydev>http://pydev.org/updates/</pydev>
     <nebula>http://download.eclipse.org/technology/nebula/snapshot</nebula>
+    <idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
   </properties>
 
   <repositories>
@@ -97,6 +98,12 @@
       <id>nebula</id>
       <layout>p2</layout>
       <url>${nebula}</url>
+    </repository>
+
+    <repository>
+      <id>idl-editor</id>
+      <layout>p2</layout>
+      <url>${idl-editor}</url>
     </repository>
   </repositories>
 

@@ -21,10 +21,7 @@
    <requires>
       <import feature="org.eclipse.cdt.sdk" version="8.2.0" match="compatible"/>
       <import feature="org.eclipse.cdt.autotools" version="3.2.0" match="compatible"/>
-      <import feature="org.eclipse.emf" version="2.9.0" match="compatible"/>
-      <import feature="org.eclipse.emf.doc" version="2.8.0" match="compatible"/>
-      <import feature="org.eclipse.emf.mapping" version="2.7.0" match="compatible"/>
-      <import feature="org.eclipse.emf.source" version="2.9.0" match="compatible"/>
+      <import feature="org.eclipse.emf.sdk" version="2.9.0" match="compatible"/>
       <import feature="org.eclipse.emf.transaction.sdk" version="1.7.0" match="compatible"/>
       <import feature="org.eclipse.emf.validation.sdk" version="1.7.0" match="compatible"/>
       <import feature="org.eclipse.emf.workspace" version="1.7.0" match="compatible"/>
@@ -51,6 +48,7 @@
       <import feature="org.eclipse.jdt" version="3.9.1.v20130911-1000"/>
       <import feature="nxm" version="3.4.1" match="compatible"/>
       <import feature="nxm.rcp.ui.sdk" version="1.1.0" match="compatible"/>
+      <import feature="net.sf.eclipsecorba.idl" version="0.7.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin
