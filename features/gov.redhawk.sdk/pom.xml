@@ -8,11 +8,12 @@
     <version>1.9.1-SNAPSHOT</version>
     <relativePath>../../releng/</relativePath>
   </parent>
-  <groupId>gov.redhawk.ide.product</groupId>
-  <name>gov.redhawk.product.ide.platform.feature</name>
-  <artifactId>gov.redhawk.product.ide.platform</artifactId>
+  <groupId>gov.redhawk</groupId>
+  <artifactId>gov.redhawk.sdk</artifactId>
+  <version>1.9.1-SNAPSHOT</version>
+  <name>gov.redhawk.sdk.feature</name>
   <packaging>eclipse-feature</packaging>
-
+  
   <build>
     <plugins>
       <plugin>
@@ -34,5 +35,4 @@
       </plugin>
     </plugins>
   </build>
-
 </project>

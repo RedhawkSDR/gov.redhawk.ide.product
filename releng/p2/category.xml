@@ -6,5 +6,11 @@
    <feature url="features/gov.redhawk.product.ide.source_1.9.1.qualifier.jar" id="gov.redhawk.product.ide.source" version="1.9.1.qualifier">
       <category name="gov.redhawk.ide.product"/>
    </feature>
-   <category-def name="gov.redhawk.ide.product" label="REDHAWK Product"/>
+   <feature url="features/gov.redhawk.sdk_1.9.1.qualifier.jar" id="gov.redhawk.sdk" version="1.9.1.qualifier">
+      <category name="gov.redhawk.ide.product"/>
+   </feature>
+   <feature url="features/gov.redhawk.product.ide.platform_1.9.1.qualifier.jar" id="gov.redhawk.product.ide.platform" version="1.9.1.qualifier">
+      <category name="gov.redhawk.ide.product"/>
+   </feature>
+   <category-def name="gov.redhawk.ide.product" label="REDHAWK SDK"/>
 </site>

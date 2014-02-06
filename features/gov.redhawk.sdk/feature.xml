@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="gov.redhawk.sdk"
+      label="REDHAWK SDK"
+      version="1.9.1.qualifier"
+      provider-name="REDHAWK">
+
+   <description url="http://redhawksdr.org">
+      %description
+   </description>
+
+   <copyright url="http://redhawksdr.org">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes
+         id="gov.redhawk.product.ide"
+         version="0.0.0"/>
+
+   <includes
+         id="gov.redhawk.product.ide.source"
+         version="0.0.0"/>
+
+   <includes
+         id="gov.redhawk.product.ide.platform"
+         version="0.0.0"/>
+
+   <requires>
+      <import feature="mil.jpeojtrs.sca.sdk" version="2.2.2" match="compatible"/>
+      <import feature="gov.redhawk.rcp.sdk" version="1.9.1" match="compatible"/>
+      <import feature="gov.redhawk.core.sdk" version="1.9.1" match="compatible"/>
+      <import feature="gov.redhawk.ide.all.sdk" version="1.9.1" match="compatible"/>
+      <import feature="gov.redhawk.ide.codegen.sdk" version="1.9.1" match="compatible"/>
+      <import feature="nxm.rcp.ui.sdk" version="1.1.0" match="compatible"/>
+   </requires>
+
+</feature>
