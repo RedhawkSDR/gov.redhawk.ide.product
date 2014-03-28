@@ -21,16 +21,8 @@
    <requires>
       <import feature="org.eclipse.cdt.sdk" version="8.2.0" match="compatible"/>
       <import feature="org.eclipse.cdt.autotools" version="3.2.0" match="compatible"/>
-      <import feature="org.eclipse.emf.sdk" version="2.9.0" match="compatible"/>
-      <import feature="org.eclipse.emf.transaction.sdk" version="1.7.0" match="compatible"/>
-      <import feature="org.eclipse.emf.validation.sdk" version="1.7.0" match="compatible"/>
-      <import feature="org.eclipse.emf.workspace" version="1.7.0" match="compatible"/>
-      <import feature="org.eclipse.emf.workspace.source" version="1.7.0" match="compatible"/>
-      <import feature="org.eclipse.wst.xml_core.feature" version="3.5.0" match="compatible"/>
       <import feature="org.eclipse.wst.xml_ui.feature" version="3.5.0" match="compatible"/>
       <import feature="org.eclipse.xsd.sdk" version="2.9.0" match="compatible"/>
-      <import feature="org.jacorb" version="3.3.0" match="compatible"/>
-      <import feature="org.eclipse.nebula.widgets.xviewer.feature" version="0.0.0" match="compatible"/>
       <import feature="org.eclipse.egit" version="3.0.0" match="compatible"/>
       <import feature="org.eclipse.wb.core.feature" version="1.6.0" match="compatible"/>
       <import feature="org.eclipse.wb.core.java.feature" version="1.6.0" match="compatible"/>
@@ -40,8 +32,6 @@
       <import feature="org.eclipse.wb.rcp.feature" version="1.6.0" match="compatible"/>
       <import feature="org.eclipse.wb.rcp.doc.user.feature" version="1.6.0" match="compatible"/>
       <import feature="org.eclipse.wb.swt.feature" version="1.6.0" match="compatible"/>
-      <import feature="org.eclipse.wb.rcp.SWT_AWT_support" version="1.6.0" match="compatible"/>
-      <import feature="org.eclipse.graphiti.sdk.feature" version="0.0.0" match="compatible"/>
       <import feature="org.eclipse.linuxtools.valgrind" version="2.0.0" match="compatible"/>
       <import feature="org.eclipse.linuxtools.rpm" version="1.0.0" match="compatible"/>
       <import feature="org.eclipse.jdt" version="3.9.1.v20130911-1000"/>
