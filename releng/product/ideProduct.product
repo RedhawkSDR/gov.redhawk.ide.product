@@ -24,6 +24,7 @@
 -Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton
 -Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer
 -Djacorb.config.dir=configuration
+-DORBInitialPort=2908
 -Dorg.eclipse.swt.browser.XULRunnerPath=xulrunner
 -Dorg.eclipse.swt.browser.DefaultType=mozilla</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
