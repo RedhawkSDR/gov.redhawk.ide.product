@@ -19,15 +19,13 @@
 -Xmx512m
 -XX:MaxPermSize=256m
 -Dcom.sun.CORBA.transport.ORBUseNIOSelectToWait=false
--Djava.util.logging.config.file=configuration/javalogger.properties
 -Djava.net.preferIPv4Stack=true
 -Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB
 -Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton
 -Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer
--Djacorb.config.dir=configuration
 -DORBInitialPort=2908
--Dorg.eclipse.swt.browser.XULRunnerPath=xulrunner
--Dorg.eclipse.swt.browser.DefaultType=mozilla</vmArgs>
+-Dorg.eclipse.swt.browser.DefaultType=mozilla
+      </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
 
@@ -78,6 +76,9 @@
       <property name="eclipse.buildId" value="${unqualifiedVersion}.${buildType}${buildQualifier}" />
       <property name="org.eclipse.update.reconcile" value="false" />
       <property name="osgi.bundles.defaultStartLevel" value="4" />
+      <property name="java.util.logging.config.file" value="platform:/config/javalogger.properties" />
+      <property name="org.eclipse.swt.browser.XULRunnerPath" value="platform:/base/xulrunner" />
+      <property name="jacorb.config.dir" value="platform:/config" />
    </configurations>
 
 </product>
