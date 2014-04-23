@@ -30,6 +30,8 @@ REDHAWK Integrated Developer Environment
 %install
 mkdir -p $RPM_BUILD_ROOT%{_prefix}/%{version}
 cp -r * $RPM_BUILD_ROOT%{_prefix}/%{version}
+jacorb_dir=`find %{_prefix}/%{version}/plugins -name org.jacorb_*`
+echo "java.endorsed.dirs=$jacorb_dir" >> $RPM_BUILD_ROOT%{_prefix}/%{version}/eclipse.ini
 
 %clean
 rm -rf $RPM_BUILD_ROOT
