@@ -25,6 +25,7 @@
 -Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer
 -DORBInitialPort=2908
 -Dorg.eclipse.swt.browser.DefaultType=mozilla
+-Djava.endorsed.dirs=/usr/share/java/jacorb
       </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
