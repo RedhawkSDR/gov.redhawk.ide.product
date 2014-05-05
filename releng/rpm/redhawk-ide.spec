@@ -7,7 +7,7 @@
 Name:           redhawk-ide
 Summary:        REDHAWK Integrated Developer Environment
 Version:        1.10.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Group:          Applications/Engineering
 License:        Eclipse Public License (EPL)
@@ -16,6 +16,8 @@ Source:         %{name}-%{version}.tar.gz
 Vendor:         REDHAWK
 
 Requires:       java-devel >= 1.6
+Requires:       jacorb >= 3.3.0
+Requires:       redhawk >= 1.10
 AutoReqProv:    no
 
 
@@ -29,9 +31,10 @@ REDHAWK Integrated Developer Environment
 
 %install
 mkdir -p $RPM_BUILD_ROOT%{_prefix}/%{version}
+mkdir -p $RPM_BUILD_ROOT/usr/bin
 cp -r * $RPM_BUILD_ROOT%{_prefix}/%{version}
-jacorb_dir=`find %{_prefix}/%{version}/plugins -name org.jacorb_*`
-echo "java.endorsed.dirs=$jacorb_dir" >> $RPM_BUILD_ROOT%{_prefix}/%{version}/eclipse.ini
+cd $RPM_BUILD_ROOT
+ln -s %{_prefix}/%{version}/eclipse $RPM_BUILD_ROOT/usr/bin/rhide
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -39,6 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-, root, root)
 %{_prefix}/%{version}
+/usr/bin/rhide
 
 %post
 %{_prefix}/%{version}/eclipse -nosplash -consolelog -initialize
