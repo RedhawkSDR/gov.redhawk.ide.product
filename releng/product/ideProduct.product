@@ -26,7 +26,8 @@
 -Dorg.eclipse.swt.browser.DefaultType=mozilla
 -Djava.endorsed.dirs=/usr/share/java/jacorb
       </vmArgs>
-      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
    </launcherArgs>
 
    <windowImages i16="/gov.redhawk.product.ide/icons/RedHawk_Logo16x.gif" i32="/gov.redhawk.product.ide/icons/RedHawk_Logo32x.gif" i48="/gov.redhawk.product.ide/icons/RedHawk_Logo48x.gif" i64="/gov.redhawk.product.ide/icons/RedHawk_Logo64x.gif" i128="/gov.redhawk.product.ide/icons/RedHawk_Logo128x.gif"/>
@@ -37,6 +38,7 @@
       startupMessageRect="7,252,445,20"
       startupForegroundColor="FFFFFF" />
    <launcher name="eclipse">
+      <linux icon="icon.xpm"/>
       <solaris/>
       <win useIco="false">
          <bmp/>
@@ -72,11 +74,11 @@
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="4" />
       <property name="eclipse.buildId" value="${unqualifiedVersion}.${buildType}${buildQualifier}" />
-      <property name="org.eclipse.update.reconcile" value="false" />
-      <property name="osgi.bundles.defaultStartLevel" value="4" />
+      <property name="jacorb.config.dir" value="platform:/config" />
       <property name="java.util.logging.config.file" value="platform:/config/javalogger.properties" />
       <property name="org.eclipse.swt.browser.XULRunnerPath" value="platform:/base/xulrunner" />
-      <property name="jacorb.config.dir" value="platform:/config" />
+      <property name="org.eclipse.update.reconcile" value="false" />
+      <property name="osgi.bundles.defaultStartLevel" value="4" />
    </configurations>
 
 </product>

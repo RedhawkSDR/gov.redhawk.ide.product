@@ -14,7 +14,8 @@
    </configIni>
 
    <launcherArgs>
-      <programArgs>-showsplash gov.redhawk.e4.platform --launcher.XXMaxPermSize 256m --launcher.defaultAction openFile  --launcher.appendVmargs</programArgs>
+      <programArgs>-showsplash gov.redhawk.e4.platform --launcher.XXMaxPermSize 256m --launcher.defaultAction openFile  --launcher.appendVmargs
+      </programArgs>
       <vmArgs>-Xms40m
 -Xmx512m
 -XX:MaxPermSize=256m
@@ -27,7 +28,8 @@
 -Dorg.eclipse.swt.browser.DefaultType=mozilla
 -Djava.endorsed.dirs=/usr/share/java/jacorb
       </vmArgs>
-      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
    </launcherArgs>
 
    <windowImages i16="/gov.redhawk.e4.platform/redhawk16.gif" i32="/gov.redhawk.e4.platform/redhawk32.gif" i48="/gov.redhawk.e4.platform/redhawk48.gif" i64="/gov.redhawk.e4.platform/redhawk64.gif" i128="/gov.redhawk.e4.platform/redhawk_lg.gif"/>
@@ -38,6 +40,7 @@
       startupMessageRect="7,252,445,20"
       startupForegroundColor="FFFFFF" />
    <launcher name="eclipse">
+      <linux icon="icon.xpm"/>
       <macosx icon="Eclipse.icns"/>
       <solaris/>
       <win useIco="false">
@@ -75,11 +78,11 @@
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="3" />
       <property name="eclipse.buildId" value="${unqualifiedVersion}.${buildType}${buildQualifier}" />
-      <property name="org.eclipse.update.reconcile" value="false" />
-      <property name="osgi.bundles.defaultStartLevel" value="4" />
+      <property name="jacorb.config.dir" value="platform:/config" />
       <property name="java.util.logging.config.file" value="platform:/config/javalogger.properties" />
       <property name="org.eclipse.swt.browser.XULRunnerPath" value="platform:/base/xulrunner" />
-      <property name="jacorb.config.dir" value="platform:/config" />
+      <property name="org.eclipse.update.reconcile" value="false" />
+      <property name="osgi.bundles.defaultStartLevel" value="4" />
    </configurations>
 
 </product>
