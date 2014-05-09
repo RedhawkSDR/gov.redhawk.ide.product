@@ -25,8 +25,10 @@
 -Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer
 -Djacorb.config.dir=configuration
 -Dorg.eclipse.swt.browser.XULRunnerPath=xulrunner
--Dorg.eclipse.swt.browser.DefaultType=mozilla</vmArgs>
-      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+-Dorg.eclipse.swt.browser.DefaultType=mozilla
+      </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
    </launcherArgs>
 
    <windowImages i16="/gov.redhawk.product.ide/icons/RedHawk_Logo16x.gif" i32="/gov.redhawk.product.ide/icons/RedHawk_Logo32x.gif" i48="/gov.redhawk.product.ide/icons/RedHawk_Logo48x.gif" i64="/gov.redhawk.product.ide/icons/RedHawk_Logo64x.gif" i128="/gov.redhawk.product.ide/icons/RedHawk_Logo128x.gif"/>
@@ -37,6 +39,7 @@
       startupMessageRect="7,222,445,20"
       startupForegroundColor="FFFFFF" />
    <launcher name="eclipse">
+      <linux icon="icon.xpm"/>
       <solaris/>
       <win useIco="false">
          <bmp/>
