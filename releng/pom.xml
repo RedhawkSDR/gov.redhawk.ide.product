@@ -30,9 +30,23 @@
     <pydev>http://pydev.org/updates/</pydev>
     <nebula>http://download.eclipse.org/technology/nebula/snapshot</nebula>
     <idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
+    <svn-connector>http://pinkman/nexus/content/repositories/subversive-connector</svn-connector>
+    <subversive>http://pinkman/nexus/content/repositories/subversive</subversive>
   </properties>
 
   <repositories>
+
+    <repository>
+      <id>svn-connector</id>
+      <layout>p2</layout>
+      <url>${svn-connector}</url>
+    </repository>
+
+    <repository>
+      <id>subversive</id>
+      <layout>p2</layout>
+      <url>${subversive}</url>
+    </repository>
 
     <repository>
       <id>orbit</id>
@@ -180,10 +194,7 @@
         <artifactId>tycho-surefire-plugin</artifactId>
         <version>${tycho-version}</version>
         <configuration>
-          <argLine>-Xmx512m -Djava.net.preferIPv4Stack=true
-            -Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB
-            -Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton
-            -Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer</argLine>
+          <argLine>-Xmx512m -Djava.net.preferIPv4Stack=true -Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB -Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton -Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer</argLine>
           <appArgLine>-nl en</appArgLine>
           <dependencies>
             <dependency>

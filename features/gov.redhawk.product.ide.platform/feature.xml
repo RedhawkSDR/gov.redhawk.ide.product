@@ -63,6 +63,9 @@
       <import feature="net.sf.eclipsecorba.idl" version="0.7.0" match="greaterOrEqual"/>
       <import feature="nxm" version="3.4.1" match="compatible"/>
       <import feature="nxm.rcp.ui.sdk" version="1.1.0" match="compatible"/>
+      <import feature="org.eclipse.team.svn" version="1.0.1" match="compatible"/>
+      <import feature="org.polarion.eclipse.team.svn.connector" version="3.0.5" match="compatible"/>
+      <import feature="org.polarion.eclipse.team.svn.connector.svnkit16" version="3.0.5" match="compatible"/>
    </requires>
 
    <plugin
