@@ -9,7 +9,6 @@
   <packaging>pom</packaging>
 
   <parent>
-    <relativePath>parent/</relativePath>
     <groupId>gov.redhawk.development.configuration</groupId>
     <artifactId>parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -246,16 +245,4 @@
     </plugins>
   </build>
 
-  <distributionManagement>
-    <repository>
-      <id>deployment</id>
-      <name>Internal Releases</name>
-      <url>${nexus-repo-releases}</url>
-    </repository>
-    <snapshotRepository>
-      <id>deployment</id>
-      <name>Internal Releases</name>
-      <url>${nexus-repo-snapshots}</url>
-    </snapshotRepository>
-  </distributionManagement>
 </project>
