@@ -384,6 +384,11 @@
          id="org.jacorb"
          version="0.0.0"/>
 
+   <requires>
+      <import feature="ch.qos.logback.feature" version="1.0.7"/>
+      <import feature="org.slf4j.feature" version="1.6.6"/>
+   </requires>
+
    <plugin
          id="org.eclipse.wst.common.project.facet.core"
          download-size="0"
