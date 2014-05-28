@@ -15,7 +15,6 @@
   </parent>
 
   <properties>
-    <buildType>SNAPSHOT</buildType>
     <tycho.scmUrl>scm:git:https://github.com/RedhawkSDR/eclipse-products-gov.redhawk.ide.product.git</tycho.scmUrl>
     <orbit>http://download.eclipse.org/tools/orbit/downloads/drops/R20130118183705/repository</orbit>
     <nxm>http://nextmidas.techma.com/p2/nxm/updates/stable</nxm>
@@ -31,9 +30,15 @@
     <idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
     <svn-connector>http://pinkman/nexus/content/repositories/subversive-connector</svn-connector>
     <subversive>http://pinkman/nexus/content/repositories/subversive</subversive>
+    <logback>http://logback.qos.ch/p2/</logback>
   </properties>
 
   <repositories>
+    <repository>
+      <id>logback</id>
+      <layout>p2</layout>
+      <url>${logback}</url>
+    </repository>
 
     <repository>
       <id>svn-connector</id>
@@ -186,40 +191,6 @@
 
   <build>
     <plugins>
-      <plugin>
-        <groupId>org.eclipse.tycho</groupId>
-        <artifactId>tycho-surefire-plugin</artifactId>
-        <version>${tycho-version}</version>
-        <configuration>
-          <argLine>-Xmx512m -Djava.net.preferIPv4Stack=true -Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB -Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton -Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer</argLine>
-          <appArgLine>-nl en</appArgLine>
-          <dependencies>
-            <dependency>
-              <type>eclipse-feature</type>
-              <artifactId>org.jacorb</artifactId>
-              <version>0.0.0</version>
-            </dependency>
-          </dependencies>
-        </configuration>
-      </plugin>
-
-      <plugin>
-        <groupId>org.eclipse.tycho</groupId>
-        <artifactId>tycho-packaging-plugin</artifactId>
-        <version>${tycho-version}</version>
-        <configuration>
-          <sourceReferences>
-            <generate>true</generate>
-          </sourceReferences>
-        </configuration>
-        <dependencies>
-          <dependency>
-            <groupId>org.eclipse.tycho.extras</groupId>
-            <artifactId>tycho-sourceref-jgit</artifactId>
-            <version>${tycho-extras-version}</version>
-          </dependency>
-        </dependencies>
-      </plugin>
 
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
