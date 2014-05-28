@@ -66,6 +66,8 @@
       <import feature="org.eclipse.team.svn" version="1.0.1" match="compatible"/>
       <import feature="org.polarion.eclipse.team.svn.connector" version="3.0.5" match="compatible"/>
       <import feature="org.polarion.eclipse.team.svn.connector.svnkit16" version="3.0.5" match="compatible"/>
+      <import feature="ch.qos.logback.feature" version="1.0.7"/>
+      <import feature="org.slf4j.feature" version="1.6.6"/>
    </requires>
 
    <plugin

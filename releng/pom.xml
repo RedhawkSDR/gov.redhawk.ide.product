@@ -30,9 +30,15 @@
     <idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
     <svn-connector>http://pinkman/nexus/content/repositories/subversive-connector</svn-connector>
     <subversive>http://pinkman/nexus/content/repositories/subversive</subversive>
+    <logback>http://logback.qos.ch/p2/</logback>
   </properties>
 
   <repositories>
+    <repository>
+      <id>logback</id>
+      <layout>p2</layout>
+      <url>${logback}</url>
+    </repository>
 
     <repository>
       <id>svn-connector</id>
