@@ -63,6 +63,11 @@
       <import feature="org.eclipse.wb.swing.feature" version="1.5.2" match="greaterOrEqual"/>
    </requires>
 
+   <requires>
+      <import feature="ch.qos.logback.feature" version="1.0.7"/>
+      <import feature="org.slf4j.feature" version="1.6.6"/>
+   </requires>
+
    <plugin
          id="org.apache.commons.io"
          download-size="0"
