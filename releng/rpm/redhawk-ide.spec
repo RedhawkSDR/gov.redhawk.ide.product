@@ -36,7 +36,6 @@ REDHAWK Integrated Developer Environment
 mkdir -p $RPM_BUILD_ROOT%{_idehome}/%{version}
 mkdir -p $RPM_BUILD_ROOT%{_bindir}
 cp -r * $RPM_BUILD_ROOT%{_idehome}/%{version}
-cd $RPM_BUILD_ROOT
 ln -s %{_idehome}/%{version}/eclipse $RPM_BUILD_ROOT%{_bindir}/rhide
 desktop-file-install --dir=$RPM_BUILD_ROOT%{_datadir}/applications %{SOURCE1}
 install -m 644 features/gov.redhawk.sdk_*/icon.xpm %{_datadir}/icons/hicolor/128x128/apps/redhawk.xpm
