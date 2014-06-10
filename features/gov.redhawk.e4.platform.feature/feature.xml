@@ -19,6 +19,7 @@
    </license>
 
    <requires>
+      <import feature="org.eclipse.pde.api.tools.ee.feature" version="1.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.cdt.sdk" version="8.2.0" match="compatible"/>
       <import feature="org.eclipse.cdt.autotools" version="3.2.0" match="compatible"/>
       <import feature="org.eclipse.emf.sdk" version="2.9.0" match="compatible"/>
