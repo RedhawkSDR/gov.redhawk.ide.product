@@ -34,16 +34,9 @@
             <svn-connector>http://community.polarion.com/projects/subversive/download/eclipse/2.0/update-site</svn-connector>
             <rcp-patch>http://download.redhawksdr.org/rcp-patch</rcp-patch>
             <rcp-patch-source>http://download.redhawksdr.org/rcp-patch-source</rcp-patch-source>
-            <logback>http://logback.qos.ch/p2/</logback>
         </properties>
 
     <repositories>
-
-        <repository>
-            <id>logback</id>
-            <layout>p2</layout>
-            <url>${logback}</url>
-        </repository>
 
         <repository>
             <id>eclipse</id>
