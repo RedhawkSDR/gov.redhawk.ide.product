@@ -1,26 +1,16 @@
 %{!?_idehome:  %define _idehome  /usr/local/redhawk/ide}
-<<<<<<< HEAD
-=======
-%define _prefix %{_idehome}
->>>>>>> origin/develop-1.9
 %define debug_package %{nil}
 %define __os_install_post %{nil}
 
 
 Name:           redhawk-ide
 Summary:        REDHAWK Integrated Developer Environment
-<<<<<<< HEAD
 Version:        1.10.0
 Release:        2%{?dist}
-=======
-Version:        1.8.7
-Release:        1%{?dist}
->>>>>>> origin/develop-1.9
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Group:          Applications/Engineering
 License:        Eclipse Public License (EPL)
 URL:            http://redhawksdr.org/
-<<<<<<< HEAD
 Source0:        %{name}-%{version}.tar.gz
 Source1:        redhawk.desktop
 Vendor:         REDHAWK
@@ -29,14 +19,6 @@ BuildRequires:  desktop-file-utils
 Requires:       java-devel >= 1.6
 Requires:       jacorb >= 3.3.0
 Requires:       redhawk >= 1.10
-=======
-Source:         %{name}-%{version}.zip
-Vendor:         REDHAWK
-
-Requires:       java-devel >= 1.6
-Requires:       jacorb >= 3.3.0
-Requires:       redhawk >= 1.8
->>>>>>> origin/develop-1.9
 AutoReqProv:    no
 
 
@@ -45,7 +27,6 @@ REDHAWK Integrated Developer Environment
  * Commit: __REVISION__
  * Source Date/Time: __DATETIME__
 
-<<<<<<< HEAD
 
 %prep
 %setup -q
@@ -55,33 +36,23 @@ REDHAWK Integrated Developer Environment
 mkdir -p $RPM_BUILD_ROOT%{_idehome}/%{version}
 mkdir -p $RPM_BUILD_ROOT%{_bindir}
 cp -r * $RPM_BUILD_ROOT%{_idehome}/%{version}
-cd $RPM_BUILD_ROOT
 ln -s %{_idehome}/%{version}/eclipse $RPM_BUILD_ROOT%{_bindir}/rhide
-desktop-file-install --dir=$RPM_BUILD_ROOT%{_datadir}/applications %{SOURCE1}
-install -m 644 features/gov.redhawk.sdk_*/icon.xpm %{_datadir}/icons/hicolor/128x128/apps/redhawk.xpm
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/128x128/apps
+desktop-file-install --dir=$RPM_BUILD_ROOT%{_datadir}/applications %{SOURCE1} --vendor=
+install -m 644 features/gov.redhawk.sdk_*/icon.xpm $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/128x128/apps/redhawk.xpm
 
-=======
-%prep
-%setup
-
-%install
-mkdir -p $RPM_BUILD_ROOT%{_prefix}/%{version}
-mkdir -p $RPM_BUILD_ROOT/usr/bin
-cp -r * $RPM_BUILD_ROOT%{_prefix}/%{version}
-cd $RPM_BUILD_ROOT
-ln -s %{_prefix}/%{version}/eclipse $RPM_BUILD_ROOT/usr/bin/rhide
->>>>>>> origin/develop-1.9
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-<<<<<<< HEAD
 
 %files
 %defattr(-, root, root)
 %{_idehome}/%{version}
 %{_bindir}/rhide
 %{_datadir}/icons/hicolor/128x128/apps/redhawk.xpm
+%{_datadir}/applications/redhawk.desktop
 
 
 %post
@@ -99,12 +70,3 @@ fi
 %posttrans
 /usr/bin/gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
-=======
-%files
-%defattr(-, root, root)
-%{_prefix}/%{version}
-/usr/bin/rhide
-
-%post
-%{_prefix}/%{version}/eclipse -nosplash -consolelog -initialize > /dev/null 2>&1
->>>>>>> origin/develop-1.9

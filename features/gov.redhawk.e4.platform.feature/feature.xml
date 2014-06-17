@@ -19,6 +19,7 @@
    </license>
 
    <requires>
+      <import feature="org.eclipse.pde.api.tools.ee.feature" version="1.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.cdt.sdk" version="8.2.0" match="compatible"/>
       <import feature="org.eclipse.cdt.autotools" version="3.2.0" match="compatible"/>
       <import feature="org.eclipse.wst.xml_ui.feature" version="3.5.0" match="compatible"/>
@@ -42,26 +43,13 @@
       <import feature="org.eclipse.team.svn" version="1.0.1" match="compatible"/>
       <import feature="org.polarion.eclipse.team.svn.connector" version="3.0.5" match="compatible"/>
       <import feature="org.polarion.eclipse.team.svn.connector.svnkit16" version="3.0.5" match="compatible"/>
-      <import feature="ch.qos.logback.feature" version="1.0.7"/>
-      <import feature="org.slf4j.feature" version="1.6.6"/>
+      <import plugin="slf4j.api" version="1.6.0" match="greaterOrEqual"/>
+      <import plugin="ch.qos.logback.classic" version="1.0.12" match="greaterOrEqual"/>
+      <import plugin="ch.qos.logback.core" version="1.0.12" match="greaterOrEqual"/>
    </requires>
 
    <plugin
          id="org.apache.commons.lang"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.slf4j.api"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.slf4j.log4j"
          download-size="0"
          install-size="0"
          version="0.0.0"
