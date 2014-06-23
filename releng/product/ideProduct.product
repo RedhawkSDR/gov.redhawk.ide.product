@@ -18,14 +18,13 @@
 -Xmx512m
 -XX:MaxPermSize=256m
 -Dcom.sun.CORBA.transport.ORBUseNIOSelectToWait=false
--Djava.util.logging.config.file=configuration/javalogger.properties
 -Djava.net.preferIPv4Stack=true
 -Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB
 -Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton
 -Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer
--Djacorb.config.dir=configuration
--Dorg.eclipse.swt.browser.XULRunnerPath=xulrunner
--Dorg.eclipse.swt.browser.DefaultType=mozilla</vmArgs>
+-Dorg.eclipse.swt.browser.DefaultType=mozilla
+-Dorg.eclipse.swt.browser.DefaultType=mozilla
+-Djava.endorsed.dirs=/usr/share/java/jacorb</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
 
@@ -37,6 +36,7 @@
       startupMessageRect="7,252,445,20"
       startupForegroundColor="FFFFFF" />
    <launcher name="eclipse">
+      <linux icon="icon.xpm"/>
       <solaris/>
       <win useIco="false">
          <bmp/>
@@ -71,6 +71,9 @@
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="4" />
       <property name="eclipse.buildId" value="${unqualifiedVersion}.${buildType}${buildQualifier}" />
+      <property name="java.util.logging.config.file" value="platform:/config/javalogger.properties" />
+      <property name="org.eclipse.swt.browser.XULRunnerPath" value="platform:/base/xulrunner" />
+      <property name="jacorb.config.dir" value="platform:/config" />
    </configurations>
 
 </product>

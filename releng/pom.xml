@@ -8,7 +8,6 @@
   <packaging>pom</packaging>
 
   <parent>
-    <relativePath>parent/</relativePath>
     <groupId>gov.redhawk.development.configuration</groupId>
     <artifactId>parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -155,4 +154,5 @@
       </plugin>
     </plugins>
   </build>
+
 </project>
