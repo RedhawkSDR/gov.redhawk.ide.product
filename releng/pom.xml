@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>gov.redhawk.ide.product</groupId>
   <artifactId>releng</artifactId>
-  <version>1.10.0-SNAPSHOT</version>
+  <version>1.11.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <parent>
@@ -19,11 +19,11 @@
     <orbit>http://download.eclipse.org/tools/orbit/downloads/drops/R20130118183705/repository</orbit>
     <nxm>http://nextmidas.techma.com/p2/nxm/updates/stable</nxm>
     <nxm-rcp>http://nextmidas.techma.com/p2/nxm.ui/updates/latest/</nxm-rcp>
-    <mil.jpeojtrs.sca>http://download.redhawksdr.org/mil.jpeojtrs.sca/releases/1.10</mil.jpeojtrs.sca>
-    <gov.redhawk.core>http://download.redhawksdr.org/gov.redhawk.core/releases/1.10</gov.redhawk.core>
-    <gov.redhawk.core.rcp>http://download.redhawksdr.org/gov.redhawk.core/rcp/releases/1.10</gov.redhawk.core.rcp>
-    <gov.redhawk.ide>http://download.redhawksdr.org/gov.redhawk.ide/releases/1.10</gov.redhawk.ide>
-    <gov.redhawk.codegen>http://download.redhawksdr.org/gov.redhawk.codegen/releases/1.10</gov.redhawk.codegen>
+    <mil.jpeojtrs.sca>http://download.redhawksdr.org/mil.jpeojtrs.sca/releases/1.11</mil.jpeojtrs.sca>
+    <gov.redhawk.core>http://download.redhawksdr.org/gov.redhawk.core/releases/1.11</gov.redhawk.core>
+    <gov.redhawk.core.rcp>http://download.redhawksdr.org/gov.redhawk.core/rcp/releases/1.11</gov.redhawk.core.rcp>
+    <gov.redhawk.ide>http://download.redhawksdr.org/gov.redhawk.ide/releases/1.11</gov.redhawk.ide>
+    <gov.redhawk.codegen>http://download.redhawksdr.org/gov.redhawk.codegen/releases/1.11</gov.redhawk.codegen>
     <jacorb>http://download.redhawksdr.org/jacorb/updates/stable</jacorb>
     <pydev>http://pydev.org/updates/</pydev>
     <nebula>http://download.eclipse.org/technology/nebula/snapshot</nebula>

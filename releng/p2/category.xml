@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/gov.redhawk.product.ide_1.10.0.qualifier.jar" id="gov.redhawk.product.ide" version="1.10.0.qualifier">
+   <feature url="features/gov.redhawk.product.ide_1.11.0.qualifier.jar" id="gov.redhawk.product.ide" version="1.11.0.qualifier">
       <category name="gov.redhawk.ide.product"/>
    </feature>
-   <feature url="features/gov.redhawk.product.ide.source_1.10.0.qualifier.jar" id="gov.redhawk.product.ide.source" version="1.10.0.qualifier">
+   <feature url="features/gov.redhawk.product.ide.source_1.11.0.qualifier.jar" id="gov.redhawk.product.ide.source" version="1.11.0.qualifier">
       <category name="gov.redhawk.ide.product"/>
    </feature>
-   <feature url="features/gov.redhawk.sdk_1.10.0.qualifier.jar" id="gov.redhawk.sdk" version="1.10.0.qualifier">
+   <feature url="features/gov.redhawk.sdk_1.11.0.qualifier.jar" id="gov.redhawk.sdk" version="1.11.0.qualifier">
       <category name="gov.redhawk.ide.product"/>
    </feature>
-   <feature url="features/gov.redhawk.product.ide.platform_1.10.0.qualifier.jar" id="gov.redhawk.product.ide.platform" version="1.10.0.qualifier">
+   <feature url="features/gov.redhawk.product.ide.platform_1.11.0.qualifier.jar" id="gov.redhawk.product.ide.platform" version="1.11.0.qualifier">
       <category name="gov.redhawk.ide.product"/>
    </feature>
    <category-def name="gov.redhawk.ide.product" label="REDHAWK SDK"/>

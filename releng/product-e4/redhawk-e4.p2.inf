@@ -99,8 +99,8 @@ update.description = An update for 4.x generation Eclipse SDK.
 properties.0.name = org.eclipse.equinox.p2.type.product
 properties.0.value = true
 
-# REDHAWK Restrict range so we are not an automatic update for 1.10.
+# REDHAWK Restrict range so we are not an automatic update for 1.11.
 update.id= gov.redhawk.product.ide.product
-update.range = [1.10,1.11)
+update.range = [1.11,1.12)
 update.severity = 0
-update.description = An update for 1.10 generation REDHAWK SDK.
+update.description = An update for 1.11 generation REDHAWK SDK.

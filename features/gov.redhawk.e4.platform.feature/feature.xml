@@ -2,7 +2,7 @@
 <feature
       id="gov.redhawk.e4.platform"
       label="REDHAWK e4 Platform"
-      version="1.10.0.qualifier"
+      version="1.11.0.qualifier"
       provider-name="REDHAWK"
       plugin="gov.redhawk.e4.platform">
 
