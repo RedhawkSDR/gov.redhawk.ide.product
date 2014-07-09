@@ -6,8 +6,5 @@
    <feature url="features/gov.redhawk.e4.platform_1.11.0.qualifier.jar" id="gov.redhawk.e4.platform" version="1.11.0.qualifier">
       <category name="gov.redhawk.e4"/>
    </feature>
-   <feature url="features/gov.redhawk.e4.platform.source_1.11.0.qualifier.jar" id="gov.redhawk.e4.platform.source" version="1.11.0.qualifier">
-      <category name="gov.redhawk.e4"/>
-   </feature>
    <category-def name="gov.redhawk.e4" label="REDHAWK e4"/>
 </site>

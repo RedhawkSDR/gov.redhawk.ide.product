@@ -19,23 +19,6 @@
    </license>
 
    <requires>
-      <import feature="org.eclipse.epp.package.standard.feature" version="4.0.0" match="compatible" />
-      <import feature="org.eclipse.pde.api.tools.ee.feature" version="1.0.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.cdt.sdk" version="8.2.0" match="compatible"/>
-      <import feature="org.eclipse.cdt.autotools" version="3.2.0" match="compatible"/>
-      <import feature="org.eclipse.wst.xml_ui.feature" version="3.5.0" match="compatible"/>
-      <import feature="org.eclipse.xsd.sdk" version="2.9.0" match="compatible"/>
-      <import feature="org.eclipse.egit" version="3.0.0" match="compatible"/>
-      <import feature="org.eclipse.graphiti.sdk.feature" version="0.0.0" match="compatible"/>
-      <import feature="org.eclipse.linuxtools.valgrind" version="2.0.0" match="compatible"/>
-      <import feature="org.eclipse.linuxtools.rpm" version="1.0.0" match="compatible"/>
-      <import feature="nxm" version="3.4.1" match="compatible"/>
-      <import feature="nxm.rcp.ui.sdk" version="1.1.0" match="compatible"/>
-      <import feature="net.sf.eclipsecorba.idl" version="0.7.0" match="greaterOrEqual"/>
-      <import feature="org.python.pydev.feature" version="3.4.1" match="compatible"/>
-      <import feature="org.eclipse.team.svn" version="1.0.1" match="compatible"/>
-      <import feature="org.polarion.eclipse.team.svn.connector" version="3.0.5" match="compatible"/>
-      <import feature="org.polarion.eclipse.team.svn.connector.svnkit16" version="3.0.5" match="compatible"/>
       <import plugin="slf4j.api" version="1.6.0" match="greaterOrEqual"/>
       <import plugin="ch.qos.logback.classic" version="1.0.12" match="greaterOrEqual"/>
       <import plugin="ch.qos.logback.core" version="1.0.12" match="greaterOrEqual"/>
