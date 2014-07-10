@@ -61,12 +61,12 @@
    </plugins>
 
    <features>
+      <feature id="gov.redhawk.e4.platform"/>
       <feature id="org.eclipse.rcp.configuration"/>
-      <feature id="gov.redhawk.sdk" installMode="root"/>
-      <feature id="gov.redhawk.e4.platform" installMode="root"/>
+      <feature id="org.eclipse.equinox.p2.user.ui"/>
+      <feature id="org.eclipse.equinox.p2.user.ui.source"/>
       <feature id="nxm" installMode="root"/>
       <feature id="nxm.rcp.ui.sdk" installMode="root"/>
-      <feature id="org.eclipse.epp.package.standard.feature" installMode="root"/>
       <feature id="org.eclipse.pde.api.tools.ee.feature" installMode="root"/>
       <feature id="org.eclipse.cdt.sdk" installMode="root"/>
       <feature id="org.eclipse.wst.xml_ui.feature" installMode="root"/>
@@ -80,8 +80,7 @@
       <feature id="org.eclipse.cdt.autotools" installMode="root"/>
       <feature id="net.sf.eclipsecorba.idl" installMode="root"/>
       <feature id="org.python.pydev.feature" installMode="root"/>
-      <feature id="org.eclipse.equinox.p2.user.ui"/>
-      <feature id="org.eclipse.equinox.p2.user.ui.source"/>
+      <feature id="org.eclipse.epp.mpc" installMode="root"/>
    </features>
 
    <configurations>
