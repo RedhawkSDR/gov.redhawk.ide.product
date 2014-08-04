@@ -84,7 +84,7 @@
 		point="org.eclipse.ui.intro">
       <introProductBinding
             introId="org.eclipse.ui.intro.universal"
-            productId="gov.redhawk.platform.ide">
+            productId="gov.redhawk.e4.platform.ide">
       </introProductBinding>
     </extension>
 

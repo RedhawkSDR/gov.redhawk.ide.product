@@ -46,6 +46,10 @@
       <import plugin="slf4j.api" version="1.6.0" match="greaterOrEqual"/>
       <import plugin="ch.qos.logback.classic" version="1.0.12" match="greaterOrEqual"/>
       <import plugin="ch.qos.logback.core" version="1.0.12" match="greaterOrEqual"/>
+      <import feature="org.eclipse.pde" version="3.9.0" match="compatible"/>
+      <import feature="org.eclipse.platform" version="4.3.0" match="compatible"/>
+      <import feature="org.eclipse.rcp" version="4.3.0" match="compatible"/>
+      <import feature="org.eclipse.sdk" version="4.3.1.v20130911-1000"/>
    </requires>
 
    <plugin
