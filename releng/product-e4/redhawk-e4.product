@@ -27,6 +27,7 @@
 -DORBInitialPort=2908
 -Dorg.eclipse.swt.browser.DefaultType=mozilla
 -Djava.endorsed.dirs=/usr/share/java/jacorb
+-Dosgi.requiredJavaVersion=1.7
       </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
