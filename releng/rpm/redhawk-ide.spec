@@ -26,7 +26,7 @@ Source1:        redhawk.desktop
 Vendor:         REDHAWK
 
 BuildRequires:  desktop-file-utils
-Requires:       java-devel >= 1.6
+Requires:       java-devel >= 1.7
 Requires:       jacorb >= 3.3.0
 Requires:       redhawk >= 1.11
 AutoReqProv:    no
