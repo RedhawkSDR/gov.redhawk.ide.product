@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    This file is protected by Copyright.
+    Please refer to the COPYRIGHT file distributed with this source distribution.
+
+    This file is part of REDHAWK IDE.
+
+    All rights reserved.  This program and the accompanying materials are made available under
+    the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html.
+-->
+<?eclipse version="3.4"?>
+<plugin>
+
+     <extension id="ide" point="org.eclipse.core.runtime.products"> 
+      <product name="Rheditor" application="gov.redhawk.editor.product.app"> 
+          <!-- For documentation on updating icons, see http://wiki.eclipse.org/Platform-releng/Updating_Branding -->
+          <property name="appName" value="Rheditor"/> 
+          <property name="preferenceCustomization" value="plugin_customization.ini"/>
+		  <property
+				name="applicationXMI"
+				value="org.eclipse.platform/LegacyIDE.e4xmi">
+		  </property>
+		  <property
+				name="cssTheme"
+				value="org.eclipse.e4.ui.css.theme.e4_default">
+		  </property>
+		  <property
+				name="applicationCSSResources"
+          value="platform:/plugin/org.eclipse.platform/images/">
+		  </property>
+      </product> 
+   </extension>
+     <extension
+           id="app"
+           point="org.eclipse.core.runtime.applications">
+        <application
+              cardinality="*"
+              thread="main"
+              visible="true">
+           <run
+                 class="gov.redhawk.editor.product.EditorApplication">
+           </run>
+        </application>
+     </extension>
+     <extension
+           point="org.eclipse.ui.perspectives">
+        <perspective
+              class="gov.redhawk.editor.product.internal.EditorPerspective"
+              fixed="true"
+              id="gov.redhawk.editor.product.perspective"
+              name="Editor">
+        </perspective>
+     </extension>
+     
+
+   <extension
+         point="org.eclipse.ui.activities">
+      <activity
+            id="gov.redhawk.editor.product.hidedistractions"
+            name="Editor Distractions">
+         <enabledWhen>
+            <not>
+               <test
+                     forcePluginActivation="true"
+                     property="org.eclipse.core.runtime.product"
+                     value="gov.redhawk.editor.product.ide">
+               </test>
+            </not>
+         </enabledWhen>
+      </activity>
+      <activityPatternBinding
+            activityId="gov.redhawk.editor.product.hidedistractions"
+            isEqualityPattern="true"
+            pattern="mil.jpeojtrs.sca.dcd.diagram/mil.jpeojtrs.sca.dcd.diagram.part.DcdCreationWizardID">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="gov.redhawk.editor.product.hidedistractions"
+            isEqualityPattern="true"
+            pattern="mil.jpeojtrs.sca.sad.diagram/mil.jpeojtrs.sca.sad.diagram.part.SadCreationWizardID">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="gov.redhawk.editor.product.hidedistractions"
+            pattern="org\.eclipse\.gef\.examples.*">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="gov.redhawk.editor.product.hidedistractions"
+            pattern="org\.eclipse\.xsd.*">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="gov.redhawk.editor.product.hidedistractions"
+            pattern="org\.eclipse\.uml2\.uml.*">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="gov.redhawk.editor.product.hidedistractions"
+            pattern="org\.eclipse\.debug.*">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="gov.redhawk.editor.product.hidedistractions"
+            pattern="org\.eclipse\.search.*">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="gov.redhawk.editor.product.hidedistractions"
+            pattern="org\.eclipse\.ui\.externaltools.*">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="gov.redhawk.editor.product.hidedistractions"
+            isEqualityPattern="true"
+            pattern="org.python.pydev.django/org.python.pydev.django.ui.wizards.project.DjangoProjectWizard">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="gov.redhawk.editor.product.hidedistractions"
+            isEqualityPattern="true"
+            pattern="org.eclipse.sdk/org.eclipse.jdt.ui.wizards.NewClassCreationWizard">
+      </activityPatternBinding>
+   </extension>
+
+
+</plugin>

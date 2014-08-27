@@ -82,6 +82,7 @@
       <feature id="net.sf.eclipsecorba.idl" installMode="root"/>
       <feature id="org.python.pydev.feature" installMode="root"/>
       <feature id="org.eclipse.epp.mpc" installMode="root"/>
+      <feature id="gov.redhawk.tailoredTools" installMode="root"/>
    </features>
 
    <configurations>

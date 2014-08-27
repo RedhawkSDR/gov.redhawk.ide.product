@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PRF Editor Product
+Bundle-SymbolicName: gov.redhawk.editor.product;singleton:=true
+Bundle-Version: 1.11.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Eclipse-BundleShape: dir
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.eclipse.ui.ide,
+ org.eclipse.core.resources,
+ gov.redhawk.prf.ui,
+ gov.redhawk.ide.spd.ui,
+ org.eclipse.platform,
+ org.eclipse.jface
+Bundle-ClassPath: platform.jar
+Import-Package: nxm.sys.prim

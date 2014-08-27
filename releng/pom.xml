@@ -153,7 +153,10 @@
       <modules>
         <module>../features/gov.redhawk.sdk</module>
         <module>../features/gov.redhawk.e4.platform.feature</module>
+        <module>../features/gov.redhawk.tailoredTools</module>
         <module>../plugins/gov.redhawk.e4.platform</module>
+        <module>../plugins/gov.redhawk.editor.product</module>
+        <module>../plugins/gov.redhawk.plotter.application</module>
         <module>product-e4</module>
         <module>p2-e4</module>
       </modules>
