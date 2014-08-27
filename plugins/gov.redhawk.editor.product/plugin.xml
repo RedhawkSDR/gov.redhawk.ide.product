@@ -93,15 +93,7 @@
       </activityPatternBinding>
       <activityPatternBinding
             activityId="gov.redhawk.editor.product.hidedistractions"
-            pattern="org\.eclipse\.debug.*">
-      </activityPatternBinding>
-      <activityPatternBinding
-            activityId="gov.redhawk.editor.product.hidedistractions"
             pattern="org\.eclipse\.search.*">
-      </activityPatternBinding>
-      <activityPatternBinding
-            activityId="gov.redhawk.editor.product.hidedistractions"
-            pattern="org\.eclipse\.ui\.externaltools.*">
       </activityPatternBinding>
       <activityPatternBinding
             activityId="gov.redhawk.editor.product.hidedistractions"
