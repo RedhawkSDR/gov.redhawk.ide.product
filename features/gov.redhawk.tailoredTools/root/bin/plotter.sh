@@ -11,5 +11,6 @@
 ###############################################################################
 MY_DIR=`dirname $0`
 WORKSPACE_LOC=~/.redhawk/plotter
-echo "$MY_DIR/../eclipse -nosplash -data $WORKSPACE_LOC -application gov.redhawk.plotter.application.plotter -pluginCustomization $MY_DIR/plotter_customization.ini $@"
-$MY_DIR/../eclipse -nosplash -data $WORKSPACE_LOC -application gov.redhawk.plotter.application.plotter -pluginCustomization $MY_DIR/plotter_customization.ini $@
+COMMAND="$MY_DIR/../eclipse -nosplash -data $WORKSPACE_LOC -name Plotter -clearPersistedState -product gov.redhawk.plotter.application.product -application gov.redhawk.plotter.application.plotter $@"
+#echo $COMMAND
+$COMMAND

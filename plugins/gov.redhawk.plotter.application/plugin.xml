@@ -34,5 +34,30 @@
             name="REDHAWK Plotter Perspective">
       </perspective>
    </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="gov.redhawk.plotter.application.plotter"
+            name="Plotter">
+         <property
+               name="appName"
+               value="Plotter">
+         </property>
+          <property name="preferenceCustomization" value="plugin_customization.ini"/>
+		  <property
+				name="applicationXMI"
+				value="org.eclipse.platform/LegacyIDE.e4xmi">
+		  </property>
+		  <property
+				name="cssTheme"
+				value="org.eclipse.e4.ui.css.theme.e4_default">
+		  </property>
+		  <property
+				name="applicationCSSResources"
+          value="platform:/plugin/org.eclipse.platform/images/">
+		  </property>
+      </product>
+   </extension>
 
 </plugin>

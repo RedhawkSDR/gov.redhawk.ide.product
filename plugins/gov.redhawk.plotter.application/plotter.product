@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Plotter" id="gov.redhawk.plotter.application.product" application="gov.redhawk.plotter.application.plotter" version="1.11.0" useFeatures="false" includeLaunchers="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <plugins>
+      <plugin id="ch.qos.logback.classic"/>
+      <plugin id="ch.qos.logback.core"/>
+      <plugin id="com.ibm.icu"/>
+      <plugin id="gov.redhawk.bulkio.util"/>
+      <plugin id="gov.redhawk.common.ui"/>
+      <plugin id="gov.redhawk.interceptor.client" fragment="true"/>
+      <plugin id="gov.redhawk.plotter.application"/>
+      <plugin id="gov.redhawk.sca"/>
+      <plugin id="gov.redhawk.sca.efs"/>
+      <plugin id="gov.redhawk.sca.launch"/>
+      <plugin id="gov.redhawk.sca.model"/>
+      <plugin id="gov.redhawk.sca.model.edit"/>
+      <plugin id="gov.redhawk.sca.ui"/>
+      <plugin id="gov.redhawk.sca.ui.rcp" fragment="true"/>
+      <plugin id="gov.redhawk.sca.util"/>
+      <plugin id="gov.redhawk.ui.port"/>
+      <plugin id="gov.redhawk.ui.port.nxmplot"/>
+      <plugin id="idl.bulkio"/>
+      <plugin id="idl.cf"/>
+      <plugin id="javax.annotation"/>
+      <plugin id="javax.inject"/>
+      <plugin id="javax.xml"/>
+      <plugin id="mil.jpeojtrs.sca.cf"/>
+      <plugin id="mil.jpeojtrs.sca.cf.edit"/>
+      <plugin id="mil.jpeojtrs.sca.dcd"/>
+      <plugin id="mil.jpeojtrs.sca.dcd.edit"/>
+      <plugin id="mil.jpeojtrs.sca.dmd"/>
+      <plugin id="mil.jpeojtrs.sca.dmd.edit"/>
+      <plugin id="mil.jpeojtrs.sca.dpd"/>
+      <plugin id="mil.jpeojtrs.sca.dpd.edit"/>
+      <plugin id="mil.jpeojtrs.sca.partitioning"/>
+      <plugin id="mil.jpeojtrs.sca.partitioning.edit"/>
+      <plugin id="mil.jpeojtrs.sca.prf"/>
+      <plugin id="mil.jpeojtrs.sca.prf.edit"/>
+      <plugin id="mil.jpeojtrs.sca.profile"/>
+      <plugin id="mil.jpeojtrs.sca.sad"/>
+      <plugin id="mil.jpeojtrs.sca.sad.edit"/>
+      <plugin id="mil.jpeojtrs.sca.scd"/>
+      <plugin id="mil.jpeojtrs.sca.scd.edit"/>
+      <plugin id="mil.jpeojtrs.sca.spd"/>
+      <plugin id="mil.jpeojtrs.sca.spd.edit"/>
+      <plugin id="mil.jpeojtrs.sca.util"/>
+      <plugin id="mil.jpeojtrs.sca.validator"/>
+      <plugin id="nxm.dsp"/>
+      <plugin id="nxm.dsp.linux.x86_64" fragment="true"/>
+      <plugin id="nxm.hwc"/>
+      <plugin id="nxm.rcp.ui"/>
+      <plugin id="nxm.redhawk"/>
+      <plugin id="nxm.sys"/>
+      <plugin id="nxm.sys.linux.x86_64" fragment="true"/>
+      <plugin id="nxm.ucl"/>
+      <plugin id="org.apache.batik.css"/>
+      <plugin id="org.apache.batik.util"/>
+      <plugin id="org.apache.batik.util.gui"/>
+      <plugin id="org.apache.commons.io"/>
+      <plugin id="org.apache.commons.lang"/>
+      <plugin id="org.apache.commons.math"/>
+      <plugin id="org.apache.felix.gogo.command"/>
+      <plugin id="org.apache.felix.gogo.runtime"/>
+      <plugin id="org.apache.felix.gogo.shell"/>
+      <plugin id="org.eclipse.compare.core"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.beans"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.filebuffers"/>
+      <plugin id="org.eclipse.core.filesystem"/>
+      <plugin id="org.eclipse.core.filesystem.java7" fragment="true"/>
+      <plugin id="org.eclipse.core.filesystem.linux.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.resources"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
+      <plugin id="org.eclipse.core.variables"/>
+      <plugin id="org.eclipse.debug.core"/>
+      <plugin id="org.eclipse.e4.core.commands"/>
+      <plugin id="org.eclipse.e4.core.contexts"/>
+      <plugin id="org.eclipse.e4.core.di"/>
+      <plugin id="org.eclipse.e4.core.di.extensions"/>
+      <plugin id="org.eclipse.e4.core.services"/>
+      <plugin id="org.eclipse.e4.ui.bindings"/>
+      <plugin id="org.eclipse.e4.ui.css.core"/>
+      <plugin id="org.eclipse.e4.ui.css.swt"/>
+      <plugin id="org.eclipse.e4.ui.css.swt.theme"/>
+      <plugin id="org.eclipse.e4.ui.di"/>
+      <plugin id="org.eclipse.e4.ui.model.workbench"/>
+      <plugin id="org.eclipse.e4.ui.services"/>
+      <plugin id="org.eclipse.e4.ui.widgets"/>
+      <plugin id="org.eclipse.e4.ui.workbench"/>
+      <plugin id="org.eclipse.e4.ui.workbench.addons.swt"/>
+      <plugin id="org.eclipse.e4.ui.workbench.renderers.swt"/>
+      <plugin id="org.eclipse.e4.ui.workbench.swt"/>
+      <plugin id="org.eclipse.e4.ui.workbench3"/>
+      <plugin id="org.eclipse.emf.common"/>
+      <plugin id="org.eclipse.emf.common.ui"/>
+      <plugin id="org.eclipse.emf.ecore"/>
+      <plugin id="org.eclipse.emf.ecore.change"/>
+      <plugin id="org.eclipse.emf.ecore.edit"/>
+      <plugin id="org.eclipse.emf.ecore.xmi"/>
+      <plugin id="org.eclipse.emf.edit"/>
+      <plugin id="org.eclipse.emf.edit.ui"/>
+      <plugin id="org.eclipse.emf.mapping.ecore2xml"/>
+      <plugin id="org.eclipse.emf.transaction"/>
+      <plugin id="org.eclipse.emf.transaction.ui"/>
+      <plugin id="org.eclipse.emf.validation"/>
+      <plugin id="org.eclipse.emf.workspace"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.bidi"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.console"/>
+      <plugin id="org.eclipse.equinox.ds"/>
+      <plugin id="org.eclipse.equinox.event"/>
+      <plugin id="org.eclipse.equinox.log"/>
+      <plugin id="org.eclipse.equinox.p2.core"/>
+      <plugin id="org.eclipse.equinox.p2.engine"/>
+      <plugin id="org.eclipse.equinox.p2.metadata"/>
+      <plugin id="org.eclipse.equinox.p2.metadata.repository"/>
+      <plugin id="org.eclipse.equinox.p2.repository"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.region" fragment="true"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.security"/>
+      <plugin id="org.eclipse.equinox.transforms.hook" fragment="true"/>
+      <plugin id="org.eclipse.equinox.util"/>
+      <plugin id="org.eclipse.equinox.weaving.hook" fragment="true"/>
+      <plugin id="org.eclipse.help"/>
+      <plugin id="org.eclipse.jface"/>
+      <plugin id="org.eclipse.jface.databinding"/>
+      <plugin id="org.eclipse.jface.text"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.compatibility.state" fragment="true"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.platform"/>
+      <plugin id="org.eclipse.swt"/>
+      <plugin id="org.eclipse.swt.gtk.linux.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.text"/>
+      <plugin id="org.eclipse.ui"/>
+      <plugin id="org.eclipse.ui.console"/>
+      <plugin id="org.eclipse.ui.editors"/>
+      <plugin id="org.eclipse.ui.forms"/>
+      <plugin id="org.eclipse.ui.ide"/>
+      <plugin id="org.eclipse.ui.intro"/>
+      <plugin id="org.eclipse.ui.navigator"/>
+      <plugin id="org.eclipse.ui.views"/>
+      <plugin id="org.eclipse.ui.views.properties.tabbed"/>
+      <plugin id="org.eclipse.ui.workbench"/>
+      <plugin id="org.eclipse.ui.workbench.texteditor"/>
+      <plugin id="org.jacorb"/>
+      <plugin id="org.jacorb.eclipse"/>
+      <plugin id="org.jacorb.services"/>
+      <plugin id="org.slf4j.api"/>
+      <plugin id="org.w3c.css.sac"/>
+      <plugin id="org.w3c.dom.events"/>
+      <plugin id="org.w3c.dom.smil"/>
+      <plugin id="org.w3c.dom.svg"/>
+      <plugin id="slf4j.api"/>
+   </plugins>
+
+
+</product>
