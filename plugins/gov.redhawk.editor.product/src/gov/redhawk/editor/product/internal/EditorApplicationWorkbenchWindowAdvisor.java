@@ -16,11 +16,12 @@ import org.eclipse.ui.application.ActionBarAdvisor;
 import org.eclipse.ui.application.IActionBarConfigurer;
 import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
 import org.eclipse.ui.application.WorkbenchWindowAdvisor;
+import org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor;
 
-public class EditorApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
+public class EditorApplicationWorkbenchWindowAdvisor extends IDEWorkbenchWindowAdvisor {
 
-	public EditorApplicationWorkbenchWindowAdvisor(IWorkbenchWindowConfigurer configurer) {
-		super(configurer);
+	public EditorApplicationWorkbenchWindowAdvisor(EditorApplicationWorkbenchAdvisor workbenchAdvisor, IWorkbenchWindowConfigurer configurer) {
+		super(workbenchAdvisor, configurer);
 	}
 
 	@Override
@@ -28,19 +29,18 @@ public class EditorApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvi
 			IActionBarConfigurer configurer) {
 		return new EditorApplicationActionBarAdvisor(configurer);
 	}
-	
-	@Override
-	public void postWindowOpen() {
-
-	}
 
 	@Override
 	public void preWindowOpen() {
+		super.preWindowOpen();
 		IWorkbenchWindowConfigurer configurer = getWindowConfigurer();
 		configurer.setInitialSize(new Point(1024, 800));
 		configurer.setShowCoolBar(true);
-		configurer.setShowStatusLine(false);
 		configurer.setShowMenuBar(true);
+		configurer.setShowStatusLine(false);
+		configurer.setShowPerspectiveBar(false);
+		configurer.setShowFastViewBars(false);
+		configurer.setShowProgressIndicator(false);
 		configurer.setTitle("REDHAWK Editor");
 	}
 }

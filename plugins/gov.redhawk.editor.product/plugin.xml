@@ -13,22 +13,20 @@
 <plugin>
 
      <extension id="ide" point="org.eclipse.core.runtime.products"> 
-      <product name="Rheditor" application="gov.redhawk.editor.product.app"> 
-          <!-- For documentation on updating icons, see http://wiki.eclipse.org/Platform-releng/Updating_Branding -->
-          <property name="appName" value="Rheditor"/> 
+      <product application="gov.redhawk.editor.product.app" description="%productBlurb" name="%product.name"> 
+          <property name="appName" value="%product.name"/> 
+          <property name="buildIdLocation" value="290,10"/> 
+          <property name="featureIconLocation" value="10,210"/>
           <property name="preferenceCustomization" value="plugin_customization.ini"/>
-		  <property
-				name="applicationXMI"
-				value="org.eclipse.platform/LegacyIDE.e4xmi">
-		  </property>
-		  <property
-				name="cssTheme"
-				value="org.eclipse.e4.ui.css.theme.e4_default">
-		  </property>
-		  <property
-				name="applicationCSSResources"
-          value="platform:/plugin/org.eclipse.platform/images/">
-		  </property>
+		  <property name="applicationXMI" value="org.eclipse.platform/LegacyIDE.e4xmi"/>
+		  <property name="cssTheme" value="org.eclipse.e4.ui.css.theme.e4_default"/>
+		  <property name="applicationCSSResources" value="platform:/plugin/org.eclipse.platform/images/"/>
+          <property name="windowImages" value="platform:/plugin/gov.redhawk.e4.platform/redhawk16.gif,platform:/plugin/gov.redhawk.e4.platform/redhawk32.gif,platform:/plugin/gov.redhawk.e4.platform/redhawk48.gif,platform:/plugin/gov.redhawk.e4.platform/redhawk64.gif,platform:/plugin/gov.redhawk.e4.platform/redhawk_lg.gif"/>
+          <property name="startupForegroundColor" value="FFFFFF"/>
+          <property name="startupMessageRect" value="7,252,445,20"/>
+          <property name="startupProgressRect" value="5,275,445,15"/>
+          <property name="aboutText" value="%productBlurb"/>
+          <property name="aboutImage" value="redhawk250.png"/>
       </product> 
    </extension>
      <extension
@@ -49,7 +47,7 @@
               class="gov.redhawk.editor.product.internal.EditorPerspective"
               fixed="true"
               id="gov.redhawk.editor.product.perspective"
-              name="Editor">
+              name="%perspective.name">
         </perspective>
      </extension>
      
@@ -58,7 +56,7 @@
          point="org.eclipse.ui.activities">
       <activity
             id="gov.redhawk.editor.product.hidedistractions"
-            name="Editor Distractions">
+            name="%activity.name">
          <enabledWhen>
             <not>
                <test

@@ -3,21 +3,45 @@
 
 <product name="Rheditor" id="gov.redhawk.editor.product.ide" application="gov.redhawk.editor.product.app" version="1.11.0.qualifier" useFeatures="false" includeLaunchers="true">
 
+   <aboutInfo>
+      <image path="redhawk250.png"/>
+      <text>
+         %productBlurb
+      </text>
+   </aboutInfo>
 
    <configIni use="default">
    </configIni>
 
    <launcherArgs>
-      <programArgs>-data @user.home/.redhawk/editor -clearPersistedState
+      <programArgs>-data @user.home/.redhawk/editor -clearPersistedState --launcher.XXMaxPermSize 256m --launcher.defaultAction openFile  --launcher.appendVmargs
       </programArgs>
+      <vmArgs>-Xms40m
+-Xmx512m
+-XX:MaxPermSize=256m
+-Dcom.sun.CORBA.transport.ORBUseNIOSelectToWait=false
+-Djava.net.preferIPv4Stack=true
+-Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB
+-Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton
+-Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer
+-DORBInitialPort=2908
+-Dorg.eclipse.swt.browser.DefaultType=mozilla
+-Dosgi.requiredJavaVersion=1.7
+      </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
    </launcherArgs>
 
-   <windowImages/>
+   <windowImages i16="/gov.redhawk.e4.platform/redhawk16.gif" i32="/gov.redhawk.e4.platform/redhawk32.gif" i48="/gov.redhawk.e4.platform/redhawk48.gif" i64="/gov.redhawk.e4.platform/redhawk64.gif" i128="/gov.redhawk.e4.platform/redhawk_lg.gif"/>
 
-
-   <launcher>
+   <splash
+      location="gov.redhawk.e4.platform"
+      startupProgressRect="5,275,445,15"
+      startupMessageRect="7,252,445,20"
+      startupForegroundColor="FFFFFF" />
+   <launcher name="eclipse">
+      <linux icon="icon.xpm"/>
+      <macosx icon="Eclipse.icns"/>
       <solaris/>
       <win useIco="false">
          <bmp/>
@@ -27,7 +51,6 @@
 
    <vm>
    </vm>
-
 
    <plugins>
       <plugin id="ch.qos.logback.classic"/>
@@ -39,6 +62,7 @@
       <plugin id="gov.redhawk.core.filemanager"/>
       <plugin id="gov.redhawk.core.resourceFactory"/>
       <plugin id="gov.redhawk.diagram"/>
+      <plugin id="gov.redhawk.e4.platform"/>
       <plugin id="gov.redhawk.eclipsecorba.idl"/>
       <plugin id="gov.redhawk.eclipsecorba.idl.edit"/>
       <plugin id="gov.redhawk.eclipsecorba.library"/>
@@ -137,6 +161,8 @@
       <plugin id="org.eclipse.core.filesystem.java7" fragment="true"/>
       <plugin id="org.eclipse.core.filesystem.linux.x86_64" fragment="true"/>
       <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.net"/>
+      <plugin id="org.eclipse.core.net.linux.x86_64" fragment="true"/>
       <plugin id="org.eclipse.core.resources"/>
       <plugin id="org.eclipse.core.runtime"/>
       <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
@@ -242,6 +268,7 @@
       <plugin id="org.eclipse.ui.externaltools"/>
       <plugin id="org.eclipse.ui.forms"/>
       <plugin id="org.eclipse.ui.ide"/>
+      <plugin id="org.eclipse.ui.ide.application"/>
       <plugin id="org.eclipse.ui.intro"/>
       <plugin id="org.eclipse.ui.navigator"/>
       <plugin id="org.eclipse.ui.navigator.resources"/>
@@ -265,5 +292,20 @@
       <plugin id="org.w3c.dom.svg"/>
    </plugins>
 
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="3" />
+      <property name="eclipse.buildId" value="${unqualifiedVersion}.${buildType}${buildQualifier}" />
+      <property name="jacorb.config.dir" value="platform:/config" />
+      <property name="java.util.logging.config.file" value="platform:/config/javalogger.properties" />
+      <property name="org.eclipse.swt.browser.XULRunnerPath" value="platform:/base/xulrunner" />
+      <property name="org.eclipse.update.reconcile" value="false" />
+      <property name="osgi.bundles.defaultStartLevel" value="4" />
+   </configurations>
 
 </product>
