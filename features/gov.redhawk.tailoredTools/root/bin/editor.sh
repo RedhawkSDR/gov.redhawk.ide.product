@@ -11,6 +11,6 @@
 ###############################################################################
 MY_DIR=`dirname $0`
 WORKSPACE_LOC=~/.redhawk/editor
-#echo $COMMAND
 COMMAND="$MY_DIR/../eclipse -nosplash -data $WORKSPACE_LOC -name Rheditor -product gov.redhawk.editor.product.ide -application gov.redhawk.editor.product.app -clearPersistedState --launcher.defaultAction openFile $@"
+#echo $COMMAND
 $COMMAND
