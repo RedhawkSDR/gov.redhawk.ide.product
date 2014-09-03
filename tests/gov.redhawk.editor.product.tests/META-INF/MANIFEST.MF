@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: RHEditor Tests
+Bundle-SymbolicName: gov.redhawk.editor.product.tests
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: REDHAWK
+Eclipse-BundleShape: dir
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: gov.redhawk.editor.product,
+ org.eclipse.ui,
+ org.eclipse.swtbot.eclipse.core;bundle-version="2.2.1",
+ org.eclipse.swtbot.eclipse.finder;bundle-version="2.2.1",
+ org.eclipse.swtbot.eclipse.ui;bundle-version="2.2.1",
+ org.eclipse.swtbot.forms.finder;bundle-version="2.2.1",
+ org.eclipse.swtbot.junit4_x;bundle-version="2.2.1",
+ org.eclipse.swtbot.swt.finder;bundle-version="2.2.1",
+ org.junit;bundle-version="4.10.0",
+ gov.redhawk.ide.swtbot

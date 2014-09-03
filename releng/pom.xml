@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-    This file is protected by Copyright.
-    Please refer to the COPYRIGHT file distributed with this source distribution.
-
-    This file is part of REDHAWK IDE.
-
-    All rights reserved.  This program and the accompanying materials are made available under
-    the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at
-    http://www.eclipse.org/legal/epl-v10.html.
--->
+<!-- This file is protected by Copyright. Please refer to the COPYRIGHT file 
+  distributed with this source distribution. This file is part of REDHAWK IDE. 
+  All rights reserved. This program and the accompanying materials are made 
+  available under the terms of the Eclipse Public License v1.0 which accompanies 
+  this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html. -->
 <project
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
   xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -42,10 +37,17 @@
     <idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
     <svn-connector>http://pinkman/nexus/content/repositories/subversive-connector</svn-connector>
     <subversive>http://pinkman/nexus/content/repositories/subversive</subversive>
+    <eclipse-e4>http://download.eclipse.org/releases/kepler</eclipse-e4>
   </properties>
 
   <repositories>
 
+    <repository>
+      <id>eclipse</id>
+      <layout>p2</layout>
+      <url>${eclipse-e4}</url>
+    </repository>
+    
     <repository>
       <id>svn-connector</id>
       <layout>p2</layout>
@@ -131,76 +133,40 @@
     </repository>
   </repositories>
 
+
+  <modules>
+    <module>../features/gov.redhawk.sdk</module>
+    <module>../features/gov.redhawk.e4.platform.feature</module>
+    <module>../features/gov.redhawk.tailoredTools</module>
+    <module>../plugins/gov.redhawk.e4.platform</module>
+    <module>../plugins/gov.redhawk.editor.product</module>
+    <module>../plugins/gov.redhawk.plotter.application</module>
+    <module>product-e4</module>
+    <module>p2-e4</module>
+  </modules>
+
   <profiles>
     <profile>
-      <id>e4</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-
+      <id>ui-tests</id>
+      <modules>
+        <module>../tests/gov.redhawk.editor.product.tests</module>
+      </modules>
       <properties>
-        <eclipse-e4>http://download.eclipse.org/releases/kepler</eclipse-e4>
+        <tycho-version>0.20.0</tycho-version>
+        <swt-bot>http://download.eclipse.org/technology/swtbot/releases/latest/</swt-bot>
       </properties>
-
       <repositories>
         <repository>
-          <id>eclipse</id>
+          <id>swt-bot</id>
           <layout>p2</layout>
-          <url>${eclipse-e4}</url>
+          <url>${swt-bot}</url>
         </repository>
       </repositories>
-
-      <modules>
-        <module>../features/gov.redhawk.sdk</module>
-        <module>../features/gov.redhawk.e4.platform.feature</module>
-        <module>../features/gov.redhawk.tailoredTools</module>
-        <module>../plugins/gov.redhawk.e4.platform</module>
-        <module>../plugins/gov.redhawk.editor.product</module>
-        <module>../plugins/gov.redhawk.plotter.application</module>
-        <module>product-e4</module>
-        <module>p2-e4</module>
-      </modules>
-
-    </profile>
-
-    <profile>
-      <id>e3</id>
-
-      <properties>
-        <eclipse-support>http://download.eclipse.org/eclipse/updates/3.8</eclipse-support>
-        <eclipse>http://download.eclipse.org/releases/juno</eclipse>
-      </properties>
-
-      <repositories>
-        <repository>
-          <id>eclipse-3.8</id>
-          <layout>p2</layout>
-          <url>${eclipse-support}</url>
-        </repository>
-
-        <repository>
-          <id>eclipse</id>
-          <layout>p2</layout>
-          <url>${eclipse}</url>
-        </repository>
-      </repositories>
-
-      <modules>
-        <module>../features/gov.redhawk.product.ide.feature</module>
-        <module>../features/gov.redhawk.product.ide.platform</module>
-        <module>../features/gov.redhawk.sdk</module>
-        <module>../plugins/gov.redhawk.product.ide</module>
-        <module>../plugins/gov.redhawk.plotter.application</module>
-        <module>p2</module>
-        <module>product</module>
-      </modules>
-
     </profile>
   </profiles>
 
   <build>
     <plugins>
-
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>target-platform-configuration</artifactId>
