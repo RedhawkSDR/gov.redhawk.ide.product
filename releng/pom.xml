@@ -152,7 +152,6 @@
         <module>../tests/gov.redhawk.editor.product.tests</module>
       </modules>
       <properties>
-        <tycho-version>0.20.0</tycho-version>
         <swt-bot>http://download.eclipse.org/technology/swtbot/releases/latest/</swt-bot>
       </properties>
       <repositories>
