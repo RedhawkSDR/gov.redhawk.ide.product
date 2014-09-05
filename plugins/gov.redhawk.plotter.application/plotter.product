@@ -7,16 +7,33 @@
    </configIni>
 
    <launcherArgs>
+      <programArgs>-data @user.home/.redhawk/plotter -clearPersistedState --launcher.XXMaxPermSize 256m --launcher.appendVmargs
+      </programArgs>
+      <vmArgs>-Xms40m
+-Xmx512m
+-XX:MaxPermSize=256m
+-Dcom.sun.CORBA.transport.ORBUseNIOSelectToWait=false
+-Djava.net.preferIPv4Stack=true
+-Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB
+-Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton
+-Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer
+-DORBInitialPort=2908
+-Dorg.eclipse.swt.browser.DefaultType=mozilla
+-Dosgi.requiredJavaVersion=1.7
+      </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
    </launcherArgs>
 
    <plugins>
+      <plugin id="bulkio"/>
       <plugin id="ch.qos.logback.classic"/>
       <plugin id="ch.qos.logback.core"/>
       <plugin id="com.ibm.icu"/>
+      <plugin id="gov.redhawk.bulkio.orb.omni"/>
       <plugin id="gov.redhawk.bulkio.util"/>
       <plugin id="gov.redhawk.common.ui"/>
+      <plugin id="gov.redhawk.e4.platform"/>
       <plugin id="gov.redhawk.interceptor.client" fragment="true"/>
       <plugin id="gov.redhawk.plotter.application"/>
       <plugin id="gov.redhawk.sca"/>
@@ -29,8 +46,11 @@
       <plugin id="gov.redhawk.sca.util"/>
       <plugin id="gov.redhawk.ui.port"/>
       <plugin id="gov.redhawk.ui.port.nxmplot"/>
+      <plugin id="gov.redhawk.ui.port.nxmplot.rcp"/>
       <plugin id="idl.bulkio"/>
+      <plugin id="idl.bulkio.jni"/>
       <plugin id="idl.cf"/>
+      <plugin id="idl.cf.jni"/>
       <plugin id="javax.annotation"/>
       <plugin id="javax.inject"/>
       <plugin id="javax.xml"/>
@@ -63,6 +83,7 @@
       <plugin id="nxm.sys"/>
       <plugin id="nxm.sys.linux.x86_64" fragment="true"/>
       <plugin id="nxm.ucl"/>
+      <plugin id="omnijni"/>
       <plugin id="org.apache.batik.css"/>
       <plugin id="org.apache.batik.util"/>
       <plugin id="org.apache.batik.util.gui"/>
@@ -72,6 +93,8 @@
       <plugin id="org.apache.felix.gogo.command"/>
       <plugin id="org.apache.felix.gogo.runtime"/>
       <plugin id="org.apache.felix.gogo.shell"/>
+      <plugin id="org.apache.log4j"/>
+      <plugin id="org.eclipse.compare"/>
       <plugin id="org.eclipse.compare.core"/>
       <plugin id="org.eclipse.core.commands"/>
       <plugin id="org.eclipse.core.contenttype"/>
@@ -85,6 +108,8 @@
       <plugin id="org.eclipse.core.filesystem.java7" fragment="true"/>
       <plugin id="org.eclipse.core.filesystem.linux.x86_64" fragment="true"/>
       <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.net"/>
+      <plugin id="org.eclipse.core.net.linux.x86_64" fragment="true"/>
       <plugin id="org.eclipse.core.resources"/>
       <plugin id="org.eclipse.core.runtime"/>
       <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
@@ -144,27 +169,35 @@
       <plugin id="org.eclipse.jface"/>
       <plugin id="org.eclipse.jface.databinding"/>
       <plugin id="org.eclipse.jface.text"/>
+      <plugin id="org.eclipse.ltk.core.refactoring"/>
+      <plugin id="org.eclipse.ltk.ui.refactoring"/>
       <plugin id="org.eclipse.osgi"/>
       <plugin id="org.eclipse.osgi.compatibility.state" fragment="true"/>
       <plugin id="org.eclipse.osgi.services"/>
       <plugin id="org.eclipse.platform"/>
       <plugin id="org.eclipse.swt"/>
       <plugin id="org.eclipse.swt.gtk.linux.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.team.core"/>
+      <plugin id="org.eclipse.team.ui"/>
       <plugin id="org.eclipse.text"/>
       <plugin id="org.eclipse.ui"/>
       <plugin id="org.eclipse.ui.console"/>
       <plugin id="org.eclipse.ui.editors"/>
       <plugin id="org.eclipse.ui.forms"/>
       <plugin id="org.eclipse.ui.ide"/>
+      <plugin id="org.eclipse.ui.ide.application"/>
       <plugin id="org.eclipse.ui.intro"/>
       <plugin id="org.eclipse.ui.navigator"/>
+      <plugin id="org.eclipse.ui.navigator.resources"/>
       <plugin id="org.eclipse.ui.views"/>
       <plugin id="org.eclipse.ui.views.properties.tabbed"/>
       <plugin id="org.eclipse.ui.workbench"/>
       <plugin id="org.eclipse.ui.workbench.texteditor"/>
+      <plugin id="org.eclipse.xtext.logging" fragment="true"/>
       <plugin id="org.jacorb"/>
       <plugin id="org.jacorb.eclipse"/>
       <plugin id="org.jacorb.services"/>
+      <plugin id="org.ossie"/>
       <plugin id="org.slf4j.api"/>
       <plugin id="org.w3c.css.sac"/>
       <plugin id="org.w3c.dom.events"/>
@@ -173,5 +206,19 @@
       <plugin id="slf4j.api"/>
    </plugins>
 
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="3" />
+      <property name="jacorb.config.dir" value="platform:/config" />
+      <property name="java.util.logging.config.file" value="platform:/config/javalogger.properties" />
+      <property name="org.eclipse.swt.browser.XULRunnerPath" value="platform:/base/xulrunner" />
+      <property name="org.eclipse.update.reconcile" value="false" />
+      <property name="osgi.bundles.defaultStartLevel" value="4" />
+   </configurations>
 
 </product>

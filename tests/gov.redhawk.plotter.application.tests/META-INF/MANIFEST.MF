@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Plotter Application Tests
+Bundle-SymbolicName: gov.redhawk.plotter.application.tests
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: gov.redhawk.plotter.application;bundle-version="1.11.0",
+ org.eclipse.core.runtime;bundle-version="3.10.0",
+ org.eclipse.ui;bundle-version="3.106.0",
+ gov.redhawk.ide.swtbot;bundle-version="1.0.0",
+ org.eclipse.swtbot.eclipse.core;bundle-version="2.2.1",
+ org.eclipse.swtbot.eclipse.finder;bundle-version="2.2.1",
+ org.eclipse.swtbot.eclipse.ui;bundle-version="2.2.1",
+ org.junit;bundle-version="4.10.0",
+ org.eclipse.swtbot.junit4_x;bundle-version="2.2.1",
+ gov.redhawk.ui.port.nxmplot;bundle-version="5.0.0"

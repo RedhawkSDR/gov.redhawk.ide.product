@@ -12,7 +12,8 @@ package gov.redhawk.plotter.application;
 
 import gov.redhawk.model.sca.ScaFactory;
 import gov.redhawk.model.sca.ScaUsesPort;
-import gov.redhawk.sca.util.ORBUtil;
+import gov.redhawk.plotter.application.internal.TestInput;
+import gov.redhawk.sca.util.OrbSession;
 import gov.redhawk.ui.port.nxmplot.IPlotView;
 import gov.redhawk.ui.port.nxmplot.PlotActivator;
 import gov.redhawk.ui.port.nxmplot.PlotType;
@@ -28,6 +29,7 @@ import mil.jpeojtrs.sca.scd.Uses;
 import org.eclipse.core.commands.Command;
 import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.expressions.EvaluationContext;
+import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Platform;
 import org.eclipse.core.runtime.Status;
@@ -40,6 +42,11 @@ import org.eclipse.ui.WorkbenchException;
 import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
 import org.eclipse.ui.application.WorkbenchWindowAdvisor;
 import org.eclipse.ui.commands.ICommandService;
+import org.omg.PortableServer.POA;
+import org.omg.PortableServer.POAPackage.ServantNotActive;
+import org.omg.PortableServer.POAPackage.WrongPolicy;
+
+import CF.PortPOATie;
 
 public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 
@@ -56,6 +63,7 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 		configurer.setShowStatusLine(true);
 		configurer.setShowFastViewBars(true);
 		configurer.setShowProgressIndicator(true);
+		configurer.setShowPerspectiveBar(false);
 		configurer.setTitle("REDHAWK Plotter");
 	}
 
@@ -77,43 +85,69 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 		// Arguments from command line
 		String ior = null;
 		String repId = null;
-		String handlerid = null;
 		String name = null;
+		String connectionID = null;
 
 		final String[] args = Platform.getApplicationArgs();
 		for (int i = 0; i < args.length; i++) {
 			final String arg = args[i];
 
-			if ("-ior".equals(arg)) {
+			if ("-ior".equalsIgnoreCase(arg)) {
 				if (i < args.length) {
 					ior = args[++i];
 				}
-			} else if ("-repid".equals(arg)) {
+			} else if ("-repid".equalsIgnoreCase(arg)) {
 				if (i < args.length) {
 					repId = args[++i];
 				}
-			} else if ("-handler".equals(arg)) {
-				if (i < args.length) {
-					handlerid = args[++i];
-				}
-			} else if ("-portname".equals(arg)) {
+			} else if ("-portname".equalsIgnoreCase(arg)) {
 				if (i < args.length) {
 					name = args[++i];
+				}
+			} else if ("-connectionID".equalsIgnoreCase(arg)) {
+				if (i < args.length) {
+					connectionID = args[++i];
 				}
 			}
 		}
 
-		if ((ior != null) && (repId != null) && (handlerid != null) && (name != null)) {
-			// Create the ORB
-			final org.omg.CORBA.ORB orb = ORBUtil.init(System.getProperties());
-			final org.omg.CORBA.Object obj = orb.string_to_object(ior);
+		if ((ior != null) && (repId != null)) {
+			// Create the ORB3
+			OrbSession session = OrbSession.createSession();
+			final org.omg.CORBA.ORB orb = session.getOrb();
+			final org.omg.CORBA.Object obj;
+			if (ior.equals("TEST")) {
+				POA poa;
+				org.omg.CORBA.Object objTmp = null;
+				try {
+					poa = session.getPOA();
+					objTmp = poa.servant_to_reference(new PortPOATie(TestInput.INSTANCE));
+					Thread thread = new Thread(TestInput.INSTANCE, "Data Thread");
+					thread.setDaemon(true);
+					thread.setPriority(Thread.MIN_PRIORITY);
+					thread.start();
+				} catch (CoreException e) {
+					// PASS
+				} catch (ServantNotActive e) {
+					// PASS
+				} catch (WrongPolicy e) {
+					// PASS
+				}
+				obj = objTmp;
+			} else {
+				obj = orb.string_to_object(ior);
+			}
 
 			gov.redhawk.ui.port.Activator.getDefault();
 
 			// Create the port objects
 			final Uses profile = ScdFactory.eINSTANCE.createUses();
 			profile.setRepID(repId);
-			profile.setName(name);
+			if (name != null) {
+				profile.setName(name);
+			} else {
+				profile.setName("<data>");
+			}
 
 			final ScaUsesPort port = ScaFactory.eINSTANCE.createScaUsesPort();
 			port.setCorbaObj(obj);
@@ -121,21 +155,26 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 
 			// Connect the port
 			final List<ScaUsesPort> ports = new ArrayList<ScaUsesPort>();
-			ports.add(port);
+			if (obj != null) {
+				ports.add(port);
+			}
 			EvaluationContext exContext = new EvaluationContext(null, ports);
 			exContext.addVariable(ISources.ACTIVE_CURRENT_SELECTION_NAME, new StructuredSelection(ports));
 			exContext.addVariable(ISources.ACTIVE_WORKBENCH_WINDOW_NAME, window);
 			Map<String, Object> exParam = new HashMap<String, Object>();
 			exParam.put(IPlotView.PARAM_PLOT_TYPE, PlotType.RASTER.toString());
 			exParam.put(IPlotView.PARAM_ISFFT, Boolean.FALSE.toString());
+			if (connectionID != null) {
+				exParam.put(IPlotView.PARAM_CONNECTION_ID, connectionID);
+			}
 			
 			ICommandService svc = (ICommandService) window.getService(ICommandService.class);
 			Command comm = svc.getCommand(IPlotView.COMMAND_ID);
 			ExecutionEvent ex = new ExecutionEvent(comm, exParam, null, exContext);
 			PlotActivator.getDefault().showPlotView(ex);
 		} else {
-			postLog("Missing one or more required arguments: -ior, -repid, -handler, -portname", null);
-			PlatformUI.getWorkbench().close();
+			postLog("Missing one or more required arguments: -ior, -repid", null);
+			System.exit(-1);
 		}
 
 	}

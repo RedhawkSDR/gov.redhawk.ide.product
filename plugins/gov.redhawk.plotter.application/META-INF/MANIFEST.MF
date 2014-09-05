@@ -9,9 +9,14 @@ Require-Bundle: org.eclipse.ui;bundle-version="3.6.1",
  gov.redhawk.ui.port.nxmplot;bundle-version="2.1.0",
  gov.redhawk.ui.port;bundle-version="5.0.0",
  gov.redhawk.sca.model;bundle-version="14.0.0",
- org.eclipse.core.expressions;bundle-version="3.4.400"
+ org.eclipse.core.expressions;bundle-version="3.4.400",
+ idl.bulkio;bundle-version="1.11.0",
+ org.ossie;bundle-version="1.11.0",
+ bulkio;bundle-version="1.11.0"
 Bundle-ActivationPolicy: lazy
 Eclipse-BundleShape: dir
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-Vendor: REDHAWK
 Bundle-ClassPath: platform.jar
+Export-Package: gov.redhawk.plotter.application;x-internal:=true,
+ gov.redhawk.plotter.application.internal;x-internal:=true

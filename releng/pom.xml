@@ -150,6 +150,7 @@
       <id>ui-tests</id>
       <modules>
         <module>../tests/gov.redhawk.editor.product.tests</module>
+        <module>../tests/gov.redhawk.plotter.application.tests</module>
       </modules>
       <properties>
         <swt-bot>http://download.eclipse.org/technology/swtbot/releases/latest/</swt-bot>
