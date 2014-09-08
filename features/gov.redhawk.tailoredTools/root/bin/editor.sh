@@ -10,7 +10,7 @@
 # http://www.eclipse.org/legal/epl-v10.html
 ###############################################################################
 MY_DIR=`dirname $0`
-WORKSPACE_LOC=~/.redhawk/editor
+WORKSPACE_LOC=$HOME/.redhawk/editor
 COMMAND="$MY_DIR/../eclipse -nosplash -data $WORKSPACE_LOC -name Rheditor -product gov.redhawk.editor.product.ide -application gov.redhawk.editor.product.app -clearPersistedState --launcher.defaultAction openFile --launcher.openFile $@"
 #echo $COMMAND
 $COMMAND

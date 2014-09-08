@@ -10,7 +10,7 @@
 # http://www.eclipse.org/legal/epl-v10.html
 ###############################################################################
 MY_DIR=`dirname $0`
-WORKSPACE_LOC=~/.redhawk/plotter
+WORKSPACE_LOC=$HOME/.redhawk/plotter
 COMMAND="$MY_DIR/../eclipse -nosplash -data $WORKSPACE_LOC -name Plotter -clearPersistedState -product gov.redhawk.plotter.application.product -application gov.redhawk.plotter.application.plotter $@"
 #echo $COMMAND
 $COMMAND
