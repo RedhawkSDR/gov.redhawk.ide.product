@@ -116,7 +116,7 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 			OrbSession session = OrbSession.createSession();
 			final org.omg.CORBA.ORB orb = session.getOrb();
 			final org.omg.CORBA.Object obj;
-			if (ior.equals("TEST")) {
+			if ("TEST".equals(ior)) {
 				POA poa;
 				org.omg.CORBA.Object objTmp = null;
 				try {
