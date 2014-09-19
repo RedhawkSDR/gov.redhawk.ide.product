@@ -7,7 +7,7 @@
     <parent>
         <groupId>gov.redhawk.ide.product</groupId>
         <artifactId>releng</artifactId>
-        <version>1.8.7-SNAPSHOT</version>
+        <version>1.8.8-SNAPSHOT</version>
     </parent>
 
     <build>
