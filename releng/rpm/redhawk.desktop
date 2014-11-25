@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=Redhawk IDE
-GenericName=Redhawk IDE
-Comment=Develop and use SDR applications for Redhawk
+Name=REDHAWK IDE
+GenericName=REDHAWK IDE
+Comment=Develop and use SDR applications for REDHAWK
 Exec=rhide
 Icon=redhawk
 Terminal=false
