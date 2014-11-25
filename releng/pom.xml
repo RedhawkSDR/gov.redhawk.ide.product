@@ -20,7 +20,6 @@
   </parent>
 
   <properties>
-    <tycho-version>0.20.0</tycho-version>
     <tycho-extras-version>${tycho-version}</tycho-extras-version>
     <tycho.scmUrl>scm:git:https://github.com/RedhawkSDR/eclipse-products-gov.redhawk.ide.product.git</tycho.scmUrl>
     <orbit>http://download.eclipse.org/tools/orbit/downloads/drops/R20130118183705/repository</orbit>
