@@ -1,8 +1,8 @@
 instructions.configure=\
-addRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/3.8,name:The Eclipse Project Updates);\
-addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/3.8,name:The Eclipse Project Updates);\
-addRepository(type:0,location:http${#58}//download.eclipse.org/releases/juno,name:Juno);\
-addRepository(type:1,location:http${#58}//download.eclipse.org/releases/juno,name:Juno);\
+addRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.3,name:The Eclipse Project Updates);\
+addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.3,name:The Eclipse Project Updates);\
+addRepository(type:0,location:http${#58}//download.eclipse.org/releases/kepler,name:Kepler);\
+addRepository(type:1,location:http${#58}//download.eclipse.org/releases/kepler,name:Kepler);\
   mkdir(path:${installFolder}/dropins);
 requires.1.namespace=org.eclipse.equinox.p2.iu
 requires.1.name=toolingorg.eclipse.sdk.configuration.macosx
@@ -89,11 +89,11 @@ units.5.touchpoint.version=1.0.0
 units.5.instructions.configure=setProgramProperty(propName:org.eclipse.swt.internal.gtk.useCairo,propValue:true);
 units.5.instructions.unconfigure=removeProgramProperty(propName:org.eclipse.swt.internal.gtk.useCairo);
 
-# Restrict range so we are not an automatic update for 3.x.
+# Restrict range so we are not an automatic update for 5.x.
 update.id= org.eclipse.sdk.ide
-update.range = [3.8.0,4.0)
+update.range = [4.3.0,5.0)
 update.severity = 0
-update.description = An update for 4.x generation Eclipse SDK.
+update.description = An update for 4.3+.x generation Eclipse SDK.
 
 # Set the product property type
 properties.0.name = org.eclipse.equinox.p2.type.product
