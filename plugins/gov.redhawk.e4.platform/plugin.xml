@@ -13,9 +13,9 @@
 <plugin>
 
      <extension id="ide" point="org.eclipse.core.runtime.products"> 
-      <product name="REDHAWK SDK" application="org.eclipse.ui.ide.workbench" description="%productBlurb"> 
+      <product name="REDHAWK IDE" application="org.eclipse.ui.ide.workbench" description="%productBlurb"> 
           <!-- For documentation on updating icons, see http://wiki.eclipse.org/Platform-releng/Updating_Branding -->
-          <property name="appName" value="REDHAWK SDK"/> 
+          <property name="appName" value="REDHAWK IDE"/> 
           <property name="preferenceCustomization" value="plugin_customization.ini"/>
           <property
                 name="buildIdLocation"
