@@ -1,1 +1,0 @@
-instructions.install = mkdir(path:${installFolder}/dropins);

@@ -44,7 +44,6 @@
   </properties>
 
   <repositories>
-
     <repository>
       <id>svn-connector</id>
       <layout>p2</layout>
@@ -132,37 +131,11 @@
 
   <profiles>
     <profile>
-      <id>e4</id>
-
-      <properties>
-        <eclipse-e4>http://download.eclipse.org/releases/kepler</eclipse-e4>
-      </properties>
-
-      <repositories>
-        <repository>
-          <id>eclipse</id>
-          <layout>p2</layout>
-          <url>${eclipse-e4}</url>
-        </repository>
-      </repositories>
-
-      <modules>
-        <module>../features/gov.redhawk.sdk</module>
-        <module>../features/gov.redhawk.e4.platform.feature</module>
-        <module>../plugins/gov.redhawk.e4.platform</module>
-        <module>product-e4</module>
-        <module>p2-e4</module>
-      </modules>
-
-    </profile>
-
-    <profile>
       <id>e3</id>
 
       <activation>
         <activeByDefault>true</activeByDefault>
       </activation>
-
 
       <properties>
         <eclipse-support>http://download.eclipse.org/eclipse/updates/3.8</eclipse-support>
@@ -198,7 +171,6 @@
 
   <build>
     <plugins>
-
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>target-platform-configuration</artifactId>
