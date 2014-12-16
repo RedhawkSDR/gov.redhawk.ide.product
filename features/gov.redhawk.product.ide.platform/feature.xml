@@ -63,12 +63,6 @@
       <import feature="org.eclipse.wb.swing.feature" version="1.5.2" match="greaterOrEqual"/>
    </requires>
 
-   <requires>
-      <import plugin="slf4j.api" version="1.6.0" match="greaterOrEqual"/>
-      <import plugin="ch.qos.logback.classic" version="1.0.12" match="greaterOrEqual"/>
-      <import plugin="ch.qos.logback.core" version="1.0.12" match="greaterOrEqual"/>
-   </requires>
-
    <plugin
          id="org.apache.commons.io"
          download-size="0"
@@ -134,6 +128,27 @@
 
    <plugin
          id="org.eclipse.wst.server.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="slf4j.api"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ch.qos.logback.classic"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ch.qos.logback.core"
          download-size="0"
          install-size="0"
          version="0.0.0"
