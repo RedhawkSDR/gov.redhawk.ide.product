@@ -29,6 +29,7 @@
             <nxm>http://nextmidas.techma.com/p2/nxm/updates/stable</nxm>
             <nxm-rcp>http://download.redhawksdr.org/nxm-ui/releases/1.0</nxm-rcp>
             <jacorb>http://download.redhawksdr.org/jacorb/updates/stable</jacorb>
+            <logback>http://download.redhawksdr.org/logback/latest</logback>
             <idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
             <subversive>http://download.eclipse.org/technology/subversive/1.0/update-site-1.0.1</subversive>
             <svn-connector>http://community.polarion.com/projects/subversive/download/eclipse/2.0/update-site</svn-connector>
@@ -114,6 +115,12 @@
             <id>org.omg.jacorb</id>
             <layout>p2</layout>
             <url>${jacorb}</url>
+        </repository>
+
+        <repository>
+            <id>logback</id>
+            <layout>p2</layout>
+            <url>${logback}</url>
         </repository>
 
         <repository>
