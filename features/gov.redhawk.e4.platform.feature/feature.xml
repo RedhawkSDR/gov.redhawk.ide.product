@@ -32,9 +32,6 @@
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.jgit"/>
-      <import plugin="slf4j.api" version="1.6.0" match="greaterOrEqual"/>
-      <import plugin="ch.qos.logback.classic" version="1.0.12" match="greaterOrEqual"/>
-      <import plugin="ch.qos.logback.core" version="1.0.12" match="greaterOrEqual"/>
       <import feature="gov.redhawk.sdk" version="1.11.0" match="greaterOrEqual"/>
    </requires>
 
@@ -67,6 +64,27 @@
 
    <plugin
          id="org.apache.commons.io"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+  <plugin
+         id="slf4j.api"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ch.qos.logback.classic"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ch.qos.logback.core"
          download-size="0"
          install-size="0"
          version="0.0.0"
