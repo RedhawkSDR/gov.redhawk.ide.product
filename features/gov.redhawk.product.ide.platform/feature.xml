@@ -67,9 +67,6 @@
       <import feature="org.eclipse.team.svn" version="1.0.1" match="compatible"/>
       <import feature="org.polarion.eclipse.team.svn.connector" version="3.0.5" match="compatible"/>
       <import feature="org.polarion.eclipse.team.svn.connector.svnkit16" version="3.0.5" match="compatible"/>
-      <import plugin="slf4j.api" version="1.6.0" match="greaterOrEqual"/>
-      <import plugin="ch.qos.logback.classic" version="1.0.12" match="greaterOrEqual"/>
-      <import plugin="ch.qos.logback.core" version="1.0.12" match="greaterOrEqual"/>
    </requires>
 
    <plugin
@@ -95,6 +92,27 @@
 
    <plugin
          id="org.eclipse.wst.server.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="slf4j.api"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ch.qos.logback.classic"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ch.qos.logback.core"
          download-size="0"
          install-size="0"
          version="0.0.0"
