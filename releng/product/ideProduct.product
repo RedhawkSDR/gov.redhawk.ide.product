@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="REDHAWK IDE" uid="gov.redhawk.product.ide.product" id="gov.redhawk.product.ide.product" application="org.eclipse.ui.ide.workbench" version="1.10.1.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="REDHAWK IDE" uid="gov.redhawk.product.ide.product" id="gov.redhawk.product.ide.product" application="org.eclipse.ui.ide.workbench" version="1.10.2.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/gov.redhawk.product.ide/icons/RedHawk_Logo250x.gif"/>

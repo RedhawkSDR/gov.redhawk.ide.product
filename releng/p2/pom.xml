@@ -15,7 +15,7 @@
   <parent>
     <groupId>gov.redhawk.ide.product</groupId>
     <artifactId>releng</artifactId>
-    <version>1.10.1-SNAPSHOT</version>
+    <version>1.10.2-SNAPSHOT</version>
   </parent>
   <groupId>gov.redhawk.ide.product</groupId>
   <artifactId>gov.redhawk.product.ide.p2</artifactId>

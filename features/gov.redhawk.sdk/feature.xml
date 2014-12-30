@@ -2,7 +2,7 @@
 <feature
       id="gov.redhawk.sdk"
       label="REDHAWK SDK"
-      version="1.10.1.qualifier"
+      version="1.10.2.qualifier"
       provider-name="REDHAWK">
 
    <description url="http://redhawksdr.org">
