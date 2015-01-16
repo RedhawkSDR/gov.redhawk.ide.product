@@ -19,18 +19,18 @@
    </license>
 
    <requires>
-      <import feature="org.eclipse.platform"/>
-      <import feature="org.eclipse.platform.source"/>
-      <import feature="org.eclipse.rcp"/>
-      <import feature="org.eclipse.rcp.source"/>
-      <import feature="org.eclipse.jdt"/>
-      <import feature="org.eclipse.jdt.source"/>
-      <import feature="org.eclipse.pde"/>
-      <import feature="org.eclipse.pde.source"/>
-      <import feature="org.eclipse.equinox.p2.user.ui"/>
-      <import feature="org.eclipse.help"/>
-      <import feature="org.eclipse.egit"/>
-      <import feature="org.eclipse.jgit"/>
+      <import feature="org.eclipse.platform" version="4.4.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.platform.source" version="4.4.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.rcp" version="4.4.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.rcp.source" version="4.4.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.jdt" version="3.10.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.jdt.source" version="3.10.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.pde" version="3.10.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.pde.source" version="3.10.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.equinox.p2.user.ui" version="2.2.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.help" version="2.0.102" match="greaterOrEqual"/>
+      <import feature="org.eclipse.egit" version="3.4.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.jgit" version="3.4.0" match="greaterOrEqual"/>
       <import feature="gov.redhawk.sdk" version="1.11.0" match="greaterOrEqual"/>
    </requires>
 
@@ -68,7 +68,7 @@
          version="0.0.0"
          unpack="false"/>
 
-  <plugin
+   <plugin
          id="slf4j.api"
          download-size="0"
          install-size="0"
