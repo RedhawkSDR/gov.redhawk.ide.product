@@ -20,5 +20,4 @@
   </parent>
   <artifactId>gov.redhawk.tailoredTools</artifactId>
   <packaging>eclipse-feature</packaging>
-
 </project>
