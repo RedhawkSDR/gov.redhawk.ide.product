@@ -22,5 +22,4 @@
   <artifactId>gov.redhawk.product.ide</artifactId>
   <name>gov.redhawk.ide.product.feature</name>
   <packaging>eclipse-feature</packaging>
-
 </project>
