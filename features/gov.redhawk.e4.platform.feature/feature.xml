@@ -29,19 +29,33 @@
    </license>
 
    <requires>
+      <import feature="net.sf.eclipsecorba.idl" version="0.7.0" match="equivalent"/>
+      <import feature="nxm" version="3.5.2" match="equivalent"/>
+      <import feature="org.eclipse.cdt.autotools" version="8.5.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.cdt.sdk" version="8.5.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.egit" version="3.4.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.epp.mpc" version="1.3.1" match="greaterOrEqual"/>
+      <import feature="org.eclipse.graphiti.sdk.feature" version="0.11.1" match="greaterOrEqual"/>
+      <import feature="org.eclipse.help" version="2.0.102" match="greaterOrEqual"/>
+      <import feature="org.eclipse.jdt" version="3.10.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.jdt.source" version="3.10.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.jgit" version="3.4.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.linuxtools.rpm" version="2.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.linuxtools.valgrind" version="3.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.pde" version="3.10.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.pde.api.tools.ee.feature" version="1.0.1" match="greaterOrEqual"/>
+      <import feature="org.eclipse.pde.source" version="3.10.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.platform" version="4.4.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.platform.source" version="4.4.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.rcp" version="4.4.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.rcp.configuration" version="1.0.2" match="greaterOrEqual"/>
       <import feature="org.eclipse.rcp.source" version="4.4.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.jdt" version="3.10.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.jdt.source" version="3.10.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.pde" version="3.10.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.pde.source" version="3.10.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.equinox.p2.user.ui" version="2.2.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.help" version="2.0.102" match="greaterOrEqual"/>
-      <import feature="org.eclipse.egit" version="3.4.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.jgit" version="3.4.0" match="greaterOrEqual"/>
-      <import feature="gov.redhawk.sdk" version="1.11.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.team.svn" version="1.0.1" match="greaterOrEqual"/>
+      <import feature="org.eclipse.wst.xml_ui.feature" version="3.6.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.xsd.sdk" version="2.10.0" match="greaterOrEqual"/>
+      <import feature="org.polarion.eclipse.team.svn.connector" version="3.0.6" match="greaterOrEqual"/>
+      <import feature="org.polarion.eclipse.team.svn.connector.svnkit16" version="3.0.6" match="greaterOrEqual"/>
+      <import feature="org.python.pydev.feature" version="3.9.2.201502050007" match="perfect"/>
    </requires>
 
    <plugin
