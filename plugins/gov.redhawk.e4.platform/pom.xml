@@ -22,4 +22,38 @@
   <artifactId>gov.redhawk.e4.platform</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>eclipse-plugin</packaging>
+  <profiles>
+    <profile>
+      <id>with-metadata</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <version>1.6</version>
+            <executions>
+              <execution>
+                <id>prepare-package</id>
+                <phase>prepare-package</phase>
+                <configuration>
+                  <target>
+                    <replace file="plugin.properties">
+                      <replacefilter value="${unqualifiedVersion}" token="@buildLabel@" />
+                      <replacefilter value="${buildType}${buildQualifier}" token="@buildId@" />
+                      <replacefilter value="${commitHash}" token="@commitHash@" />
+                    </replace>
+                   </target>
+                </configuration>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>
+
 </project>
