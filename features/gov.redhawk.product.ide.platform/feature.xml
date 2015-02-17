@@ -53,7 +53,6 @@
       <import feature="org.eclipse.wb.rcp.doc.user.feature" version="1.5.0" match="compatible"/>
       <import feature="org.eclipse.wb.swt.feature" version="1.5.0" match="compatible"/>
       <import feature="org.eclipse.wb.rcp.SWT_AWT_support" version="1.5.0" match="compatible"/>
-      <import feature="org.eclipse.graphiti.sdk.feature" version="0.0.0" match="compatible"/>
       <import feature="org.eclipse.linuxtools.valgrind" version="1.0.0" match="compatible"/>
       <import feature="org.eclipse.linuxtools.rpm" version="1.0.0" match="compatible"/>
       <import feature="org.eclipse.jgit" version="2.2.0" match="compatible"/>
