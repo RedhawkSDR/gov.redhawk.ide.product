@@ -15,7 +15,7 @@
 
 Name:           redhawk-ide
 Summary:        REDHAWK Integrated Developer Environment
-Version:        1.11.0
+Version:        2.0.0
 Release:        1%{?dist}
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Group:          Applications/Engineering
