@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/gov.redhawk.sdk_1.11.0.qualifier.jar" id="gov.redhawk.sdk" version="1.11.0.qualifier">
+   <feature url="features/gov.redhawk.sdk_0.0.0.qualifier.jar" id="gov.redhawk.sdk">
       <category name="gov.redhawk.e4"/>
    </feature>
-   <feature url="features/gov.redhawk.e4.platform_1.11.0.qualifier.jar" id="gov.redhawk.e4.platform" version="1.11.0.qualifier">
+   <feature url="features/gov.redhawk.e4.platform_0.0.0.qualifier.jar" id="gov.redhawk.e4.platform">
       <category name="gov.redhawk.e4"/>
    </feature>
-   <feature url="features/gov.redhawk.tailoredTools_1.11.0.qualifier.jar" id="gov.redhawk.tailoredTools" version="1.11.0.qualifier">
+   <feature url="features/gov.redhawk.tailoredTools_0.0.0.qualifier.jar" id="gov.redhawk.tailoredTools">
       <category name="gov.redhawk.e4"/>
    </feature>
    <category-def name="gov.redhawk.e4" label="REDHAWK e4"/>
