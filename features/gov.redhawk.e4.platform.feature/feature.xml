@@ -30,7 +30,7 @@
 
    <requires>
       <import feature="net.sf.eclipsecorba.idl" version="0.7.0" match="equivalent"/>
-      <import feature="nxm" version="3.5.2" match="equivalent"/>
+      <import feature="nxm" version="3.5.2" match="compatible"/>
       <import feature="org.eclipse.cdt.autotools" version="8.5.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.cdt.sdk" version="8.5.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.egit" version="3.4.0" match="greaterOrEqual"/>
