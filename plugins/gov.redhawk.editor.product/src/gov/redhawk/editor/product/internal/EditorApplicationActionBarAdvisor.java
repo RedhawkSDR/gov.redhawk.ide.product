@@ -152,60 +152,53 @@ public class EditorApplicationActionBarAdvisor extends ActionBarAdvisor {
 	 * Fills the coolbar with the workbench actions.
 	 */
 	protected void fillCoolBar(ICoolBarManager coolBar) {
-
 		IActionBarConfigurer2 actionBarConfigurer = (IActionBarConfigurer2) getActionBarConfigurer();
-		{ // Set up the context Menu
-			coolbarPopupMenuManager = new MenuManager();
-			coolbarPopupMenuManager.add(new ActionContributionItem(lockToolBarAction));
-			coolbarPopupMenuManager.add(new ActionContributionItem(editActionSetAction));
-			coolBar.setContextMenuManager(coolbarPopupMenuManager);
-			IMenuService menuService = (IMenuService) window.getService(IMenuService.class);
-			menuService.populateContributionManager(coolbarPopupMenuManager, "popup:windowCoolbarContextMenu"); //$NON-NLS-1$
-		}
+
+		// Set up the context Menu
+		coolbarPopupMenuManager = new MenuManager();
+		coolbarPopupMenuManager.add(new ActionContributionItem(lockToolBarAction));
+		coolbarPopupMenuManager.add(new ActionContributionItem(editActionSetAction));
+		coolBar.setContextMenuManager(coolbarPopupMenuManager);
+		IMenuService menuService = (IMenuService) window.getService(IMenuService.class);
+		menuService.populateContributionManager(coolbarPopupMenuManager, "popup:windowCoolbarContextMenu"); //$NON-NLS-1$
+
+		// File Group
 		coolBar.add(new GroupMarker(IIDEActionConstants.GROUP_FILE));
-		{ // File Group
-			IToolBarManager fileToolBar = actionBarConfigurer.createToolBarManager();
-			fileToolBar.add(new GroupMarker(IWorkbenchActionConstants.SAVE_GROUP));
-			fileToolBar.add(saveAction);
-			fileToolBar.add(saveAllAction);
-			fileToolBar.add(new GroupMarker(IWorkbenchActionConstants.SAVE_EXT));
-			fileToolBar.add(getPrintItem());
-			fileToolBar.add(new GroupMarker(IWorkbenchActionConstants.PRINT_EXT));
+		IToolBarManager fileToolBar = actionBarConfigurer.createToolBarManager();
+		fileToolBar.add(new GroupMarker(IWorkbenchActionConstants.SAVE_GROUP));
+		fileToolBar.add(saveAction);
+		fileToolBar.add(saveAllAction);
+		fileToolBar.add(new GroupMarker(IWorkbenchActionConstants.SAVE_EXT));
+		fileToolBar.add(getPrintItem());
+		fileToolBar.add(new GroupMarker(IWorkbenchActionConstants.PRINT_EXT));
+		fileToolBar.add(new Separator(IWorkbenchActionConstants.MB_ADDITIONS));
 
-			fileToolBar.add(new Separator(IWorkbenchActionConstants.MB_ADDITIONS));
-
-			// Add to the cool bar manager
-			coolBar.add(actionBarConfigurer.createToolBarContributionItem(fileToolBar, IWorkbenchActionConstants.TOOLBAR_FILE));
-		}
+		// Add to the cool bar manager
+		coolBar.add(actionBarConfigurer.createToolBarContributionItem(fileToolBar, IWorkbenchActionConstants.TOOLBAR_FILE));
 
 		coolBar.add(new GroupMarker(IWorkbenchActionConstants.MB_ADDITIONS));
 
+		// Navigate group
 		coolBar.add(new GroupMarker(IIDEActionConstants.GROUP_NAV));
-		{ // Navigate group
-			IToolBarManager navToolBar = actionBarConfigurer.createToolBarManager();
-			navToolBar.add(new Separator(IWorkbenchActionConstants.HISTORY_GROUP));
-			navToolBar.add(new GroupMarker(IWorkbenchActionConstants.GROUP_APP));
-			navToolBar.add(backwardHistoryAction);
-			navToolBar.add(forwardHistoryAction);
+		IToolBarManager navToolBar = actionBarConfigurer.createToolBarManager();
+		navToolBar.add(new Separator(IWorkbenchActionConstants.HISTORY_GROUP));
+		navToolBar.add(new GroupMarker(IWorkbenchActionConstants.GROUP_APP));
+		navToolBar.add(backwardHistoryAction);
+		navToolBar.add(forwardHistoryAction);
 
-			// Add to the cool bar manager
-			coolBar.add(actionBarConfigurer.createToolBarContributionItem(navToolBar, IWorkbenchActionConstants.TOOLBAR_NAVIGATE));
-		}
+		// Add to the cool bar manager
+		coolBar.add(actionBarConfigurer.createToolBarContributionItem(navToolBar, IWorkbenchActionConstants.TOOLBAR_NAVIGATE));
 
 		coolBar.add(new GroupMarker(IWorkbenchActionConstants.GROUP_EDITOR));
 
+		// Help group
 		coolBar.add(new GroupMarker(IWorkbenchActionConstants.GROUP_HELP));
-
-		{ // Help group
-			IToolBarManager helpToolBar = actionBarConfigurer.createToolBarManager();
-			helpToolBar.add(new Separator(IWorkbenchActionConstants.GROUP_HELP));
-//            helpToolBar.add(searchComboItem);
-			// Add the group for applications to contribute
-			helpToolBar.add(new GroupMarker(IWorkbenchActionConstants.GROUP_APP));
-			// Add to the cool bar manager
-			coolBar.add(actionBarConfigurer.createToolBarContributionItem(helpToolBar, IWorkbenchActionConstants.TOOLBAR_HELP));
-		}
-
+		IToolBarManager helpToolBar = actionBarConfigurer.createToolBarManager();
+		helpToolBar.add(new Separator(IWorkbenchActionConstants.GROUP_HELP));
+		// Add the group for applications to contribute
+		helpToolBar.add(new GroupMarker(IWorkbenchActionConstants.GROUP_APP));
+		// Add to the cool bar manager
+		coolBar.add(actionBarConfigurer.createToolBarContributionItem(helpToolBar, IWorkbenchActionConstants.TOOLBAR_HELP));
 	}
 
 	/**
