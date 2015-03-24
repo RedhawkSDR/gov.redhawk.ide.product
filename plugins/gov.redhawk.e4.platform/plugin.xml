@@ -111,12 +111,6 @@
         <newWizardShortcut
               id="gov.redhawk.ide.ui.wizards.newnode">
         </newWizardShortcut>
-        <newWizardShortcut
-              id="gov.redhawk.ide.ui.wizards.newidl">
-        </newWizardShortcut>
-        <newWizardShortcut
-              id="gov.redhawk.ide.ui.wizard.controlPanel">
-        </newWizardShortcut>
         <viewShortcut
               id="gov.redhawk.ui.sca_explorer">
         </viewShortcut>
@@ -149,12 +143,6 @@
         </newWizardShortcut>
         <newWizardShortcut
               id="gov.redhawk.ide.ui.wizards.newnode">
-        </newWizardShortcut>
-        <newWizardShortcut
-              id="gov.redhawk.ide.ui.wizards.newidl">
-        </newWizardShortcut>
-        <newWizardShortcut
-              id="gov.redhawk.ide.ui.wizard.controlPanel">
         </newWizardShortcut>
         <viewShortcut
               id="gov.redhawk.ui.sca_explorer">
@@ -200,12 +188,6 @@
         </newWizardShortcut>
         <newWizardShortcut
               id="gov.redhawk.ide.ui.wizards.newnode">
-        </newWizardShortcut>
-        <newWizardShortcut
-              id="gov.redhawk.ide.ui.wizards.newidl">
-        </newWizardShortcut>
-        <newWizardShortcut
-              id="gov.redhawk.ide.ui.wizard.controlPanel">
         </newWizardShortcut>
         <viewShortcut
               id="gov.redhawk.ui.sca_explorer">
@@ -258,12 +240,6 @@
         <newWizardShortcut
               id="gov.redhawk.ide.ui.wizards.newnode">
         </newWizardShortcut>
-        <newWizardShortcut
-              id="gov.redhawk.ide.ui.wizards.newidl">
-        </newWizardShortcut>
-        <newWizardShortcut
-              id="gov.redhawk.ide.ui.wizard.controlPanel">
-        </newWizardShortcut>
         <viewShortcut
               id="gov.redhawk.ui.sca_explorer">
         </viewShortcut>
@@ -314,12 +290,6 @@
         </newWizardShortcut>        
         <newWizardShortcut
               id="gov.redhawk.ide.ui.wizards.newnode">
-        </newWizardShortcut>
-        <newWizardShortcut
-              id="gov.redhawk.ide.ui.wizards.newidl">
-        </newWizardShortcut>
-        <newWizardShortcut
-              id="gov.redhawk.ide.ui.wizard.controlPanel">
         </newWizardShortcut>
         <viewShortcut
               id="gov.redhawk.ui.sca_explorer">
