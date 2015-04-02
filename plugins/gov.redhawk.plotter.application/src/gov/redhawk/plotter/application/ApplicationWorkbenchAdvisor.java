@@ -10,12 +10,20 @@
  *******************************************************************************/
 package gov.redhawk.plotter.application;
 
+import gov.redhawk.plotter.application.internal.CommandLineParser;
+
 import org.eclipse.ui.application.IWorkbenchConfigurer;
 import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
 import org.eclipse.ui.application.WorkbenchAdvisor;
 import org.eclipse.ui.application.WorkbenchWindowAdvisor;
 
 public class ApplicationWorkbenchAdvisor extends WorkbenchAdvisor {
+
+	private CommandLineParser commandLine;
+
+	public ApplicationWorkbenchAdvisor(CommandLineParser commandLine) {
+		this.commandLine = commandLine;
+	}
 
 	@Override
 	public WorkbenchWindowAdvisor createWorkbenchWindowAdvisor(final IWorkbenchWindowConfigurer configurer) {
@@ -26,7 +34,7 @@ public class ApplicationWorkbenchAdvisor extends WorkbenchAdvisor {
 
 		workbenchConfigurer.setExitOnLastWindowClose(true);
 		workbenchConfigurer.setSaveAndRestore(false);
-		return new ApplicationWorkbenchWindowAdvisor(configurer);
+		return new ApplicationWorkbenchWindowAdvisor(configurer, commandLine);
 	}
 
 	@Override

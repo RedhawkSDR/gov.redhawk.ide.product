@@ -10,6 +10,9 @@
  *******************************************************************************/
 package gov.redhawk.plotter.application;
 
+import gov.redhawk.plotter.application.internal.CommandLineParser;
+
+import org.eclipse.core.runtime.Platform;
 import org.eclipse.equinox.app.IApplication;
 import org.eclipse.equinox.app.IApplicationContext;
 import org.eclipse.swt.widgets.Display;
@@ -20,10 +23,15 @@ public class PlotterApplication implements IApplication {
 
 	@Override
 	public Object start(final IApplicationContext context) throws Exception {
+		CommandLineParser commandLine = new CommandLineParser();
+		if (!commandLine.parse(Platform.getApplicationArgs())) {
+			return 0;
+		}
+
 		final Display display = PlatformUI.createDisplay();
 
 		try {
-			final int returnCode = PlatformUI.createAndRunWorkbench(display, new ApplicationWorkbenchAdvisor());
+			final int returnCode = PlatformUI.createAndRunWorkbench(display, new ApplicationWorkbenchAdvisor(commandLine));
 			if (returnCode == PlatformUI.RETURN_RESTART) {
 				return IApplication.EXIT_RESTART;
 			} else {

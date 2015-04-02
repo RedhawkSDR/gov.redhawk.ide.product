@@ -1,0 +1,9 @@
+Usage:
+    plotter.sh -ior <port IOR> -repid <IDL repid of port> [<optional arg>]
+
+Optional arguments:
+    -connectionID <id>    Specifies the id to use when creating a connection to the port
+    -portname <porname>   Gives the name of the port for display in the UI
+
+Example:
+    plotter.sh -ior IOR:123....456 -repid IDL:BULKIO/dataFloat:1.0
