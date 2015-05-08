@@ -56,7 +56,7 @@
       <import feature="org.eclipse.xsd.sdk" version="2.10.0" match="greaterOrEqual"/>
       <import feature="org.polarion.eclipse.team.svn.connector" version="3.0.6" match="greaterOrEqual"/>
       <import feature="org.polarion.eclipse.team.svn.connector.svnkit16" version="3.0.6" match="greaterOrEqual"/>
-      <import feature="org.python.pydev.feature" version="3.9.2.201502050007" match="perfect"/>
+      <import feature="org.python.pydev.feature" version="4.0.0.201504132356" match="perfect"/>
    </requires>
 
    <plugin
