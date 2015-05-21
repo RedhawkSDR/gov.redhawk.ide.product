@@ -35,7 +35,7 @@
     <idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
     <svn-connector>http://pinkman/nexus/content/repositories/subversive-connector</svn-connector>
     <subversive>http://pinkman/nexus/content/repositories/subversive</subversive>
-    <eclipse>http://download.eclipse.org/releases/luna/</eclipse>
+    <eclipse>http://download.eclipse.org/releases/mars/</eclipse>
   </properties>
 
   <repositories>
