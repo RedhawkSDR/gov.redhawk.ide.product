@@ -27,362 +27,94 @@
       %license
    </license>
 
-   <includes
-         id="nxm"
-         version="0.0.0"/>
-
-   <includes
-         id="nxm.rcp.ui"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.cdt"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.emf.codegen"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.emf.codegen.ecore"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.emf.codegen.ecore.ui"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.emf.codegen.ui"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.emf.common"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.emf.common.ui"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.emf.ecore"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.emf.ecore.edit"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.emf.edit"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.emf.edit.ui"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.emf.mapping"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.gef.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="org.python.pydev.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.emf.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.emf.transaction.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.emf.validation.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.rcp"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.ocl.all.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.uml2.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wst.xml_ui.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.xsd.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wst.server_core.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.equinox.p2.user.ui"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.equinox.p2.user.ui.source"
-         version="0.0.0"/>
-
-   <includes
-         id="gov.redhawk.ide.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="gov.redhawk.ide.ui.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="gov.redhawk.sca.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="gov.redhawk.ui.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="gov.redhawk.rcp.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="mil.jpeojtrs.sca.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.cdt.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.linuxtools.callgraph"
-         version="0.0.0"
-         optional="true"
-         os="linux"/>
-
-   <includes
-         id="org.eclipse.linuxtools.cdt.autotools"
-         version="0.0.0"
-         os="linux"/>
-
-   <includes
-         id="org.eclipse.linuxtools.changelog"
-         version="0.0.0"
-         os="linux"/>
-
-   <includes
-         id="org.eclipse.linuxtools.gcov"
-         version="0.0.0"
-         os="linux"/>
-
-   <includes
-         id="org.eclipse.linuxtools.gprof"
-         version="0.0.0"
-         os="linux"/>
-
-   <includes
-         id="org.eclipse.linuxtools.lttng"
-         version="0.0.0"
-         os="linux"/>
-
-   <includes
-         id="org.eclipse.linuxtools.oprofile"
-         version="0.0.0"
-         os="linux"/>
-
-   <includes
-         id="org.eclipse.linuxtools.profiling"
-         version="0.0.0"
-         os="linux"/>
-
-   <includes
-         id="org.eclipse.linuxtools.rpm"
-         version="0.0.0"
-         os="linux"/>
-
-   <includes
-         id="org.eclipse.linuxtools.rpm.ui.editor"
-         version="0.0.0"
-         os="linux"/>
-
-   <includes
-         id="org.eclipse.linuxtools.tmf"
-         version="0.0.0"
-         os="linux"/>
-
-   <includes
-         id="org.eclipse.linuxtools.valgrind"
-         version="0.0.0"
-         os="linux"/>
-
-   <includes
-         id="org.eclipse.rap.tooling"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.core.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.core.ui.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.core.xml.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.doc.user.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.layout.group.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.rcp.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.rcp.SWT_AWT_support"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.swt.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.xwt.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.swing.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="gov.redhawk.interfaces.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.jdt"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.jdt.source"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.help"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.help.source"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.pde"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.pde.source"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.platform"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.platform.source"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.cvs"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.cvs.source"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.team.svn"
-         version="0.0.0"/>
-
-   <includes
-         id="org.polarion.eclipse.team.svn.connector.svnkit16"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.core.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.core.ui.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.core.xml.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.doc.user.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.layout.group.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.rcp.doc.user.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.rcp.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.rcp.SWT_AWT_support"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.swing.doc.user.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.swing.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.swt.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.xwt.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="gov.redhawk.ide.codegen.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="gov.redhawk.apps.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="net.sf.eclipsecorba.idl"
-         version="0.0.0"/>
-
-   <includes
-         id="org.jacorb"
-         version="0.0.0"/>
+   <requires>
+      <import feature="nxm" version="0.0.0" match="compatible"/>
+      <import feature="nxm.rcp.ui" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.cdt" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.emf.codegen" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.emf.codegen.ecore" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.emf.codegen.ecore.ui" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.emf.codegen.ui" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.emf.common" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.emf.common.ui" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.emf.ecore" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.emf.ecore.edit" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.emf.edit" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.emf.edit.ui" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.emf.mapping" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.gef.sdk" version="0.0.0" match="compatible"/>
+      <import feature="org.python.pydev.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.emf.sdk" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.emf.transaction.sdk" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.emf.validation.sdk" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.rcp" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.ocl.all.sdk" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.uml2.sdk" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wst.xml_ui.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.xsd.sdk" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wst.server_core.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.equinox.p2.user.ui" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.equinox.p2.user.ui.source" version="0.0.0" match="compatible"/>
+      <import feature="gov.redhawk.ide.sdk" version="0.0.0" match="compatible"/>
+      <import feature="gov.redhawk.ide.ui.sdk" version="0.0.0" match="compatible"/>
+      <import feature="gov.redhawk.sca.sdk" version="0.0.0" match="compatible"/>
+      <import feature="gov.redhawk.ui.sdk" version="0.0.0" match="compatible"/>
+      <import feature="gov.redhawk.rcp.sdk" version="0.0.0" match="compatible"/>
+      <import feature="mil.jpeojtrs.sca.sdk" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.cdt.sdk" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.linuxtools.callgraph" version="0.0.0" optional="true" os="linux" match="compatible"/>
+      <import feature="org.eclipse.linuxtools.cdt.autotools" version="0.0.0" os="linux" match="compatible"/>
+      <import feature="org.eclipse.linuxtools.changelog" version="0.0.0" os="linux" match="compatible"/>
+      <import feature="org.eclipse.linuxtools.gcov" version="0.0.0" os="linux" match="compatible"/>
+      <import feature="org.eclipse.linuxtools.gprof" version="0.0.0" os="linux" match="compatible"/>
+      <import feature="org.eclipse.linuxtools.lttng" version="0.0.0" os="linux" match="compatible"/>
+      <import feature="org.eclipse.linuxtools.oprofile" version="0.0.0" os="linux" match="compatible"/>
+      <import feature="org.eclipse.linuxtools.profiling" version="0.0.0" os="linux" match="compatible"/>
+      <import feature="org.eclipse.linuxtools.rpm" version="0.0.0" os="linux" match="compatible"/>
+      <import feature="org.eclipse.linuxtools.rpm.ui.editor" version="0.0.0" os="linux" match="compatible"/>
+      <import feature="org.eclipse.linuxtools.tmf" version="0.0.0" os="linux" match="compatible"/>
+      <import feature="org.eclipse.linuxtools.valgrind" version="0.0.0" os="linux" match="compatible"/>
+      <import feature="org.eclipse.rap.tooling" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.core.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.core.ui.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.core.xml.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.doc.user.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.layout.group.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.rcp.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.rcp.SWT_AWT_support" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.swt.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.xwt.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.swing.feature" version="0.0.0" match="compatible"/>
+      <import feature="gov.redhawk.interfaces.sdk" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.jdt" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.jdt.source" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.help" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.help.source" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.pde" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.pde.source" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.platform" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.platform.source" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.cvs" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.cvs.source" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.team.svn" version="0.0.0" match="compatible"/>
+      <import feature="org.polarion.eclipse.team.svn.connector.svnkit16" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.core.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.core.ui.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.core.xml.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.doc.user.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.layout.group.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.rcp.doc.user.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.rcp.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.rcp.SWT_AWT_support" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.swing.doc.user.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.swing.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.swt.feature" version="0.0.0" match="compatible"/>
+      <import feature="org.eclipse.wb.xwt.feature" version="0.0.0" match="compatible"/>
+      <import feature="gov.redhawk.ide.codegen.sdk" version="0.0.0" match="compatible"/>
+      <import feature="gov.redhawk.apps.sdk" version="0.0.0" match="compatible"/>
+      <import feature="net.sf.eclipsecorba.idl" version="0.0.0" match="compatible"/>
+      <import feature="org.jacorb" version="0.0.0" match="compatible"/>
+   </requires>
 
    <plugin
          id="org.eclipse.wst.common.project.facet.core"
