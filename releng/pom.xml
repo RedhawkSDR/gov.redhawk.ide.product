@@ -41,8 +41,8 @@
             <jacorb>http://download.redhawksdr.org/jacorb/updates/stable</jacorb>
             <logback>http://download.redhawksdr.org/logback/latest</logback>
             <idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
-            <subversive>http://download.eclipse.org/technology/subversive/1.0/update-site-1.0.1</subversive>
-            <svn-connector>http://community.polarion.com/projects/subversive/download/eclipse/2.0/update-site</svn-connector>
+            <subversive>http://download.eclipse.org/technology/subversive/1.1/update-site/</subversive>
+            <svn-connector>http://community.polarion.com/projects/subversive/download/eclipse/3.0/update-site</svn-connector>
             <rcp-patch>http://download.redhawksdr.org/rcp-patch</rcp-patch>
             <rcp-patch-source>http://download.redhawksdr.org/rcp-patch-source</rcp-patch-source>
         </properties>
