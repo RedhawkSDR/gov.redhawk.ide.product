@@ -52,8 +52,19 @@
    </plugins>
 
    <features>
+      <feature id="gov.redhawk.interfaces.sdk"/>
+      <feature id="mil.jpeojtrs.sca.sdk"/>
+      <feature id="gov.redhawk.rcp.sdk"/>
+      <feature id="gov.redhawk.sca.sdk"/>
+      <feature id="gov.redhawk.ui.sdk"/>
+      <feature id="gov.redhawk.ide.sdk"/>
+      <feature id="gov.redhawk.ide.ui.sdk"/>
+      <feature id="gov.redhawk.ide.codegen.sdk"/>
+      <feature id="gov.redhawk.apps.sdk"/>
       <feature id="gov.redhawk.product.ide.feature" version="1.8.9.qualifier"/>
       <feature id="gov.redhawk.product.ide.platform" version="1.8.9.qualifier"/>
+      <feature id="org.eclipse.equinox.p2.user.ui"/>
+      <feature id="org.eclipse.equinox.p2.user.ui.source"/>
    </features>
 
    <configurations>

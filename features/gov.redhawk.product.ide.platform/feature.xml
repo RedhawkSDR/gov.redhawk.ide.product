@@ -53,14 +53,6 @@
       <import feature="org.eclipse.wst.xml_ui.feature" version="3.2.3" match="compatible"/>
       <import feature="org.eclipse.xsd.sdk" version="2.6.0" match="compatible"/>
       <import feature="org.eclipse.wst.server_core.feature" version="3.2.3" match="compatible"/>
-      <import feature="org.eclipse.equinox.p2.user.ui" version="2.0.1" match="compatible"/>
-      <import feature="org.eclipse.equinox.p2.user.ui.source" version="2.0.1" match="compatible"/>
-      <import feature="gov.redhawk.ide.sdk" version="1.8.0" match="compatible"/>
-      <import feature="gov.redhawk.ide.ui.sdk" version="1.8.0" match="compatible"/>
-      <import feature="gov.redhawk.sca.sdk" version="1.8.0" match="compatible"/>
-      <import feature="gov.redhawk.ui.sdk" version="1.8.0" match="compatible"/>
-      <import feature="gov.redhawk.rcp.sdk" version="1.8.0" match="compatible"/>
-      <import feature="mil.jpeojtrs.sca.sdk" version="2.2.2" match="compatible"/>
       <import feature="org.eclipse.cdt.sdk" version="7.0.2" match="compatible"/>
       <import feature="org.eclipse.linuxtools.callgraph" version="0.0.2" match="compatible"/>
       <import feature="org.eclipse.linuxtools.cdt.autotools" version="2.0.1" match="compatible"/>
@@ -75,7 +67,6 @@
       <import feature="org.eclipse.linuxtools.tmf" version="0.3.0" match="compatible"/>
       <import feature="org.eclipse.linuxtools.valgrind" version="0.7.0" match="compatible"/>
       <import feature="org.eclipse.rap.tooling" version="1.3.2" match="compatible"/>
-      <import feature="gov.redhawk.interfaces.sdk" version="1.8.0" match="compatible"/>
       <import feature="org.eclipse.jdt" version="3.6.2" match="compatible"/>
       <import feature="org.eclipse.jdt.source" version="3.6.2" match="compatible"/>
       <import feature="org.eclipse.help" version="1.2.1" match="compatible"/>
@@ -100,8 +91,6 @@
       <import feature="org.eclipse.wb.swing.feature" version="1.5.2" match="compatible"/>
       <import feature="org.eclipse.wb.swt.feature" version="1.5.2" match="compatible"/>
       <import feature="org.eclipse.wb.xwt.feature" version="1.5.2" match="compatible"/>
-      <import feature="gov.redhawk.ide.codegen.sdk" version="1.8.0" match="compatible"/>
-      <import feature="gov.redhawk.apps.sdk" version="1.8.0" match="compatible"/>
       <import feature="net.sf.eclipsecorba.idl" version="0.7.0" match="compatible"/>
       <import feature="org.jacorb" version="3.3.0" match="compatible"/>
    </requires>
