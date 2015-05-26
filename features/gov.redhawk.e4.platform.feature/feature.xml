@@ -51,7 +51,7 @@
       <import feature="org.eclipse.rcp" version="4.4.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.rcp.configuration" version="1.0.2" match="greaterOrEqual"/>
       <import feature="org.eclipse.rcp.source" version="4.4.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.team.svn" version="1.0.1" match="greaterOrEqual"/>
+      <import feature="org.eclipse.team.svn" version="1.1.4" match="greaterOrEqual"/>
       <import feature="org.eclipse.wst.xml_ui.feature" version="3.6.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.xsd.sdk" version="2.10.0" match="greaterOrEqual"/>
       <import feature="org.polarion.eclipse.team.svn.connector" version="3.0.6" match="greaterOrEqual"/>
