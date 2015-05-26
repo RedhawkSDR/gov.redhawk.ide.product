@@ -40,8 +40,8 @@
     <pydev>http://pydev.org/updates/</pydev>
     <nebula>http://download.eclipse.org/technology/nebula/archives/Q32014/release</nebula>
     <idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
-    <svn-connector>http://pinkman/nexus/content/repositories/subversive-connector</svn-connector>
-    <subversive>http://pinkman/nexus/content/repositories/subversive</subversive>
+    <svn-connector>http://community.polarion.com/projects/subversive/download/eclipse/3.0/update-site/</svn-connector>
+    <subversive>http://download.eclipse.org/technology/subversive/1.1/update-site/</subversive>
   </properties>
 
   <repositories>
