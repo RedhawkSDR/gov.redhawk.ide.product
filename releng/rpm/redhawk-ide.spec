@@ -6,7 +6,7 @@
 
 Name:           redhawk-ide
 Summary:        REDHAWK Integrated Developer Environment
-Version:        1.8.7
+Version:        1.9.1
 Release:        1%{?dist}
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Group:          Applications/Engineering
@@ -17,7 +17,7 @@ Vendor:         REDHAWK
 
 Requires:       java-devel >= 1.6
 Requires:       jacorb >= 3.3.0
-Requires:       redhawk >= 1.8
+Requires:       redhawk >= 1.9
 AutoReqProv:    no
 
 
