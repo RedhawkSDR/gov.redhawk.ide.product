@@ -11,7 +11,6 @@
 -->
 <?eclipse version="3.4"?>
 <plugin>
-
      <extension id="ide" point="org.eclipse.core.runtime.products"> 
       <product application="gov.redhawk.editor.product.app" description="%productBlurb" name="%product.name"> 
           <property name="appName" value="%product.name"/> 
@@ -50,8 +49,6 @@
               name="%perspective.name">
         </perspective>
      </extension>
-     
-
    <extension
          point="org.eclipse.ui.activities">
       <activity
@@ -59,11 +56,13 @@
             name="%activity.name">
          <enabledWhen>
             <not>
-               <test
-                     forcePluginActivation="true"
-                     property="org.eclipse.core.runtime.product"
-                     value="gov.redhawk.editor.product.ide">
-               </test>
+               <with variable="org.eclipse.core.runtime.Platform">
+                  <test
+                        forcePluginActivation="true"
+                        property="org.eclipse.core.runtime.product"
+                        value="gov.redhawk.editor.product.ide">
+                  </test>
+            </with>
             </not>
          </enabledWhen>
       </activity>
@@ -104,6 +103,4 @@
             pattern="org.eclipse.sdk/org.eclipse.jdt.ui.wizards.NewClassCreationWizard">
       </activityPatternBinding>
    </extension>
-
-
 </plugin>
