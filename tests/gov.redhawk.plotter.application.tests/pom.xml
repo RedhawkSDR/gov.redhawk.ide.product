@@ -35,7 +35,7 @@
           <application>gov.redhawk.plotter.application.plotter</application>
           <product>gov.redhawk.plotter.application.product</product>
           <showEclipseLog>true</showEclipseLog>
-          <argLine>-DORBInitialPort=2908 -XX:MaxPermSize=256m -Xmx1024m -Djava.net.preferIPv4Stack=true</argLine>
+          <argLine>-XX:MaxPermSize=256m -Xmx1024m -Djava.net.preferIPv4Stack=true</argLine>
           <appArgLine>-nosplash -clearPersistedState -nl en -repid IDL:BULKIO/dataDouble:1.0 -ior TEST -connectionID TEST_CONNECTION</appArgLine>
           <dependencies>
             <dependency>
