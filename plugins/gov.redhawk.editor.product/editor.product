@@ -25,7 +25,6 @@
 -Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton
 -Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer
 -DORBInitialPort=2908
--Dorg.eclipse.swt.browser.DefaultType=mozilla
 -Dosgi.requiredJavaVersion=1.7
       </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
@@ -302,7 +301,6 @@
       <property name="eclipse.buildId" value="${unqualifiedVersion}.${buildType}${buildQualifier}" />
       <property name="jacorb.config.dir" value="platform:/config" />
       <property name="java.util.logging.config.file" value="platform:/config/javalogger.properties" />
-      <property name="org.eclipse.swt.browser.XULRunnerPath" value="platform:/base/xulrunner" />
       <property name="org.eclipse.update.reconcile" value="false" />
       <property name="osgi.bundles.defaultStartLevel" value="4" />
    </configurations>
