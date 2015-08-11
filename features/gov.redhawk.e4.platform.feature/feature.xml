@@ -53,62 +53,20 @@
       <import feature="org.eclipse.xsd.sdk" version="2.11.0" match="greaterOrEqual"/>
       <import feature="org.polarion.eclipse.team.svn.connector" version="3.0.6" match="greaterOrEqual"/>
       <import feature="org.polarion.eclipse.team.svn.connector.svnkit16" version="3.0.6" match="greaterOrEqual"/>
-      <import feature="org.python.pydev.feature" version="4.0.0.201504132356" match="perfect"/>
+      <import feature="org.python.pydev.feature" version="4.0.0" match="equivalent"/>
+      <import plugin="ch.qos.logback.classic"/>
+      <import plugin="ch.qos.logback.core"/>
+      <import plugin="org.apache.commons.io"/>
+      <import plugin="org.apache.commons.lang"/>
+      <import plugin="org.apache.commons.math"/>
+      <import plugin="org.apache.log4j"/>
+      <import plugin="org.slf4j.api"/>
    </requires>
-
-   <plugin
-         id="org.apache.commons.lang"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.apache.log4j"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.wst.server.core"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
 
    <plugin
          id="gov.redhawk.e4.platform"
          download-size="0"
          install-size="0"
          version="0.0.0"/>
-
-   <plugin
-         id="org.apache.commons.io"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="slf4j.api"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="ch.qos.logback.classic"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="ch.qos.logback.core"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
 
 </feature>
