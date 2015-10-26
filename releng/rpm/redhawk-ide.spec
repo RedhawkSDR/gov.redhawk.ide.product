@@ -43,5 +43,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_prefix}/%{version}
 /usr/bin/rhide
 
-%post
-%{_prefix}/%{version}/eclipse -nosplash -consolelog -initialize > /dev/null 2>&1
