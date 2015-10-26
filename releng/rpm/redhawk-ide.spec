@@ -16,7 +16,6 @@ Source:         %{name}-%{version}.zip
 Vendor:         REDHAWK
 
 Requires:       java-devel >= 1.6
-Requires:       jacorb >= 3.3.0
 Requires:       redhawk >= 1.8
 AutoReqProv:    no
 
