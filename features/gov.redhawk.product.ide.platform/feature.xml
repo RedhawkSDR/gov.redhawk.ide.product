@@ -28,7 +28,7 @@
    </license>
 
    <requires>
-      <import feature="org.eclipse.cdt.sdk" version="8.1.2" match="compatible"/>
+      <import feature="org.eclipse.cdt" version="8.1.2" match="compatible"/>
       <import feature="org.eclipse.cdt.autotools" version="3.0.0" match="compatible"/>
       <import feature="org.eclipse.emf.transaction.sdk" version="1.6.0" match="compatible"/>
       <import feature="org.eclipse.emf.validation.sdk" version="1.6.0" match="compatible"/>
@@ -61,21 +61,13 @@
       <import feature="org.eclipse.wb.doc.user.feature" version="1.5.2" match="greaterOrEqual"/>
       <import feature="org.eclipse.wb.rcp.SWT_AWT_support" version="1.5.2" match="greaterOrEqual"/>
       <import feature="org.eclipse.wb.swing.feature" version="1.5.2" match="greaterOrEqual"/>
+      <import plugin="org.apache.commons.io"/>
+      <import plugin="org.apache.commons.lang"/>
+      <import plugin="org.apache.log4j"/>
+      <import plugin="slf4j.api"/>
+      <import plugin="ch.qos.logback.classic"/>
+      <import plugin="ch.qos.logback.core"/>
    </requires>
-
-   <plugin
-         id="org.apache.commons.io"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.apache.commons.lang"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
 
    <plugin
          id="org.slf4j.api"
@@ -113,13 +105,6 @@
          unpack="false"/>
 
    <plugin
-         id="org.apache.log4j"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.apache.log4j.source"
          download-size="0"
          install-size="0"
@@ -128,27 +113,6 @@
 
    <plugin
          id="org.eclipse.wst.server.core"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="slf4j.api"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="ch.qos.logback.classic"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="ch.qos.logback.core"
          download-size="0"
          install-size="0"
          version="0.0.0"
