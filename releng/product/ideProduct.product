@@ -77,7 +77,6 @@
       <property name="eclipse.buildId" value="${unqualifiedVersion}.${buildType}${buildQualifier}" />
       <property name="jacorb.config.dir" value="platform:/config" />
       <property name="java.util.logging.config.file" value="platform:/config/javalogger.properties" />
-      <property name="org.eclipse.swt.browser.XULRunnerPath" value="platform:/base/xulrunner" />
       <property name="org.eclipse.update.reconcile" value="false" />
       <property name="osgi.bundles.defaultStartLevel" value="4" />
    </configurations>

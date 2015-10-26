@@ -1,11 +1,11 @@
 ###############################################################################
-# This file is protected by Copyright. 
+# This file is protected by Copyright.
 # Please refer to the COPYRIGHT file distributed with this source distribution.
 #
 # This file is part of REDHAWK IDE.
 #
-# All rights reserved.  This program and the accompanying materials are made available under 
-# the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at 
+# All rights reserved.  This program and the accompanying materials are made available under
+# the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at
 # http://www.eclipse.org/legal/epl-v10.html
 ###############################################################################
 %{!?_idehome:  %define _idehome  /usr/local/redhawk/ide}
@@ -27,7 +27,6 @@ Vendor:         REDHAWK
 
 BuildRequires:  desktop-file-utils
 Requires:       java-devel >= 1.6
-Requires:       jacorb >= 3.3.0
 Requires:       redhawk >= 1.10
 AutoReqProv:    no
 
