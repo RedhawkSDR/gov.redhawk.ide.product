@@ -89,24 +89,16 @@
       <import feature="org.eclipse.wb.xwt.feature" version="1.5.2" match="compatible"/>
       <import feature="net.sf.eclipsecorba.idl" version="0.7.0" match="compatible"/>
       <import feature="org.jacorb" version="3.3.0" match="compatible"/>
+      <import plugin="org.apache.commons.io"/>
+      <import plugin="org.apache.commons.lang"/>
+      <import plugin="org.apache.log4j"/>
+      <import plugin="slf4j.api"/>
+      <import plugin="ch.qos.logback.classic"/>
+      <import plugin="ch.qos.logback.core"/>
    </requires>
 
    <plugin
          id="org.eclipse.wst.common.project.facet.core"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.apache.commons.lang"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.apache.log4j"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -601,33 +593,5 @@
          install-size="0"
          version="0.0.0"
          fragment="true"/>
-
-   <plugin
-         id="org.apache.commons.io"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="slf4j.api"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="ch.qos.logback.classic"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="ch.qos.logback.core"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
 
 </feature>
