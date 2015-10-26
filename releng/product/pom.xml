@@ -18,7 +18,7 @@
     <parent>
         <groupId>gov.redhawk.ide.product</groupId>
         <artifactId>releng</artifactId>
-        <version>1.8.9-SNAPSHOT</version>
+        <version>1.8.10-SNAPSHOT</version>
     </parent>
 
     <build>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="REDHAWK IDE" uid="gov.redhawk.product.ide.product" id="gov.redhawk.product.ide.product" application="org.eclipse.ui.ide.workbench" version="1.8.9.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="REDHAWK IDE" uid="gov.redhawk.product.ide.product" id="gov.redhawk.product.ide.product" application="org.eclipse.ui.ide.workbench" version="1.8.10.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/gov.redhawk.product.ide/icons/RedHawk_Logo250x.gif"/>
@@ -60,8 +60,8 @@
       <feature id="gov.redhawk.ide.ui.sdk"/>
       <feature id="gov.redhawk.ide.codegen.sdk"/>
       <feature id="gov.redhawk.apps.sdk"/>
-      <feature id="gov.redhawk.product.ide.feature" version="1.8.9.qualifier"/>
-      <feature id="gov.redhawk.product.ide.platform" version="1.8.9.qualifier"/>
+      <feature id="gov.redhawk.product.ide.feature" version="1.8.10.qualifier"/>
+      <feature id="gov.redhawk.product.ide.platform" version="1.8.10.qualifier"/>
       <feature id="org.eclipse.equinox.p2.user.ui"/>
       <feature id="org.eclipse.equinox.p2.user.ui.source"/>
    </features>
