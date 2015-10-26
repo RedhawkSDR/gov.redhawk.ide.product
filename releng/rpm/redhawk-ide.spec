@@ -1,5 +1,14 @@
+###############################################################################
+# This file is protected by Copyright.
+# Please refer to the COPYRIGHT file distributed with this source distribution.
+#
+# This file is part of REDHAWK IDE.
+#
+# All rights reserved.  This program and the accompanying materials are made available under
+# the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at
+# http://www.eclipse.org/legal/epl-v10.html
+###############################################################################
 %{!?_idehome:  %define _idehome  /usr/local/redhawk/ide}
-%define _prefix %{_idehome}
 %define debug_package %{nil}
 %define __os_install_post %{nil}
 
@@ -25,21 +34,24 @@ REDHAWK Integrated Developer Environment
  * Commit: __REVISION__
  * Source Date/Time: __DATETIME__
 
+
 %prep
-%setup
+%setup -q
+
 
 %install
-mkdir -p $RPM_BUILD_ROOT%{_prefix}/%{version}
-mkdir -p $RPM_BUILD_ROOT/usr/bin
-cp -r * $RPM_BUILD_ROOT%{_prefix}/%{version}
-cd $RPM_BUILD_ROOT
-ln -s %{_prefix}/%{version}/eclipse $RPM_BUILD_ROOT/usr/bin/rhide
+mkdir -p $RPM_BUILD_ROOT%{_idehome}/%{version}
+mkdir -p $RPM_BUILD_ROOT%{_bindir}
+cp -r * $RPM_BUILD_ROOT%{_idehome}/%{version}
+ln -s %{_idehome}/%{version}/eclipse $RPM_BUILD_ROOT%{_bindir}/rhide
+
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+
 %files
 %defattr(-, root, root)
-%{_prefix}/%{version}
-/usr/bin/rhide
+%{_idehome}/%{version}
+%{_bindir}/rhide
 
