@@ -14,8 +14,8 @@
    </configIni>
 
    <launcherArgs>
-      <vmArgs>-Xms40m
--Xmx512m
+      <vmArgs>-Xms256m
+-Xmx1024m
 -XX:MaxPermSize=256m
 -Dcom.sun.CORBA.transport.ORBUseNIOSelectToWait=false
 -Djava.net.preferIPv4Stack=true
