@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This file is protected by Copyright. Please refer to the COPYRIGHT file 
-  distributed with this source distribution. This file is part of REDHAWK IDE. 
-  All rights reserved. This program and the accompanying materials are made 
-  available under the terms of the Eclipse Public License v1.0 which accompanies 
+<!-- This file is protected by Copyright. Please refer to the COPYRIGHT file
+  distributed with this source distribution. This file is part of REDHAWK IDE.
+  All rights reserved. This program and the accompanying materials are made
+  available under the terms of the Eclipse Public License v1.0 which accompanies
   this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html. -->
 <project
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
   xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>gov.redhawk.ide.product</groupId>
-  <artifactId>releng</artifactId>
-  <version>1.11.0-SNAPSHOT</version>
+  <artifactId>gov.redhawk.ide.product.parent</artifactId>
+  <version>2.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <parent>
@@ -45,7 +45,7 @@
       <layout>p2</layout>
       <url>${eclipse}</url>
     </repository>
-    
+
     <repository>
       <id>svn-connector</id>
       <layout>p2</layout>
@@ -127,22 +127,22 @@
 
 
   <modules>
-    <module>../features/gov.redhawk.sdk</module>
-    <module>../features/gov.redhawk.e4.platform.feature</module>
-    <module>../features/gov.redhawk.tailoredTools</module>
-    <module>../plugins/gov.redhawk.e4.platform</module>
-    <module>../plugins/gov.redhawk.editor.product</module>
-    <module>../plugins/gov.redhawk.plotter.application</module>
-    <module>product</module>
-    <module>p2</module>
+    <module>features/gov.redhawk.sdk</module>
+    <module>features/gov.redhawk.e4.platform.feature</module>
+    <module>features/gov.redhawk.tailoredTools</module>
+    <module>plugins/gov.redhawk.e4.platform</module>
+    <module>plugins/gov.redhawk.editor.product</module>
+    <module>plugins/gov.redhawk.plotter.application</module>
+    <module>releng/product</module>
+    <module>releng/p2</module>
   </modules>
 
   <profiles>
     <profile>
       <id>ui-tests</id>
       <modules>
-        <module>../tests/gov.redhawk.editor.product.tests</module>
-        <module>../tests/gov.redhawk.plotter.application.tests</module>
+        <module>tests/gov.redhawk.editor.product.tests</module>
+        <module>tests/gov.redhawk.plotter.application.tests</module>
       </modules>
       <properties>
         <swt-bot>http://download.eclipse.org/technology/swtbot/releases/latest/</swt-bot>
