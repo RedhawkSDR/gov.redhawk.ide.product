@@ -20,6 +20,5 @@
     <relativePath>../..</relativePath>
   </parent>
   <artifactId>gov.redhawk.editor.product</artifactId>
-  <version>2.0.0-SNAPSHOT</version>
   <packaging>eclipse-plugin</packaging>
 </project>
