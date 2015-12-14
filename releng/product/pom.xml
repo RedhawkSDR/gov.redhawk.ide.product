@@ -16,8 +16,9 @@
     <packaging>eclipse-repository</packaging>
     <groupId>gov.redhawk.ide.product.product</groupId>
     <parent>
+        <relativePath>../..</relativePath>
         <groupId>gov.redhawk.ide.product</groupId>
-        <artifactId>releng</artifactId>
+        <artifactId>gov.redhawk.ide.product.parent</artifactId>
         <version>1.8.10-SNAPSHOT</version>
     </parent>
 
@@ -55,7 +56,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-patch-plugin</artifactId>
-                <version>1.1.1</version>
+                <version>1.2</version>
                 <configuration>
                     <targetDirectory>target/products/gov.redhawk.product.ide.product/linux/gtk</targetDirectory>
                     <patchDirectory>patches</patchDirectory>

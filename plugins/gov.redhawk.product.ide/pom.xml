@@ -16,9 +16,9 @@
     <packaging>eclipse-plugin</packaging>
     <parent>
         <groupId>gov.redhawk.ide.product</groupId>
-        <artifactId>releng</artifactId>
+        <artifactId>gov.redhawk.ide.product.parent</artifactId>
         <version>1.8.10-SNAPSHOT</version>
-        <relativePath>../../releng</relativePath>
+        <relativePath>../..</relativePath>
     </parent>
     <profiles>
         <profile>
