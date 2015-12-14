@@ -17,8 +17,9 @@
   <name>REDHAWK IDE Product</name>
   <packaging>eclipse-repository</packaging>
   <parent>
+    <relativePath>../..</relativePath>
     <groupId>gov.redhawk.ide.product</groupId>
-    <artifactId>releng</artifactId>
+    <artifactId>gov.redhawk.ide.product.parent</artifactId>
     <version>1.9.1-SNAPSHOT</version>
   </parent>
 
