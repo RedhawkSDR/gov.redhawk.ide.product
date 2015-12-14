@@ -14,7 +14,7 @@
   xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>gov.redhawk.ide.product</groupId>
-  <artifactId>releng</artifactId>
+  <artifactId>gov.redhawk.ide.product.parent</artifactId>
   <version>1.10.2-SNAPSHOT</version>
   <packaging>pom</packaging>
 
@@ -157,13 +157,13 @@
       </repositories>
 
       <modules>
-        <module>../features/gov.redhawk.product.ide.feature</module>
-        <module>../features/gov.redhawk.product.ide.platform</module>
-        <module>../features/gov.redhawk.sdk</module>
-        <module>../plugins/gov.redhawk.product.ide</module>
-        <module>../plugins/gov.redhawk.plotter.application</module>
-        <module>p2</module>
-        <module>product</module>
+        <module>features/gov.redhawk.product.ide.feature</module>
+        <module>features/gov.redhawk.product.ide.platform</module>
+        <module>features/gov.redhawk.sdk</module>
+        <module>plugins/gov.redhawk.product.ide</module>
+        <module>plugins/gov.redhawk.plotter.application</module>
+        <module>releng/p2</module>
+        <module>releng/product</module>
       </modules>
 
     </profile>
