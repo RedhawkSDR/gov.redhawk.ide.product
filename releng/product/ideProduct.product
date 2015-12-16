@@ -56,7 +56,6 @@
    </plugins>
 
    <features>
-      <feature id="org.eclipse.rcp.configuration"/>
       <feature id="org.eclipse.sdk"/>
       <feature id="gov.redhawk.sdk"/>
       <feature id="org.eclipse.equinox.p2.user.ui"/>
