@@ -25,7 +25,7 @@
   </parent>
 
   <properties>
-    <tycho-version>0.19.0</tycho-version>
+    <tycho-version>${tycho-version}</tycho-version>
     <tycho.scmUrl>scm:git:https://github.com/RedhawkSDR/eclipse-products-gov.redhawk.ide.product.git</tycho.scmUrl>
     <orbit>http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository</orbit>
     <nxm>http://nextmidas.techma.com/p2/nxm/updates/latest</nxm>
