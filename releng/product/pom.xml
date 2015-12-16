@@ -30,6 +30,15 @@
         <artifactId>target-platform-configuration</artifactId>
         <version>${tycho-version}</version>
         <configuration>
+          <filters>
+            <filter>
+              <type>eclipse-plugin</type>
+              <id>org.eclipse.core.runtime</id>
+              <restrictTo>
+                <version>3.8.0.v20120521-2346</version>
+              </restrictTo>
+             </filter>
+          </filters>
           <dependency-resolution>
             <extraRequirements>
               <requirement>
