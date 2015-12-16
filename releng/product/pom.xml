@@ -44,6 +44,11 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <formats>
+                        <win32>zip</win32>
+                        <linux>tar.gz</linux>
+                        <macosx>tar.gz</macosx>
+                    </formats>
                     <products>
                         <product>
                             <id>gov.redhawk.product.ide.product</id>
