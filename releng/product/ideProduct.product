@@ -58,7 +58,6 @@
    </plugins>
 
    <features>
-      <feature id="org.eclipse.rcp.configuration"/>
       <feature id="gov.redhawk.product.ide"/>
       <feature id="gov.redhawk.product.ide.platform"/>
       <feature id="gov.redhawk.sdk"/>
