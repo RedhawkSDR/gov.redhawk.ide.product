@@ -10,16 +10,16 @@
     http://www.eclipse.org/legal/epl-v10.html.
 -->
 <site>
-   <feature url="features/gov.redhawk.product.ide_1.10.2.qualifier.jar" id="gov.redhawk.product.ide" version="1.10.2.qualifier">
+   <feature url="features/gov.redhawk.product.ide_0.0.0.qualifier.jar" id="gov.redhawk.product.ide">
       <category name="gov.redhawk.ide.product"/>
    </feature>
-   <feature url="features/gov.redhawk.product.ide.source_1.10.2.qualifier.jar" id="gov.redhawk.product.ide.source" version="1.10.2.qualifier">
+   <feature url="features/gov.redhawk.product.ide.source_0.0.0.qualifier.jar" id="gov.redhawk.product.ide.source">
       <category name="gov.redhawk.ide.product"/>
    </feature>
-   <feature url="features/gov.redhawk.sdk_1.10.2.qualifier.jar" id="gov.redhawk.sdk" version="1.10.2.qualifier">
+   <feature url="features/gov.redhawk.sdk_0.0.0.qualifier.jar" id="gov.redhawk.sdk">
       <category name="gov.redhawk.ide.product"/>
    </feature>
-   <feature url="features/gov.redhawk.product.ide.platform_1.10.2.qualifier.jar" id="gov.redhawk.product.ide.platform" version="1.10.2.qualifier">
+   <feature url="features/gov.redhawk.product.ide.platform_0.0.0.qualifier.jar" id="gov.redhawk.product.ide.platform">
       <category name="gov.redhawk.ide.product"/>
    </feature>
    <category-def name="gov.redhawk.ide.product" label="REDHAWK SDK"/>
