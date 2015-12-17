@@ -78,7 +78,7 @@
                </requirement>
                <requirement>
                  <type>eclipse-feature</type>
-                 <id>gov.redhawk.ide.swtbot</id>
+                 <id>gov.redhawk.ide.swtbot.feature</id>
                  <versionRange>0.0.0</versionRange>
                </requirement>
                <requirement>
@@ -99,21 +99,6 @@
                <requirement>
                  <type>eclipse-feature</type>
                  <id>mil.jpeojtrs.sca</id>
-                 <versionRange>0.0.0</versionRange>
-               </requirement>
-               <requirement>
-                 <type>eclipse-feature</type>
-                 <id>org.eclipse.swtbot.forms</id>
-                 <versionRange>0.0.0</versionRange>
-               </requirement>
-               <requirement>
-                 <type>eclipse-feature</type>
-                 <id>org.eclipse.swtbot.eclipse.gef</id>
-                 <versionRange>0.0.0</versionRange>
-               </requirement>
-               <requirement>
-                 <type>eclipse-feature</type>
-                 <id>org.eclipse.swtbot</id>
                  <versionRange>0.0.0</versionRange>
                </requirement>
                <requirement>
