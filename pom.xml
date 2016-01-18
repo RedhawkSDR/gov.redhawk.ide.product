@@ -33,8 +33,6 @@
     <pydev>https://dl.bintray.com/fabioz/pydev/all/</pydev>
     <nebula>http://download.eclipse.org/technology/nebula/archives/Q32014/release</nebula>
     <idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
-    <svn-connector>http://community.polarion.com/projects/subversive/download/eclipse/3.0/update-site/</svn-connector>
-    <subversive>http://download.eclipse.org/technology/subversive/1.1/update-site/</subversive>
     <eclipse>http://download.eclipse.org/releases/mars/</eclipse>
   </properties>
 
@@ -44,18 +42,6 @@
       <id>eclipse</id>
       <layout>p2</layout>
       <url>${eclipse}</url>
-    </repository>
-
-    <repository>
-      <id>svn-connector</id>
-      <layout>p2</layout>
-      <url>${svn-connector}</url>
-    </repository>
-
-    <repository>
-      <id>subversive</id>
-      <layout>p2</layout>
-      <url>${subversive}</url>
     </repository>
 
     <repository>
