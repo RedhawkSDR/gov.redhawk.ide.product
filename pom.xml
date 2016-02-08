@@ -40,8 +40,6 @@
             <nxm-rcp>http://download.redhawksdr.org/nxm-ui/releases/1.0</nxm-rcp>
             <jacorb>http://download.redhawksdr.org/jacorb/updates/stable</jacorb>
             <idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
-            <subversive>http://download.eclipse.org/technology/subversive/1.1/update-site/</subversive>
-            <svn-connector>http://community.polarion.com/projects/subversive/download/eclipse/3.0/update-site</svn-connector>
             <rcp-patch>http://download.redhawksdr.org/rcp-patch</rcp-patch>
             <rcp-patch-source>http://download.redhawksdr.org/rcp-patch-source</rcp-patch-source>
         </properties>
@@ -130,18 +128,6 @@
             <id>idl-editor</id>
             <layout>p2</layout>
             <url>${idl-editor}</url>
-        </repository>
-
-        <repository>
-            <id>svn-connector</id>
-            <layout>p2</layout>
-            <url>${svn-connector}</url>
-        </repository>
-
-        <repository>
-            <id>subversive</id>
-            <layout>p2</layout>
-            <url>${subversive}</url>
         </repository>
 
         <repository>

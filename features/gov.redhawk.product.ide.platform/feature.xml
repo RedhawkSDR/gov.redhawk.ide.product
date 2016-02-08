@@ -73,8 +73,6 @@
       <import feature="org.eclipse.pde.source" version="3.6.2" match="compatible"/>
       <import feature="org.eclipse.platform" version="3.6.2" match="compatible"/>
       <import feature="org.eclipse.platform.source" version="3.6.2" match="compatible"/>
-      <import feature="org.eclipse.team.svn" version="1.1.4" match="compatible"/>
-      <import feature="org.polarion.eclipse.team.svn.connector.svnkit16" version="3.0.6" match="compatible"/>
       <import feature="org.eclipse.wb.core.feature" version="1.5.2" match="compatible"/>
       <import feature="org.eclipse.wb.core.ui.feature" version="1.5.2" match="compatible"/>
       <import feature="org.eclipse.wb.core.xml.feature" version="1.5.2" match="compatible"/>
