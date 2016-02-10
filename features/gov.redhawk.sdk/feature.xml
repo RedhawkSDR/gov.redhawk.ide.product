@@ -11,9 +11,9 @@
 -->
 <feature
       id="gov.redhawk.sdk"
-      label="REDHAWK SDK"
+      label="%featureName"
       version="1.9.1.qualifier"
-      provider-name="REDHAWK">
+      provider-name="%providerName">
 
    <description url="http://redhawksdr.org">
       %description
