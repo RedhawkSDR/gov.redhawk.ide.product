@@ -11,16 +11,16 @@
 -->
 <feature
       id="gov.redhawk.e4.platform"
-      label="REDHAWK e4 Platform"
+      label="%featureName"
       version="2.0.1.qualifier"
-      provider-name="REDHAWK"
+      provider-name="%providerName"
       plugin="gov.redhawk.e4.platform">
 
    <description url="http://redhawksdr.org">
       %description
    </description>
 
-   <copyright url="http://redhawksdr.org">
+   <copyright url="%copyrightURL">
       %copyright
    </copyright>
 

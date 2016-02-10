@@ -11,15 +11,15 @@
 -->
 <feature
       id="gov.redhawk.sdk"
-      label="REDHAWK SDK"
+      label="%featureName"
       version="2.0.1.qualifier"
-      provider-name="REDHAWK">
+      provider-name="%providerName">
 
    <description url="http://redhawksdr.org">
       %description
    </description>
 
-   <copyright url="http://redhawksdr.org">
+   <copyright url="%copyrightURL">
       %copyright
    </copyright>
 
