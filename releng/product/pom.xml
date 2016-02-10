@@ -17,13 +17,46 @@
   <name>REDHAWK IDE Product</name>
   <packaging>eclipse-repository</packaging>
   <parent>
+    <relativePath>../..</relativePath>
     <groupId>gov.redhawk.ide.product</groupId>
-    <artifactId>releng</artifactId>
+    <artifactId>gov.redhawk.ide.product.parent</artifactId>
     <version>1.9.1-SNAPSHOT</version>
   </parent>
 
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>target-platform-configuration</artifactId>
+        <version>${tycho-version}</version>
+        <configuration>
+          <filters>
+            <filter>
+              <type>eclipse-plugin</type>
+              <id>org.eclipse.core.runtime</id>
+              <restrictTo>
+                <version>3.8.0.v20120521-2346</version>
+              </restrictTo>
+             </filter>
+            <filter>
+              <type>eclipse-plugin</type>
+              <id>org.eclipse.update.configurator</id>
+              <restrictTo>
+                <version>3.3.200.v20120912-142556</version>
+              </restrictTo>
+            </filter>
+          </filters>
+          <dependency-resolution>
+            <extraRequirements>
+              <requirement>
+                <type>eclipse-feature</type>
+                <id>org.eclipse.rcp.configuration</id>
+                <versionRange>0.0.0</versionRange>
+              </requirement>
+            </extraRequirements>
+          </dependency-resolution>
+        </configuration>
+      </plugin>
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-p2-director-plugin</artifactId>

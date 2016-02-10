@@ -11,15 +11,15 @@
 -->
 <feature
       id="gov.redhawk.sdk"
-      label="REDHAWK SDK"
+      label="%featureName"
       version="1.9.1.qualifier"
-      provider-name="REDHAWK">
+      provider-name="%providerName">
 
    <description url="http://redhawksdr.org">
       %description
    </description>
 
-   <copyright url="http://redhawksdr.org">
+   <copyright url="%copyrightURL">
       %copyright
    </copyright>
 
@@ -45,6 +45,7 @@
       <import feature="gov.redhawk.core.sdk" version="1.9.1" match="compatible"/>
       <import feature="gov.redhawk.ide.all.sdk" version="1.9.1" match="compatible"/>
       <import feature="gov.redhawk.ide.codegen.sdk" version="1.9.1" match="compatible"/>
+      <import feature="org.jacorb" version="3.3.0" match="compatible"/>
       <import feature="nxm.rcp.ui.sdk" version="1.1.0" match="compatible"/>
    </requires>
 
