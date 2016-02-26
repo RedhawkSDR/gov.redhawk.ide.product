@@ -17,9 +17,8 @@ import gov.redhawk.plotter.application.internal.TestInput;
 import org.eclipse.swtbot.eclipse.finder.SWTWorkbenchBot;
 import org.eclipse.swtbot.eclipse.finder.widgets.SWTBotPerspective;
 import org.eclipse.swtbot.eclipse.finder.widgets.SWTBotView;
-import org.eclipse.swtbot.swt.finder.SWTBot;
 import org.eclipse.swtbot.swt.finder.junit.SWTBotJunit4ClassRunner;
-import org.eclipse.swtbot.swt.finder.waits.ICondition;
+import org.eclipse.swtbot.swt.finder.waits.DefaultCondition;
 import org.eclipse.swtbot.swt.finder.widgets.SWTBotToolbarButton;
 import org.eclipse.swtbot.swt.finder.widgets.SWTBotToolbarDropDownButton;
 import org.junit.Assert;
@@ -36,49 +35,39 @@ public class TestPlotter {
 	public void before() {
 		bot = new SWTWorkbenchBot();
 	}
-	
+
+	@SuppressWarnings("restriction")
 	@Test
 	public void testPlotterApp() {
 		SWTBotPerspective perspective = bot.activePerspective();
 		Assert.assertEquals("REDHAWK Plotter Perspective", perspective.getLabel());
 		SWTBotView view = bot.activeView();
 		Assert.assertEquals(PlotView2.ID, view.getViewReference().getId());
-		
-		bot.sleep(5000);
-	
+
 		SWTBotToolbarButton button = view.toolbarButton("Change the plot's type");
 		button.click();
-		
 		bot.sleep(2000);
-		
+
 		button.click();
-		
+		bot.sleep(2000);
+
 		SWTBotToolbarDropDownButton dropDown = view.toolbarDropDownButton("Change the plot's mode (Imaginary, 10 Log, etc.)");
 		dropDown.menuItem("Real vs Imaginary").click();
-		
 		bot.sleep(2000);
 	}
-	
+
 	@Test
 	public void testConnectionID() {
-		bot.waitUntil(new ICondition() {
-			
+		bot.waitUntil(new DefaultCondition() {
 			@Override
 			public boolean test() throws Exception {
-				return TestInput.INSTANCE.getConnectionID() != null;
+				return "TEST_CONNECTION".equals(TestInput.INSTANCE.getConnectionID());
 			}
-			
-			@Override
-			public void init(SWTBot bot) {
-				// TODO Auto-generated method stub
-				
-			}
-			
+
 			@Override
 			public String getFailureMessage() {
 				return "Connection ID never changed";
 			}
-		}, 60000);
-		Assert.assertEquals("TEST_CONNECTION", TestInput.INSTANCE.getConnectionID());
+		}, 60000, 1000);
 	}
 }
