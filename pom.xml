@@ -31,7 +31,7 @@
     <gov.redhawk.codegen>http://download.redhawksdr.org/gov.redhawk.codegen/releases/2.0</gov.redhawk.codegen>
     <jacorb>http://download.redhawksdr.org/jacorb/updates/stable</jacorb>
     <pydev>https://dl.bintray.com/fabioz/pydev/all/</pydev>
-    <nebula>http://download.eclipse.org/technology/nebula/archives/Q32014/release</nebula>
+    <nebula>http://archive.eclipse.org/technology/nebula/Q32014/release/</nebula>
     <idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
     <eclipse>http://download.eclipse.org/releases/mars/</eclipse>
   </properties>
