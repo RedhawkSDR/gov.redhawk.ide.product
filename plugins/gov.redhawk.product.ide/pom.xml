@@ -38,12 +38,10 @@
                                     <replace file="OSGI-INF/l10n/bundle.properties">
                                         <replacefilter value="${unqualifiedVersion}" token="@version@" />
                                         <replacefilter value="${buildType}${buildQualifier}" token="@buildId@" />
-                                        <replacefilter value="${commitHash}" token="@commitHash@" />
                                     </replace>
                                     <replace file="about.properties">
                                         <replacefilter value="${unqualifiedVersion}" token="@buildLabel@" />
                                         <replacefilter value="${buildType}${buildQualifier}" token="@buildId@" />
-                                        <replacefilter value="${commitHash}" token="@commitHash@" />
                                     </replace>
                                 </target>
                             </configuration>
