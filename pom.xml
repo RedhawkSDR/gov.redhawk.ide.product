@@ -37,7 +37,7 @@
     <gov.redhawk.codegen>http://download.redhawksdr.org/gov.redhawk.codegen/releases/1.9</gov.redhawk.codegen>
     <jacorb>http://download.redhawksdr.org/jacorb/updates/stable</jacorb>
     <pydev>http://pydev.org/updates/</pydev>
-    <nebula>http://download.eclipse.org/technology/nebula/archives/Q32014/release</nebula>
+    <nebula>http://archive.eclipse.org/technology/nebula/Q32014/release/</nebula>
     <idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
     <eclipse-support>http://download.eclipse.org/eclipse/updates/3.8</eclipse-support>
     <eclipse>http://download.eclipse.org/releases/juno</eclipse>
