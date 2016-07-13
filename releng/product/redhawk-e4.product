@@ -63,8 +63,6 @@
       <feature id="gov.redhawk.e4.platform" version="2.0.2.qualifier"/>
       <feature id="gov.redhawk.sdk" version="2.0.2.qualifier"/>
       <feature id="gov.redhawk.tailoredTools" version="2.0.2.qualifier" installMode="root"/>
-      <feature id="org.eclipse.equinox.p2.user.ui"/>
-      <feature id="org.eclipse.equinox.p2.user.ui.source"/>
    </features>
 
    <configurations>
