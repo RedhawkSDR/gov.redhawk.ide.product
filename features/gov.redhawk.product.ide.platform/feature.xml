@@ -43,7 +43,7 @@
       <import feature="org.eclipse.emf.edit.ui" version="2.6.0" match="compatible"/>
       <import feature="org.eclipse.emf.mapping" version="2.6.0" match="compatible"/>
       <import feature="org.eclipse.gef.sdk" version="3.6.2" match="compatible"/>
-      <import feature="org.python.pydev.feature" version="1.6.4" match="compatible"/>
+      <import feature="org.python.pydev.feature" version="1.6.4" match="equivalent"/>
       <import feature="org.eclipse.emf.sdk" version="2.6.1" match="compatible"/>
       <import feature="org.eclipse.emf.transaction.sdk" version="1.4.0" match="compatible"/>
       <import feature="org.eclipse.emf.validation.sdk" version="1.4.0" match="compatible"/>

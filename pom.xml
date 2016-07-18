@@ -29,7 +29,7 @@
             <eclipse>http://download.eclipse.org/releases/helios</eclipse>
             <orbit>http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository</orbit>
             <wb>http://download.eclipse.org/windowbuilder/WB/release/R201302221200/3.6</wb>
-            <pydev>http://pydev.org/updates</pydev>
+            <pydev>https://dl.bintray.com/fabioz/pydev/old/features/</pydev>
             <cdt>http://download.eclipse.org/tools/cdt/releases/helios</cdt>
             <mil.jpeojtrs.sca>http://download.redhawksdr.org/mil.jpeojtrs.sca/releases/1.8</mil.jpeojtrs.sca>
             <gov.redhawk.core>http://download.redhawksdr.org/gov.redhawk.core/releases/1.8</gov.redhawk.core>
