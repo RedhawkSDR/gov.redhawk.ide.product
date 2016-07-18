@@ -50,7 +50,7 @@
       <import feature="org.eclipse.rcp.source" version="4.5.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.wst.xml_ui.feature" version="3.7.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.xsd.sdk" version="2.11.0" match="greaterOrEqual"/>
-      <import feature="org.python.pydev.feature" version="4.0.0" match="equivalent"/>
+      <import feature="org.python.pydev.feature" version="4.5.5" match="equivalent"/>
       <import plugin="ch.qos.logback.classic"/>
       <import plugin="ch.qos.logback.core"/>
       <import plugin="org.apache.commons.io"/>
