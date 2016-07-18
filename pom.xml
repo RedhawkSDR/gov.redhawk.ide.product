@@ -35,7 +35,7 @@
     <gov.redhawk.ide>http://download.redhawksdr.org/gov.redhawk.ide/releases/1.10</gov.redhawk.ide>
     <gov.redhawk.codegen>http://download.redhawksdr.org/gov.redhawk.codegen/releases/1.10</gov.redhawk.codegen>
     <jacorb>http://download.redhawksdr.org/jacorb/updates/stable</jacorb>
-    <pydev>http://pydev.org/updates/</pydev>
+    <pydev>https://dl.bintray.com/fabioz/pydev/old/</pydev>
     <nebula>http://archive.eclipse.org/technology/nebula/Q32014/release/</nebula>
     <idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
   </properties>
