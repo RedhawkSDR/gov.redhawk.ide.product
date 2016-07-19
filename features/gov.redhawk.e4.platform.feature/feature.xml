@@ -57,6 +57,8 @@
       <import plugin="org.apache.commons.lang"/>
       <import plugin="org.apache.commons.math"/>
       <import plugin="org.apache.log4j"/>
+      <import plugin="org.eclipse.nebula.widgets.xviewer"/>
+      <import plugin="org.eclipse.nebula.widgets.xviewer.core"/>
       <import plugin="org.slf4j.api"/>
    </requires>
 
