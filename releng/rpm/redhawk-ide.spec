@@ -27,7 +27,9 @@ Vendor:         REDHAWK
 
 BuildRequires:  desktop-file-utils
 Requires:       java7-devel >= 1.7
-Requires:       redhawk >= 2.0
+Requires:       redhawk-devel >= 2.0
+Requires:       redhawk-codegen >= 2.0
+Requires:       bulkioInterfaces >= 2.0
 AutoReqProv:    no
 
 
