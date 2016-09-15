@@ -26,7 +26,7 @@ Source1:        redhawk.desktop
 Vendor:         REDHAWK
 
 BuildRequires:  desktop-file-utils
-Requires:       java7-devel >= 1.7
+Requires:       java >= 1:1.8.0
 Requires:       redhawk-devel >= 2.0
 Requires:       redhawk-codegen >= 2.0
 Requires:       bulkioInterfaces >= 2.0
