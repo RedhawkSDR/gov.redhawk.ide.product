@@ -27,6 +27,11 @@ Vendor:         REDHAWK
 
 BuildRequires:  desktop-file-utils
 Requires:       java >= 1:1.8.0
+%if 0%{?rhel} >= 7 || 0%{?fedora} >= 17
+Requires:       PackageKit-gtk3-module libcanberra-gtk3 libwebkit2gtk
+%else
+Requires:       PackageKit-gtk-module libcanberra-gtk2 webkitgtk
+%endif
 Requires:       redhawk-devel >= 2.0
 Requires:       redhawk-codegen >= 2.0
 Requires:       bulkioInterfaces >= 2.0
