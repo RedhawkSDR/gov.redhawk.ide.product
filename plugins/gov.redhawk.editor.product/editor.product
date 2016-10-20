@@ -14,11 +14,10 @@
    </configIni>
 
    <launcherArgs>
-      <programArgs>-data @user.home/.redhawk/editor -clearPersistedState --launcher.XXMaxPermSize 256m --launcher.defaultAction openFile  --launcher.appendVmargs
+      <programArgs>-data @user.home/.redhawk/editor -clearPersistedState --launcher.defaultAction openFile  --launcher.appendVmargs
       </programArgs>
       <vmArgs>-Xms40m
 -Xmx512m
--XX:MaxPermSize=256m
 -Dcom.sun.CORBA.transport.ORBUseNIOSelectToWait=false
 -Djava.net.preferIPv4Stack=true
 -Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB

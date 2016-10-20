@@ -28,7 +28,7 @@
 <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-os ${target.os} -ws ${target.ws} -arch ${target.arch} -nl ${target.nl} -consoleLog -repid IDL:BULKIO/dataDouble:1.0 -ior TEST -connectionID TEST_CONNECTION"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="gov.redhawk.plotter.application.tests"/>
 <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.pde.ui.workbenchClasspathProvider"/>
-<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xms40m&#10;-XX:MaxPermSize=256m&#10;-Xmx512m&#10;-Dcom.sun.CORBA.transport.ORBUseNIOSelectToWait=false&#10;-Djava.net.preferIPv4Stack=true&#10;-Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB&#10;-Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton&#10;-Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xms40m&#10;-Xmx512m&#10;-Dcom.sun.CORBA.transport.ORBUseNIOSelectToWait=false&#10;-Djava.net.preferIPv4Stack=true&#10;-Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB&#10;-Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton&#10;-Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer"/>
 <stringAttribute key="pde.version" value="3.3"/>
 <stringAttribute key="product" value="gov.redhawk.plotter.application.product"/>
 <booleanAttribute key="run_in_ui_thread" value="false"/>

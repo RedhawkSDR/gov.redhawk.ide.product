@@ -35,7 +35,7 @@
           <application>gov.redhawk.editor.product.app</application>
           <product>gov.redhawk.editor.product.ide</product>
           <showEclipseLog>true</showEclipseLog>
-          <argLine>-XX:MaxPermSize=256m -Xmx1024m -Djava.net.preferIPv4Stack=true</argLine>
+          <argLine>-Xmx1024m -Djava.net.preferIPv4Stack=true</argLine>
           <appArgLine>-nosplash -name Rheditor -clearPersistedState -nl en</appArgLine>
         </configuration>
       </plugin>
