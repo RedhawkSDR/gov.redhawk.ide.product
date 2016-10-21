@@ -34,6 +34,7 @@
     <nebula>http://download.eclipse.org/nebula/releases/1.0.0/</nebula>
     <idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
     <eclipse>http://download.eclipse.org/releases/mars/</eclipse>
+    <eclipse-neon-subset>http://download.redhawksdr.org/eclipse/neon-subset/</eclipse-neon-subset>
   </properties>
 
   <repositories>
@@ -42,6 +43,12 @@
       <id>eclipse</id>
       <layout>p2</layout>
       <url>${eclipse}</url>
+    </repository>
+
+    <repository>
+      <id>eclipse-neon-subset</id>
+      <layout>p2</layout>
+      <url>${eclipse-neon-subset}</url>
     </repository>
 
     <repository>
