@@ -26,7 +26,7 @@ Source1:        redhawk.desktop
 Vendor:         REDHAWK
 
 BuildRequires:  desktop-file-utils
-Requires:       java >= 1:1.8.0
+Requires:       java-1.8.0-openjdk-devel
 %if 0%{?rhel} >= 7 || 0%{?fedora} >= 17
 Requires:       PackageKit-gtk3-module libcanberra-gtk3 libwebkit2gtk
 %else
