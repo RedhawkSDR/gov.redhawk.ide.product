@@ -62,7 +62,6 @@
       <feature id="gov.redhawk.e4.platform" version="2.0.4.qualifier"/>
       <feature id="gov.redhawk.sdk" version="2.0.4.qualifier"/>
       <feature id="gov.redhawk.tailoredTools" version="2.0.4.qualifier" installMode="root"/>
-      <feature id="gov.redhawk.e4.rcp" version="2.0.4.qualifier"/>
    </features>
 
    <configurations>
