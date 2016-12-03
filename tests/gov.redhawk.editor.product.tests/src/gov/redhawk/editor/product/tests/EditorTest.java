@@ -20,7 +20,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @RunWith(SWTBotJunit4ClassRunner.class)
-public class TestEditor {
+public class EditorTest {
 
 	private SWTWorkbenchBot bot;
 
