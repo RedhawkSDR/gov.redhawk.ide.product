@@ -33,8 +33,7 @@
     <pydev>https://dl.bintray.com/fabioz/pydev/4.5.5/</pydev>
     <nebula>http://download.eclipse.org/nebula/releases/1.0.0/</nebula>
     <idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
-    <eclipse>http://download.eclipse.org/releases/mars/</eclipse>
-    <eclipse-mars-patch>http://download.redhawksdr.org/eclipse/mars-patch/</eclipse-mars-patch>
+    <eclipse>http://download.eclipse.org/releases/neon/</eclipse>
   </properties>
 
   <repositories>
@@ -43,12 +42,6 @@
       <id>eclipse</id>
       <layout>p2</layout>
       <url>${eclipse}</url>
-    </repository>
-
-    <repository>
-      <id>eclipse-mars-patch</id>
-      <layout>p2</layout>
-      <url>${eclipse-mars-patch}</url>
     </repository>
 
     <repository>
