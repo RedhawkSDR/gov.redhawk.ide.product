@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: REDHAWK e4 Platform
 Bundle-SymbolicName: gov.redhawk.e4.platform;singleton:=true
-Bundle-Version: 2.0.6.qualifier
+Bundle-Version: 2.0.7.qualifier
 Bundle-Activator: gov.redhawk.platform.RedhawkPlatformActivator
 Bundle-Vendor: REDHAWK
 Require-Bundle: org.eclipse.ui,
