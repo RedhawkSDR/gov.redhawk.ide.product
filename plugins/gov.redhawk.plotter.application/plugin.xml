@@ -55,15 +55,15 @@
 		  </property>
 		  <property
 				name="applicationCSSResources"
-          value="platform:/plugin/org.eclipse.platform/images/">
+				value="platform:/plugin/org.eclipse.ui.themes/images/">
 		  </property>
 		   <property name="appName" value="%product.name"/> 
           <property name="preferenceCustomization" value="plugin_customization.ini"/>
 		  <property name="applicationXMI" value="org.eclipse.platform/LegacyIDE.e4xmi"/>
 		  <property name="cssTheme" value="org.eclipse.e4.ui.css.theme.e4_default"/>
 		  <property name="applicationCSSResources" value="platform:/plugin/org.eclipse.platform/images/"/>
-          <property name="windowImages" value="platform:/plugin/gov.redhawk.e4.platform/redhawk16.gif,platform:/plugin/gov.redhawk.e4.platform/redhawk32.gif,platform:/plugin/gov.redhawk.e4.platform/redhawk48.gif,platform:/plugin/gov.redhawk.e4.platform/redhawk64.gif,platform:/plugin/gov.redhawk.e4.platform/redhawk_lg.gif"/>
-          <property name="startupForegroundColor" value="FFFFFF"/>
+          <property name="windowImages" value="platform:/plugin/gov.redhawk.e4.platform/redhawk16.png,platform:/plugin/gov.redhawk.e4.platform/redhawk32.png,platform:/plugin/gov.redhawk.e4.platform/redhawk48.png"/>
+          <property name="startupForegroundColor" value="9c9696"/>
           <property name="startupMessageRect" value="7,252,445,20"/>
           <property name="startupProgressRect" value="5,275,445,15"/>
       </product>
