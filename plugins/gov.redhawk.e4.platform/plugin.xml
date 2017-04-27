@@ -63,11 +63,11 @@
     </property>
     <property
           name="windowImages"
-          value="redhawk16.gif,redhawk32.gif,redhawk48.gif,redhawk64.gif,redhawk_lg.gif">
+          value="redhawk16.png,redhawk32.png,redhawk48.png">
     </property>
     <property
           name="startupForegroundColor"
-          value="FFFFFF">
+          value="9c9696">
     </property>
     <property
           name="startupMessageRect"

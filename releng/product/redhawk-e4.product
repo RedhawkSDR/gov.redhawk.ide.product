@@ -30,13 +30,13 @@
       </vmArgsMac>
    </launcherArgs>
 
-   <windowImages i16="/gov.redhawk.e4.platform/redhawk16.gif" i32="/gov.redhawk.e4.platform/redhawk32.gif" i48="/gov.redhawk.e4.platform/redhawk48.gif" i64="/gov.redhawk.e4.platform/redhawk64.gif" i128="/gov.redhawk.e4.platform/redhawk_lg.gif"/>
+   <windowImages i16="/gov.redhawk.e4.platform/redhawk16.png" i32="/gov.redhawk.e4.platform/redhawk32.png" i48="/gov.redhawk.e4.platform/redhawk48.png"/>
 
    <splash
       location="gov.redhawk.e4.platform"
       startupProgressRect="5,275,445,15"
       startupMessageRect="7,252,445,20"
-      startupForegroundColor="FFFFFF" />
+      startupForegroundColor="9c9696" />
    <launcher name="eclipse">
       <linux icon="icon.xpm"/>
       <macosx icon="Eclipse.icns"/>
