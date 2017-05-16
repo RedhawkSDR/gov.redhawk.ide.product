@@ -46,6 +46,7 @@
       <import feature="org.eclipse.pde.source" version="3.11.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.platform" version="4.6.2" match="greaterOrEqual"/>
       <import feature="org.eclipse.platform.source" version="4.6.2" match="greaterOrEqual"/>
+      <import feature="org.eclipse.tm.terminal.feature" version="4.2.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.wst.xml_ui.feature" version="3.7.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.xsd.sdk" version="2.11.0" match="greaterOrEqual"/>
       <import feature="org.python.pydev.feature" version="5.5.0" match="greaterOrEqual"/>
