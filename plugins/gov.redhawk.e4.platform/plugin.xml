@@ -123,9 +123,6 @@
         <viewShortcut
               id="org.eclipse.ui.navigator.ProjectExplorer">
         </viewShortcut>
-        <viewShortcut
-              id="gov.redhawk.ide.ui.eventViewer">
-        </viewShortcut>
      </perspectiveExtension>
      <perspectiveExtension
            targetID="org.eclipse.cdt.ui.CPerspective">
@@ -155,9 +152,6 @@
         </viewShortcut>
         <viewShortcut
               id="org.eclipse.ui.navigator.ProjectExplorer">
-        </viewShortcut>
-        <viewShortcut
-              id="gov.redhawk.ide.ui.eventViewer">
         </viewShortcut>
         <view
               id="gov.redhawk.ui.sca_explorer"
@@ -200,9 +194,6 @@
         </viewShortcut>
         <viewShortcut
               id="org.eclipse.ui.navigator.ProjectExplorer">
-        </viewShortcut>
-        <viewShortcut
-              id="gov.redhawk.ide.ui.eventViewer">
         </viewShortcut>
         <view
               id="gov.redhawk.ui.sca_explorer"
@@ -252,9 +243,6 @@
         <viewShortcut
               id="org.eclipse.ui.navigator.ProjectExplorer">
         </viewShortcut>
-        <viewShortcut
-              id="gov.redhawk.ide.ui.eventViewer">
-        </viewShortcut>
         <view
               id="gov.redhawk.ui.sca_explorer"
               minimized="false"
@@ -302,9 +290,6 @@
         </viewShortcut>
         <viewShortcut
               id="org.eclipse.ui.navigator.ProjectExplorer">
-        </viewShortcut>
-        <viewShortcut
-              id="gov.redhawk.ide.ui.eventViewer">
         </viewShortcut>
         <view
               id="gov.redhawk.ui.sca_explorer"
