@@ -68,16 +68,6 @@
       </activity>
       <activityPatternBinding
             activityId="gov.redhawk.editor.product.hidedistractions"
-            isEqualityPattern="true"
-            pattern="mil.jpeojtrs.sca.dcd.diagram/mil.jpeojtrs.sca.dcd.diagram.part.DcdCreationWizardID">
-      </activityPatternBinding>
-      <activityPatternBinding
-            activityId="gov.redhawk.editor.product.hidedistractions"
-            isEqualityPattern="true"
-            pattern="mil.jpeojtrs.sca.sad.diagram/mil.jpeojtrs.sca.sad.diagram.part.SadCreationWizardID">
-      </activityPatternBinding>
-      <activityPatternBinding
-            activityId="gov.redhawk.editor.product.hidedistractions"
             pattern="org\.eclipse\.gef\.examples.*">
       </activityPatternBinding>
       <activityPatternBinding
