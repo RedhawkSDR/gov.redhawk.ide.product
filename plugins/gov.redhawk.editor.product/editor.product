@@ -60,7 +60,6 @@
       <plugin id="gov.redhawk.common.ui"/>
       <plugin id="gov.redhawk.core.filemanager"/>
       <plugin id="gov.redhawk.core.resourceFactory"/>
-      <plugin id="gov.redhawk.diagram"/>
       <plugin id="gov.redhawk.e4.platform"/>
       <plugin id="gov.redhawk.eclipsecorba.idl"/>
       <plugin id="gov.redhawk.eclipsecorba.idl.edit"/>
@@ -96,7 +95,6 @@
       <plugin id="gov.redhawk.sca.model"/>
       <plugin id="gov.redhawk.sca.model.edit"/>
       <plugin id="gov.redhawk.sca.ui"/>
-      <plugin id="gov.redhawk.sca.ui.rcp" fragment="true"/>
       <plugin id="gov.redhawk.sca.util"/>
       <plugin id="gov.redhawk.scd.validation"/>
       <plugin id="gov.redhawk.spd.validation"/>
@@ -114,7 +112,6 @@
       <plugin id="mil.jpeojtrs.sca.cf.edit"/>
       <plugin id="mil.jpeojtrs.sca.dcd"/>
       <plugin id="mil.jpeojtrs.sca.dcd.edit"/>
-      <plugin id="mil.jpeojtrs.sca.diagram"/>
       <plugin id="mil.jpeojtrs.sca.dmd"/>
       <plugin id="mil.jpeojtrs.sca.dmd.edit"/>
       <plugin id="mil.jpeojtrs.sca.dpd"/>
@@ -213,36 +210,10 @@
       <plugin id="org.eclipse.equinox.p2.metadata.repository"/>
       <plugin id="org.eclipse.equinox.p2.repository"/>
       <plugin id="org.eclipse.equinox.preferences"/>
-      <plugin id="org.eclipse.equinox.region" fragment="true"/>
       <plugin id="org.eclipse.equinox.registry"/>
       <plugin id="org.eclipse.equinox.security"/>
-      <plugin id="org.eclipse.equinox.transforms.hook" fragment="true"/>
       <plugin id="org.eclipse.equinox.util"/>
-      <plugin id="org.eclipse.equinox.weaving.hook" fragment="true"/>
       <plugin id="org.eclipse.gef"/>
-      <plugin id="org.eclipse.gmf.runtime.common.core"/>
-      <plugin id="org.eclipse.gmf.runtime.common.ui"/>
-      <plugin id="org.eclipse.gmf.runtime.common.ui.action"/>
-      <plugin id="org.eclipse.gmf.runtime.common.ui.services"/>
-      <plugin id="org.eclipse.gmf.runtime.common.ui.services.action"/>
-      <plugin id="org.eclipse.gmf.runtime.common.ui.services.properties"/>
-      <plugin id="org.eclipse.gmf.runtime.diagram.core"/>
-      <plugin id="org.eclipse.gmf.runtime.diagram.ui"/>
-      <plugin id="org.eclipse.gmf.runtime.diagram.ui.actions"/>
-      <plugin id="org.eclipse.gmf.runtime.diagram.ui.properties"/>
-      <plugin id="org.eclipse.gmf.runtime.diagram.ui.providers"/>
-      <plugin id="org.eclipse.gmf.runtime.diagram.ui.resources.editor"/>
-      <plugin id="org.eclipse.gmf.runtime.diagram.ui.resources.editor.ide"/>
-      <plugin id="org.eclipse.gmf.runtime.draw2d.ui"/>
-      <plugin id="org.eclipse.gmf.runtime.draw2d.ui.render"/>
-      <plugin id="org.eclipse.gmf.runtime.emf.clipboard.core"/>
-      <plugin id="org.eclipse.gmf.runtime.emf.commands.core"/>
-      <plugin id="org.eclipse.gmf.runtime.emf.core"/>
-      <plugin id="org.eclipse.gmf.runtime.emf.type.core"/>
-      <plugin id="org.eclipse.gmf.runtime.emf.ui"/>
-      <plugin id="org.eclipse.gmf.runtime.emf.ui.properties"/>
-      <plugin id="org.eclipse.gmf.runtime.gef.ui"/>
-      <plugin id="org.eclipse.gmf.runtime.notation"/>
       <plugin id="org.eclipse.help"/>
       <plugin id="org.eclipse.jface"/>
       <plugin id="org.eclipse.jface.databinding"/>
