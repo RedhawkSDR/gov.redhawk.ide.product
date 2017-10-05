@@ -115,8 +115,6 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 			obj = orb.string_to_object(commandLine.getIor());
 		}
 
-		gov.redhawk.ui.port.Activator.getDefault();
-
 		// Create the port objects
 		final Uses profile = ScdFactory.eINSTANCE.createUses();
 		profile.setRepID(commandLine.getRepId());
