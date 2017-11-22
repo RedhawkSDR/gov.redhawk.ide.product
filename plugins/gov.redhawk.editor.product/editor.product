@@ -18,6 +18,8 @@
       </programArgs>
       <vmArgs>-Xms40m
 -Xmx512m
+-XX:+UseG1GC
+-XX:+UseStringDeduplication
 -Dcom.sun.CORBA.transport.ORBUseNIOSelectToWait=false
 -Djava.net.preferIPv4Stack=true
 -Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB
