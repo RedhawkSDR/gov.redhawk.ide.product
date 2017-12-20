@@ -35,20 +35,20 @@
       <import feature="org.eclipse.cdt" version="9.3.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.egit" version="4.8.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.epp.mpc" version="1.6.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.graphiti.feature" version="0.15.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.graphiti.feature" version="0.14.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.help" version="2.2.100" match="greaterOrEqual"/>
-      <import feature="org.eclipse.jdt" version="3.14.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.jdt" version="3.13.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.jgit" version="4.8.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.linuxtools.rpm" version="6.2.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.linuxtools.valgrind" version="6.2.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.linuxtools.rpm" version="6.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.linuxtools.valgrind" version="6.1.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.pde" version="3.13.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.pde.api.tools.ee.feature" version="1.0.1" match="greaterOrEqual"/>
       <import feature="org.eclipse.pde.source" version="3.13.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.platform" version="4.8.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.platform.source" version="4.8.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.platform" version="4.7.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.platform.source" version="4.7.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.tm.terminal.feature" version="4.3.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.wst.xml_ui.feature" version="3.9.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.xsd.sdk" version="2.14.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.xsd.sdk" version="2.13.0" match="greaterOrEqual"/>
       <import feature="org.python.pydev.feature" version="6.2.0" match="greaterOrEqual"/>
       <import plugin="ch.qos.logback.classic"/>
       <import plugin="ch.qos.logback.core"/>
