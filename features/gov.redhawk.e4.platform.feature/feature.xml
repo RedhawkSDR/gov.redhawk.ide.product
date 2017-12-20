@@ -41,6 +41,7 @@
       <import feature="org.eclipse.jgit" version="4.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.linuxtools.rpm" version="4.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.linuxtools.valgrind" version="4.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.m2e.feature" version="1.6.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.pde" version="3.11.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.pde.api.tools.ee.feature" version="1.0.1" match="greaterOrEqual"/>
       <import feature="org.eclipse.pde.source" version="3.11.0" match="greaterOrEqual"/>
