@@ -14,10 +14,10 @@
      <extension id="ide" point="org.eclipse.core.runtime.products"> 
       <product application="gov.redhawk.editor.product.app" description="%productBlurb" name="%product.name"> 
           <property name="appName" value="%product.name"/> 
-          <property name="buildIdLocation" value="290,10"/>
+          <property name="buildIdLocation" value="270,10"/>
           <property
                 name="buildIdSize"
-                value="150,40">
+                value="170,40">
           </property>
           <property name="featureIconLocation" value="10,210"/>
           <property name="preferenceCustomization" value="plugin_customization.ini"/>

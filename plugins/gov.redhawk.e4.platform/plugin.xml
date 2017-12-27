@@ -19,10 +19,10 @@
           <property name="preferenceCustomization" value="plugin_customization.ini"/>
           <property
                 name="buildIdLocation"
-                value="290,10"/>
+                value="270,10"/>
           <property
                 name="buildIdSize"
-                value="150,40">
+                value="170,40">
           </property>
          <property
                 name="featureIconLocation"
