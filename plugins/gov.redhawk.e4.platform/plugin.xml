@@ -19,7 +19,11 @@
           <property name="preferenceCustomization" value="plugin_customization.ini"/>
           <property
                 name="buildIdLocation"
-                value="290,10"/> 
+                value="290,10"/>
+          <property
+                name="buildIdSize"
+                value="150,40">
+          </property>
          <property
                 name="featureIconLocation"
                 value="10,210"/>
@@ -67,7 +71,7 @@
     </property>
     <property
           name="startupForegroundColor"
-          value="9c9696">
+          value="ffe6e6">
     </property>
     <property
           name="startupMessageRect"
