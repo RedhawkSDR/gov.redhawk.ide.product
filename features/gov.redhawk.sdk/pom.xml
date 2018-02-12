@@ -15,7 +15,7 @@
   <parent>
     <groupId>gov.redhawk.ide.product</groupId>
     <artifactId>gov.redhawk.ide.product.parent</artifactId>
-    <version>2.0.8-SNAPSHOT</version>
+    <version>2.0.9-SNAPSHOT</version>
     <relativePath>../..</relativePath>
   </parent>
   <groupId>gov.redhawk</groupId>
