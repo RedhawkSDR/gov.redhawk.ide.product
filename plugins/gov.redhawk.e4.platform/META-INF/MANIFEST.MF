@@ -13,3 +13,4 @@ Bundle-ActivationPolicy: lazy
 Bundle-Localization: plugin
 Eclipse-BundleShape: dir
 Bundle-ClassPath: platform.jar
+Automatic-Module-Name: gov.redhawk.e4.platform

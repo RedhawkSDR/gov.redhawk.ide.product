@@ -19,3 +19,4 @@ Bundle-Vendor: REDHAWK
 Bundle-ClassPath: platform.jar
 Export-Package: gov.redhawk.plotter.application;x-internal:=true,
  gov.redhawk.plotter.application.internal;x-friends:="gov.redhawk.plotter.application.tests"
+Automatic-Module-Name: gov.redhawk.plotter.application
