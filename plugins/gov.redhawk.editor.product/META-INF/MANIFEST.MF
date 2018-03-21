@@ -20,3 +20,4 @@ Require-Bundle: org.eclipse.core.runtime,
 Bundle-ClassPath: platform.jar
 Import-Package: nxm.sys.prim
 Bundle-Vendor: %providerName
+Automatic-Module-Name: gov.redhawk.editor.product
