@@ -49,7 +49,7 @@
       <import feature="org.eclipse.tm.terminal.feature" version="4.3.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.wst.xml_ui.feature" version="3.9.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.xsd.sdk" version="2.13.0" match="greaterOrEqual"/>
-      <import feature="org.python.pydev.feature" version="6.2.0" match="greaterOrEqual"/>
+      <import feature="org.python.pydev.feature" version="6.3.1" match="greaterOrEqual"/>
       <import plugin="ch.qos.logback.classic"/>
       <import plugin="ch.qos.logback.core"/>
       <import plugin="org.apache.commons.io"/>
