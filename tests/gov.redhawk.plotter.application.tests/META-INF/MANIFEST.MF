@@ -14,3 +14,4 @@ Require-Bundle: gov.redhawk.plotter.application,
  org.junit;bundle-version="4.10.0",
  org.eclipse.swtbot.junit4_x;bundle-version="2.2.1",
  gov.redhawk.ui.port.nxmplot;bundle-version="5.0.0"
+Automatic-Module-Name: gov.redhawk.plotter.application.tests
