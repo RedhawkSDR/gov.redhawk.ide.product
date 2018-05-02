@@ -22,7 +22,6 @@
   <properties>
     <tycho-extras-version>${tycho-version}</tycho-extras-version>
     <tycho.scmUrl>scm:git:https://github.com/RedhawkSDR/eclipse-products-gov.redhawk.ide.product.git</tycho.scmUrl>
-    <orbit>http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository</orbit>
     <nxm>http://nextmidas.techma.com/p2/nxm/updates/3.6/latest/</nxm>
     <nxm-rcp>http://nextmidas.techma.com/p2/nxm.ui/updates/latest/</nxm-rcp>
     <mil.jpeojtrs.sca>http://download.redhawksdr.org/mil.jpeojtrs.sca/releases/2.0</mil.jpeojtrs.sca>
@@ -49,12 +48,6 @@
       <id>eclipse-mars-patch</id>
       <layout>p2</layout>
       <url>${eclipse-mars-patch}</url>
-    </repository>
-
-    <repository>
-      <id>orbit</id>
-      <layout>p2</layout>
-      <url>${orbit}</url>
     </repository>
 
     <repository>
