@@ -16,3 +16,4 @@ Require-Bundle: gov.redhawk.editor.product,
  org.eclipse.swtbot.swt.finder;bundle-version="2.2.1",
  org.junit;bundle-version="4.10.0",
  gov.redhawk.ide.swtbot
+Automatic-Module-Name: gov.redhawk.editor.product.tests
