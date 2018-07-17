@@ -10,7 +10,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>gov.redhawk.ide.product</groupId>
   <artifactId>gov.redhawk.ide.product.parent</artifactId>
-  <version>2.1.3-SNAPSHOT</version>
+  <version>2.2.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <parent>
@@ -24,10 +24,10 @@
     <tycho.scmUrl>scm:git:https://github.com/RedhawkSDR/eclipse-products-gov.redhawk.ide.product.git</tycho.scmUrl>
     <nxm>http://nextmidas.techma.com/p2/nxm/updates/3.6/latest/</nxm>
     <nxm-rcp>http://nextmidas.techma.com/p2/nxm.ui/updates/latest/</nxm-rcp>
-    <mil.jpeojtrs.sca>http://download.redhawksdr.org/mil.jpeojtrs.sca/releases/2.1</mil.jpeojtrs.sca>
-    <gov.redhawk.core>http://download.redhawksdr.org/gov.redhawk.core/releases/2.1</gov.redhawk.core>
-    <gov.redhawk.ide>http://download.redhawksdr.org/gov.redhawk.ide/releases/2.1</gov.redhawk.ide>
-    <gov.redhawk.codegen>http://download.redhawksdr.org/gov.redhawk.codegen/releases/2.1</gov.redhawk.codegen>
+    <mil.jpeojtrs.sca>http://download.redhawksdr.org/mil.jpeojtrs.sca/releases/2.2</mil.jpeojtrs.sca>
+    <gov.redhawk.core>http://download.redhawksdr.org/gov.redhawk.core/releases/2.2</gov.redhawk.core>
+    <gov.redhawk.ide>http://download.redhawksdr.org/gov.redhawk.ide/releases/2.2</gov.redhawk.ide>
+    <gov.redhawk.codegen>http://download.redhawksdr.org/gov.redhawk.codegen/releases/2.2</gov.redhawk.codegen>
     <jacorb>http://download.redhawksdr.org/jacorb/updates/stable</jacorb>
     <pydev>https://dl.bintray.com/fabioz/pydev/6.4.3/</pydev>
     <nebula>http://download.eclipse.org/nebula/releases/2.0.0/</nebula>
