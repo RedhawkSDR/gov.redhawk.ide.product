@@ -18,7 +18,7 @@
     <relativePath>../..</relativePath>
     <groupId>gov.redhawk.ide.product</groupId>
     <artifactId>gov.redhawk.ide.product.parent</artifactId>
-    <version>2.2.0-SNAPSHOT</version>
+    <version>2.2.1-SNAPSHOT</version>
   </parent>
 
   <!-- If building for Oxygen, use a different p2.inf file -->

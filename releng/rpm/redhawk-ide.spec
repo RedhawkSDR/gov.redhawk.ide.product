@@ -15,8 +15,8 @@
 
 Name:           redhawk-ide
 Summary:        REDHAWK Integrated Developer Environment
-Version:        2.2.0
-Release:        2%{?dist}
+Version:        2.2.1
+Release:        1%{?dist}
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Group:          Applications/Engineering
 License:        Eclipse Public License (EPL)
@@ -32,9 +32,9 @@ Requires:       PackageKit-gtk3-module libcanberra-gtk3 libwebkit2gtk
 %else
 Requires:       PackageKit-gtk-module libcanberra-gtk2 webkitgtk
 %endif
-Requires:       redhawk-devel >= 2.0
-Requires:       redhawk-codegen >= 2.0
-Requires:       bulkioInterfaces >= 2.0
+Requires:       redhawk-devel >= 2.2
+Requires:       redhawk-codegen >= 2.2
+Requires:       bulkioInterfaces >= 2.2
 AutoReqProv:    no
 
 
