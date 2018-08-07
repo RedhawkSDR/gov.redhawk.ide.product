@@ -32,9 +32,9 @@ Requires:       PackageKit-gtk3-module libcanberra-gtk3 libwebkit2gtk
 %else
 Requires:       PackageKit-gtk-module libcanberra-gtk2 webkitgtk
 %endif
-Requires:       redhawk-devel >= 2.0
-Requires:       redhawk-codegen >= 2.0
-Requires:       bulkioInterfaces >= 2.0
+Requires:       redhawk-devel >= 2.3
+Requires:       redhawk-codegen >= 2.3
+Requires:       bulkioInterfaces >= 2.3
 AutoReqProv:    no
 
 
