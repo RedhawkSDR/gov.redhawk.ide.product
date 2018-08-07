@@ -40,8 +40,12 @@ AutoReqProv:    no
 
 %description
 REDHAWK Integrated Developer Environment
- * Commit: __REVISION__
- * Source Date/Time: __DATETIME__
+Git commits:
+ * mil.jpeojtrs.sca        - __mil.jpeojtrs.sca__
+ * gov.redhawk.core        - __gov.redhawk.core__
+ * gov.redhawk.ide         - __gov.redhawk.ide__
+ * gov.redhawk.codegen     - __gov.redhawk.codegen__
+ * gov.redhawk.ide.project - __gov.redhawk.ide.product__
 
 
 %prep
