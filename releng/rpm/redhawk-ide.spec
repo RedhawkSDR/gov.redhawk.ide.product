@@ -45,7 +45,7 @@ Git commits:
  * gov.redhawk.core        - __gov.redhawk.core__
  * gov.redhawk.ide         - __gov.redhawk.ide__
  * gov.redhawk.codegen     - __gov.redhawk.codegen__
- * gov.redhawk.ide.project - __gov.redhawk.ide.product__
+ * gov.redhawk.ide.product - __gov.redhawk.ide.product__
 
 
 %prep
