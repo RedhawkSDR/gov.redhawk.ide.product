@@ -55,7 +55,7 @@ Git commits:
 
 %install
 mkdir -p $RPM_BUILD_ROOT%{_idehome}/%{version}
-ln -s %{_idehome}/%{version} $RPM_BUILD_ROOT%{_idehome}/%{shortver}
+ln -s %{version} $RPM_BUILD_ROOT%{_idehome}/%{shortver}
 mkdir -p $RPM_BUILD_ROOT%{_bindir}
 cp -r * $RPM_BUILD_ROOT%{_idehome}/%{version}
 ln -s %{_idehome}/%{version}/eclipse $RPM_BUILD_ROOT%{_bindir}/rhide
