@@ -16,6 +16,7 @@
 Name:           redhawk-ide
 Summary:        REDHAWK Integrated Developer Environment
 Version:        2.3.0
+%global shortver 2.3
 Release:        1%{?dist}
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Group:          Applications/Engineering
@@ -32,9 +33,9 @@ Requires:       PackageKit-gtk3-module libcanberra-gtk3 libwebkit2gtk
 %else
 Requires:       PackageKit-gtk-module libcanberra-gtk2 webkitgtk
 %endif
-Requires:       redhawk-devel >= 2.3
-Requires:       redhawk-codegen >= 2.3
-Requires:       bulkioInterfaces >= 2.3
+Requires:       redhawk-devel >= %{shortver}
+Requires:       redhawk-codegen >= %{shortver}
+Requires:       bulkioInterfaces >= %{shortver}
 AutoReqProv:    no
 
 
@@ -54,6 +55,7 @@ Git commits:
 
 %install
 mkdir -p $RPM_BUILD_ROOT%{_idehome}/%{version}
+ln -s %{version} $RPM_BUILD_ROOT%{_idehome}/%{shortver}
 mkdir -p $RPM_BUILD_ROOT%{_bindir}
 cp -r * $RPM_BUILD_ROOT%{_idehome}/%{version}
 ln -s %{_idehome}/%{version}/eclipse $RPM_BUILD_ROOT%{_bindir}/rhide
@@ -70,6 +72,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-, root, root)
 %{_idehome}/%{version}
+%{_idehome}/%{shortver}
 %{_bindir}/rhide
 %{_datadir}/icons/hicolor/128x128/apps/redhawk.xpm
 %{_datadir}/applications/redhawk.desktop
