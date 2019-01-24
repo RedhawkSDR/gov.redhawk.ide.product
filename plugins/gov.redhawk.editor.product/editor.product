@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Rheditor" id="gov.redhawk.editor.product.ide" application="gov.redhawk.editor.product.app" version="2.2.1.qualifier" useFeatures="false" includeLaunchers="true">
+<product name="Rheditor" id="gov.redhawk.editor.product.ide" application="gov.redhawk.editor.product.app" version="2.2.2.qualifier" useFeatures="false" includeLaunchers="true">
 
    <aboutInfo>
       <image path="redhawk250.png"/>
