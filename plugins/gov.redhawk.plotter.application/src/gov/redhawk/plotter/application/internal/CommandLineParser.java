@@ -14,8 +14,9 @@ import gov.redhawk.plotter.application.PlotterApplicationPlugin;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.URISyntaxException;
 import java.net.URL;
 
@@ -112,26 +113,24 @@ public class CommandLineParser {
 		}
 
 		URL usageURL = PlotterApplicationPlugin.getDefault().getBundle().getEntry("usage.txt");
-		BufferedReader input;
-		try {
-			File file = new File(FileLocator.resolve(usageURL).toURI());
-			input = new BufferedReader(new FileReader(file));
+		try (FileInputStream fis = new FileInputStream(new File(FileLocator.resolve(usageURL).toURI()))) {
+			try (BufferedReader input = new BufferedReader(new InputStreamReader(fis))) {
+				String line = input.readLine();
+				while (line != null) {
+					System.err.println(line); // SUPPRESS CHECKSTYLE ERROR LOG
+					line = input.readLine();
+				}
+				input.close();
+			} catch (IOException ex) {
+				PlotterApplicationPlugin.getDefault().getLog().log(
+					new Status(IStatus.ERROR, PlotterApplicationPlugin.PLUGIN_ID, "Unable to display error message", ex));
+			}
 		} catch (URISyntaxException ex) {
 			PlotterApplicationPlugin.getDefault().getLog().log(new Status(IStatus.ERROR, PlotterApplicationPlugin.PLUGIN_ID, "Error loading usage text", ex));
 			return;
 		} catch (IOException ex) {
 			PlotterApplicationPlugin.getDefault().getLog().log(new Status(IStatus.ERROR, PlotterApplicationPlugin.PLUGIN_ID, "Error loading usage text", ex));
 			return;
-		}
-		try {
-			String line = input.readLine();
-			while (line != null) {
-				System.err.println(line); // SUPPRESS CHECKSTYLE ERROR LOG
-				line = input.readLine();
-			}
-		} catch (IOException ex) {
-			PlotterApplicationPlugin.getDefault().getLog().log(
-				new Status(IStatus.ERROR, PlotterApplicationPlugin.PLUGIN_ID, "Unable to display error message", ex));
 		}
 	}
 }
