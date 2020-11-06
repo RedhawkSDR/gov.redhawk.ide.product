@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Plotter" id="gov.redhawk.plotter.application.product" application="gov.redhawk.plotter.application.plotter" version="2.2.6.qualifier" useFeatures="false" includeLaunchers="true">
+<product name="Plotter" id="gov.redhawk.plotter.application.product" application="gov.redhawk.plotter.application.plotter" version="2.2.7.qualifier" useFeatures="false" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>
