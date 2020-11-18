@@ -28,7 +28,7 @@
    </license>
 
    <requires>
-      <import feature="mil.jpeojtrs.sca.sdk" version="2.2.2" match="equivalent"/>
+      <import feature="mil.jpeojtrs.sca.sdk" version="2.3.0" match="equivalent"/>
       <import feature="gov.redhawk.core.sdk" version="2.3.0" match="equivalent"/>
       <import feature="gov.redhawk.ide.all.sdk" version="2.3.0" match="equivalent"/>
       <import feature="gov.redhawk.ide.codegen.sdk" version="2.3.0" match="equivalent"/>
