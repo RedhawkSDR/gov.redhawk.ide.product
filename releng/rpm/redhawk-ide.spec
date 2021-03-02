@@ -12,6 +12,7 @@
 %define debug_package %{nil}
 %define __os_install_post %{nil}
 
+%global shortver 2.3
 
 Name:           redhawk-ide
 Summary:        REDHAWK Integrated Developer Environment
