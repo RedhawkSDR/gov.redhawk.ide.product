@@ -12,12 +12,11 @@
 %define debug_package %{nil}
 %define __os_install_post %{nil}
 
-%global shortver 2.3
-
 Name:           redhawk-ide
 Summary:        REDHAWK Integrated Developer Environment
 Version:        2.3.0
-Release:        1%{?dist}
+%global shortver 2.3
+Release:        2%{?dist}
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Group:          Applications/Engineering
 License:        Eclipse Public License (EPL)
@@ -47,7 +46,6 @@ Git commits:
  * gov.redhawk.ide         - __gov.redhawk.ide__
  * gov.redhawk.codegen     - __gov.redhawk.codegen__
  * gov.redhawk.ide.product - __gov.redhawk.ide.product__
-
 
 %prep
 %setup -q
