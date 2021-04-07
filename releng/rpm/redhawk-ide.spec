@@ -17,7 +17,7 @@ Name:           redhawk-ide
 Summary:        REDHAWK Integrated Developer Environment
 Version:        2.2.8
 %global shortver 2.2
-Release:        1%{?dist}
+Release:        0%{?dist}
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Group:          Applications/Engineering
 License:        Eclipse Public License (EPL)
