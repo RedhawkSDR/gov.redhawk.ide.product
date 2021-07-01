@@ -2,15 +2,15 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: REDHAWK Plotter Application
 Bundle-SymbolicName: gov.redhawk.plotter.application;singleton:=true
-Bundle-Version: 2.3.0.qualifier
+Bundle-Version: 3.0.0.qualifier
 Bundle-Activator: gov.redhawk.plotter.application.PlotterApplicationPlugin
 Require-Bundle: org.eclipse.ui;bundle-version="3.6.1",
  org.eclipse.core.runtime;bundle-version="3.6.0",
  gov.redhawk.ui.port.nxmplot;bundle-version="2.1.0",
  gov.redhawk.sca.model;bundle-version="14.0.0",
  org.eclipse.core.expressions;bundle-version="3.4.400",
- idl.bulkio;bundle-version="2.3.0",
- org.ossie;bundle-version="2.3.0",
+ idl.bulkio;bundle-version="3.0.0",
+ org.ossie;bundle-version="3.0.0",
  bulkio;bundle-version="2.3.0"
 Bundle-ActivationPolicy: lazy
 Eclipse-BundleShape: dir
