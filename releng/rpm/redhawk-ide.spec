@@ -14,7 +14,7 @@
 
 Name:           redhawk-ide
 Summary:        REDHAWK Integrated Developer Environment
-Version:        3.0.0
+Version:        3.0.1
 %global shortver 3.0
 Release:        5%{?dist}
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
