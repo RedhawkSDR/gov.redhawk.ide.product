@@ -33,9 +33,15 @@
     <nebula>http://download.eclipse.org/nebula/releases/2.0.0/</nebula>
     <idl-editor>http://download.redhawksdr.org/idl-editor</idl-editor>
     <eclipse>http://download.eclipse.org/releases/photon/</eclipse>
+    <reload4j>http://download.redhawksdr.org/reload4j/1.2.19</reload4j>
   </properties>
 
   <repositories>
+    <repository>
+      <id>reload4j</id>
+      <layout>p2</layout>
+      <url>${reload4j}</url>
+    </repository>
 
     <repository>
       <id>eclipse</id>
