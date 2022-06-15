@@ -1,0 +1,24 @@
+<!--See:https://maven.apache.org/plugins/maven-assembly-plugin/component.html-->
+
+<assembly>
+  <formats>
+    <format>tar.gz</format>
+  </formats>
+
+  <baseDirectory>eclipse</baseDirectory>
+  
+  <fileSets>
+    <fileSet>
+      <directory>target/products/gov.redhawk.e4.platform.ide/linux/gtk/x86_64/eclipse</directory>
+      <outputDirectory>/</outputDirectory>
+
+      <!-- remove log4j jar files from final ide product due to CVE-2021-44832 -->
+      <excludes>
+        <exclude>**/ant-apache-log4j.jar</exclude>
+        <exclude>**/org.apache.log4j_1.2.15.v201012070815.jar</exclude>
+        <exclude>**/org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar</exclude>
+      </excludes>
+
+    </fileSet>
+  </fileSets>
+</assembly>

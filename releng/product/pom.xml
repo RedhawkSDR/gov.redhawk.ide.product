@@ -94,6 +94,27 @@
           </products>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <descriptor>assembly.xml</descriptor>
+          <outputDirectory>${project.build.directory}/products</outputDirectory>
+          <!-- overwrite the tar.gz produced by the tycho-p2-director-plugin above -->
+          <finalName>redhawk-ide-${unqualifiedVersion}.${buildType}${buildQualifier}-linux.gtk.x86_64</finalName>
+          <overrideUid>0</overrideUid>
+          <overrideGid>0</overrideGid>
+        </configuration>
+        <executions>
+          <execution>
+            <!-- the tycho-p2-director-plugin assembles the project in the pre-integration-test phase, so run after that -->
+            <phase>post-integration-test</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 </project>
