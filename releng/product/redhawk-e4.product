@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="REDHAWK IDE" uid="gov.redhawk.e4.platform.ide" id="gov.redhawk.e4.platform.ide" application="org.eclipse.ui.ide.workbench" version="2.2.10.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="REDHAWK IDE" uid="gov.redhawk.e4.platform.ide" id="gov.redhawk.e4.platform.ide" application="org.eclipse.ui.ide.workbench" version="2.2.11.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/gov.redhawk.e4.platform/redhawk250.png"/>
@@ -63,9 +63,9 @@
    </plugins>
 
    <features>
-      <feature id="gov.redhawk.e4.platform" version="2.2.10.qualifier"/>
-      <feature id="gov.redhawk.sdk" version="2.2.10.qualifier"/>
-      <feature id="gov.redhawk.tailoredTools" version="2.2.10.qualifier" installMode="root"/>
+      <feature id="gov.redhawk.e4.platform" version="2.2.11.qualifier"/>
+      <feature id="gov.redhawk.sdk" version="2.2.11.qualifier"/>
+      <feature id="gov.redhawk.tailoredTools" version="2.2.11.qualifier" installMode="root"/>
    </features>
 
    <configurations>
